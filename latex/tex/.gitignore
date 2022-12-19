@@ -1,6 +1,7 @@
 *.fdb_latexmk
 *.log
 *.pdf
+!hsma-logo.pdf
 *.synctex.gz
 *.fls
 *.idx
