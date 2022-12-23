@@ -6,20 +6,19 @@ Das Unternehmen Caruso stellt seit 2017 eine standartisierte Schnittstelle für 
 
 Caruso schließt Verträge mit Autoherstellern (OEMS) wie Mercedes oder BMW, Verträge zur Vernetzung von Autodaten über ihren Dienst ab. Die propertiären Fahrzeuginformationen werden erfasst und über eine einheitliche Schnittstelle, der Caruso API zur Verfügung gestellt. Diese Datenpunkte beinhalten informationen von der Position des Fahrzeugs oder dem nächsten Servicetermin. Die Datenpunkte werden in gebündelten Pakten, auch Datenpakten abonniert und abhängig von der Nutzung abgerechnet. Caruso verkauft die Datenpakte an Kunden wie Werkstätten, Versicherungen oder Pannendienste.
 
+% Caruso Sales-Mitarbeiter Workflow??
+
 Viele dieser Kunden sind mittelständische Unternehmen, welche den Mehrwert dieser Schnittstelle und der zur Verfügung gestellten Daten erkennen wollen, bevor sie in den Zugang zur Schnittstelle investieren. Caruso spricht in diesem Kontext von Entscheidungsträgern. Entscheidungstärger sind Personen in den Unternehmen, welche die Entscheidung zum Einkaufen des Produkts geben. In der Regel sind die Entscheidungsträger nicht technische Mitarbeiter ind Führugnspositionen, die mit den Rohdaten der Datenpunkte nichts anfangen können. Sie verlangen häufig Daten oder Versicherungen, welche über ihre Fahrzeuge gesammelt werden und leicht verständlich sind. Besonders Live-Inforamtionen über das Fahrzeug sind von Interesse.
 
 Caruso stellt derzeit keine Anwendung bereit, die Live-Informationen verständlich für nicht technische Benutzer zur Verfügung stellt. Aktuell werden beispielsweise Skripte erstellt, welche die informationen der Fahrzeuge über die Schnittstelle sammeln und in einem Excel oder HTML-Bericht zur Verfügung stellen. Die Berichte werden in manuellen Prozessen durch mehrere Caruso-Mitarbeiter erstellt und müssen für jeden Kunden individuell erstellt werden.
 \section{Goals of the Project}
-"Durch einen verbesserten Workflow werden für den Entscheidungsträger relevante Daten schneller und verständlicher vom Sales-Mitarbeiter dargestellt.". Dies ist das Long-Term-Goal für das gesamte Projekt. Dies beinhaltet einige kleinere Ziele:
+Das übergeordnete Ziel für das gesamte Projekt lautet: "Durch einen verbesserten Workflow werden für den Entscheidungsträger relevante Daten schneller und verständlicher vom Sales-Mitarbeiter dargestellt". Damit ist gemeint, dass der Sales-Mitarbeiter einfacher und schneller Präsentationen für die Vorstellung beim Entscheidungsträger vorbereiten kann und diese von den Entscheidungsträgern besser verstanden werden. Konkrete lässt sich dieses Ziel in mehrere Subziele einteilen:
 \begin{itemize}
-  \item konfiguration über ein System
-  \item verbesserung des Workflows durch entfernen des Konfigurators
-  \item vertrauen in die Telemetriedaten erhalten
-  \item verständnis für die Telemetriedaten fördern
-  \item Live informationen überbringen
+  \item 1. Das Produkt visualisiert Live-Informationen der Fahrzeuge. Dies erhöht das Vertrauen der Entscheidungsträger in das Caruso-System.
+  \item 2. Das Produkt zeigt die Datenpunkte für nicht-technische Entscheidungsträger verständlich an. Dies sorgt dafür, dass der Mehrwert der Daten sichtbarer wird.
+  \item 3. Das Produkt ist wiederverwendbar für mehrere Entscheidungsträger. Dies sorgt dafür, dass der Zeitaufwand für eine manuelle Datensammlung seitens Caruso minimiert wird.
+  \item 4. Das Produkt enthält eine leicht verständliche konfiguration. Dies sorgt dafür, dass die nicht-technischen Mitarbeiter von Caruso keine Hilfe von Entwicklern der Caruso GmbH benötigen.
 \end{itemize}
 
 \section{Overall Solution}
-\begin{itemize}
-  \item Die Anwendung ist ein Ansammlung webbasierter Dashboards, , welche die Datenpunkte einzelner und mehrerer Autos für einen Entscheidungsträger in einer verständlichen und leicht zugänglichen Weise darstellen. Mitarbeiter von Caruso sind in der Lage die Dashbaord für ihre jeweiligen Entscheidungsträger anzupassen, um so das Vertrauen zum Kunden besser aufbauen zu können.
-\end{itemize}
+Die grobe Lösung für die Fragestellung von Caruso ist eine webbasierte Anwendung in Form mehrere Dashboards. Diese lassen sich für einzelne Entscheidungsträger konfigurieren. Sie beinhalten die Informationen der Kundenfahrzeuge in Form visualisierter Datenpunkte sowohl für einzelne Fahrzeuge als auch Gruppen von Fahrzeugen (Flotten).
