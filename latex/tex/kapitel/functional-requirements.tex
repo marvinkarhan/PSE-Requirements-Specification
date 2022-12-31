@@ -1,20 +1,33 @@
 \chapter{Functional Requirements}
-\begin{table}[h]
-    \caption{User Stories}
-    \subsection*{Decision Maker}
-    \label{FunctionalRequirements}
-    \renewcommand{\arraystretch}{1.2}
-    \centering
-    \sffamily
-    \begin{footnotesize}
-      \begin{tabular}{l l L}
+
+  \sffamily
+  \begin{footnotesize}
+    \begin{longtable}[i i L]{ p{.5\textwidth} p{.1\textwidth} p{.1\textwidth} }
+      \caption[Tabelle mit ISO-Ländercodes]                       % Caption für das Tabellenverzeichnis
+          {Lange Tabelle mit ISO-Ländercodes\label{laendercodes}} % Caption für die Tabelle selbst
+          \\
       \toprule
-      \textbf{US ID} & \textbf{PUC} & \textbf{Description}\\
+      \textbf{US ID} & \textbf{PUC} & \textbf{Description} \\
       \midrule
       US\_01 & & As a Decision Maker, I want to see a list of all of my vehicles to see which vehicles are in my fleet.\\
-      US\_02 & & As a Decision Maker, I want to 
+      US\_02 & & As a Decision Maker, I want to add a vehicle to my fleet to account to changes to my cars. \\
+      US\_03 & & Als Entscheidungsträger will ich sehen, ob mein Fahrzeug unterwegs ist oder steht, um zu wissen, ob das Fahrzeug derzeit verwendet wird. \\
+      US\_04 & & Als Entscheidungsträger will ich die VIN meines Fahrzeugs in der Liste meiner Fahrzeuge sehen, um mein Fahrzeug eindeutig zu identifizieren. \\
+      US\_05 & & Als Entscheidungsträger will ich Fahrzeuge anhand der, in der Fahrzeugliste vorhandenen Kriterien filtern können, um nur Informationen angezeigt zu bekommen, die mich aktuell interessieren \\
+      US\_06 & & Als Entscheidungsträger will ich einen Bericht zu einem aktuell ausgewählten Fahrzeug herunterladen, damit ich diesen persistieren kann. \\
+      US\_07 & & Als Entscheidungsträger will ich einen Bericht über alle meine Fahrzeuge herunterladen, um diesen mit anderen Mitarbeitern zu teilen. \\
+      US\_08 & & Als Entscheidungsträger will ich den Tankstand in Prozent sowie die verbleibende Reichweite einzelner Fahrzeuge einsehen, um zu wissen, wann das Fahrzeug wieder getankt werden muss \\ 
+      US\_09 & & Als Entscheidungsträger will ich das Modell eines einzelnen Fahrzeugs einsehen, um es besser zu identifizieren \\
+      US\_10 & & Als Entscheidungsträger will ich den Kilometerstand eines einzelnen Fahrzeugs einsehen, um zu wissen, wie weiter das Fahrzeug bisher gefahren ist. \\
+      US\_11 & & Als Entscheidungsträger will ich für mein Fahrzeug wissen, wann ein nächster Servicetermin ansteht, um meine Flotte besser planenen zu können. Zu den Serviceterminen gehören die Hauptuntersuchung, der ÖlWechsel sowie der normale Servicetermin. \\
+      US\_12 & & Als Entscheidungsträger will ich die Position einzelner Fahrzeuge auf einer Karter einsehen, um zu wissen, wo sich meine Fahrzeug befindet. \\
+      US\_13 & & Als Entscheidungsträger will ich die Geschwindigkeit einzelner Fahrzeuge innerhalb bestimmter Zeiträume einsehen, um herauszufinden, ob das Fahrzeug gut gefahren wird. \\
+      US\_14 & & Als Entscheidungsträger will ich vergangene Fahrten einzelner Fahrzeuge einsehen, um herauszufinden, welche Route Mitarbeiter wann gefahren sind und wann sie Pausen einlegen und wie lange diese gehen. \\
+      US\_15 & & Als Entscheidungsträger will ich vergangene Ladestopps einzelner Fahrzeuge einsehen, um herauszufinden wann und wie lange getankt das Fahrzeug betankt wurde. \\
+      US\_16 & & Als Entscheidungsträger will ich eine chronologische Liste aller Fahrzeugereignisse ansehen, um herauszufinden, ob und wann Probleme stattgefunden sind. \\
+     
       \bottomrule
-      \end{tabular}
-    \end{footnotesize}
-    \rmfamily
-  \end{table}
+    \end{longtable}
+  \end{footnotesize}
+  \rmfamily
+% blub
