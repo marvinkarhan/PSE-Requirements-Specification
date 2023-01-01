@@ -2,9 +2,9 @@
 
   \sffamily
   \begin{footnotesize}
-    \begin{longtable}[i i L]{ p{.5\textwidth} p{.1\textwidth} p{.1\textwidth} }
-      \caption[Tabelle mit ISO-Ländercodes]                       % Caption für das Tabellenverzeichnis
-          {Lange Tabelle mit ISO-Ländercodes\label{laendercodes}} % Caption für die Tabelle selbst
+    \begin{longtable}[i i L]{ p{.1\textwidth} p{.1\textwidth} p{.5\textwidth} }
+      \caption                       % Caption für das Tabellenverzeichnis
+          {Entscheidungsträger} % Caption für die Tabelle selbs
           \\
       \toprule
       \textbf{US ID} & \textbf{PUC} & \textbf{Description} \\
@@ -19,13 +19,48 @@
       US\_08 & & Als Entscheidungsträger will ich den Tankstand in Prozent sowie die verbleibende Reichweite einzelner Fahrzeuge einsehen, um zu wissen, wann das Fahrzeug wieder getankt werden muss \\ 
       US\_09 & & Als Entscheidungsträger will ich das Modell eines einzelnen Fahrzeugs einsehen, um es besser zu identifizieren \\
       US\_10 & & Als Entscheidungsträger will ich den Kilometerstand eines einzelnen Fahrzeugs einsehen, um zu wissen, wie weiter das Fahrzeug bisher gefahren ist. \\
-      US\_11 & & Als Entscheidungsträger will ich für mein Fahrzeug wissen, wann ein nächster Servicetermin ansteht, um meine Flotte besser planenen zu können. Zu den Serviceterminen gehören die Hauptuntersuchung, der ÖlWechsel sowie der normale Servicetermin. \\
+      US\_11 & & Als Entscheidungsträger will ich für mein Fahrzeug wissen, wann ein nächster Servicetermin ansteht, um meine Flotte besser planen zu können. Zu den Serviceterminen gehören die Hauptuntersuchung, der ÖlWechsel sowie der normale Servicetermin. \\
       US\_12 & & Als Entscheidungsträger will ich die Position einzelner Fahrzeuge auf einer Karter einsehen, um zu wissen, wo sich meine Fahrzeug befindet. \\
       US\_13 & & Als Entscheidungsträger will ich die Geschwindigkeit einzelner Fahrzeuge innerhalb bestimmter Zeiträume einsehen, um herauszufinden, ob das Fahrzeug gut gefahren wird. \\
       US\_14 & & Als Entscheidungsträger will ich vergangene Fahrten einzelner Fahrzeuge einsehen, um herauszufinden, welche Route Mitarbeiter wann gefahren sind und wann sie Pausen einlegen und wie lange diese gehen. \\
       US\_15 & & Als Entscheidungsträger will ich vergangene Ladestopps einzelner Fahrzeuge einsehen, um herauszufinden wann und wie lange getankt das Fahrzeug betankt wurde. \\
       US\_16 & & Als Entscheidungsträger will ich eine chronologische Liste aller Fahrzeugereignisse ansehen, um herauszufinden, ob und wann Probleme stattgefunden sind. \\
      
+      \bottomrule
+    \end{longtable}
+  \end{footnotesize}
+  \rmfamily
+
+
+  \sffamily
+  \begin{footnotesize}
+    \renewcommand{\arraystretch}{1.4}
+    \begin{longtable}[i i L]{ p{.1\textwidth} p{.1\textwidth} p{.7\textwidth} }
+      \caption                       % Caption für das Tabellenverzeichnis
+          {Konfigurator} % Caption für die Tabelle selbs
+          \\
+      \toprule
+      \textbf{US ID} & \textbf{PUC} & \textbf{Description} \\
+      \midrule
+
+      USC01 & & Als Konfigurator will ich ein neues Projekt für einen Entscheidungsträger erstellen, damit ich für diesen eine individuelle Präsentation vorbereiten kann. \\
+      USC02 & & Als Konfigurator will ich ein Marketplace-Konto mit einem Projekt verknüpfen, um die Fahrzeuge des Kontos mit der Anwendung zu verbinden. \\
+      USC03 & & Als Konfigurator will ich mehrere Marketplace-Konten zum Betrachten eines Projekts hinzufügen, um mehreren Mitarbeitern des Entscheidungsträgers Zugriff auf den Data Appettizer zu gewähren. \\
+      USC04 & & Als Konfigurator will ich das Logo für einen Entscheidungsträger in seinem Projekt hinterlegen, damit dieser mehr Vertrauen in die Anwendung erhält. 
+      \textbf{Anmerkung:} Das Logo soll sichtbar bei Verwendung des Appetizers sein. \\
+      USC05 & & Als Konfigurator will ich eine Hauptfarbe und eine Akzentfarbe für das Projekt eines Entscheidungsträgers einstellen, damit dessen CI seines Unternehmens im Appetizer vertreten wird. \\
+      USC06 & & Als Konfigurator will ich einsehen, wer und wann die letzte Änderung an einem Projekt durchgeführt wurde, um nachvollziehen zu können, ob was geändert wurde. \\
+      USC07 & & Als Konfigurator will sehen, wer und wann das letzte Mal das Projekt eingesehen wurde, um zu wissen, ob das Projekt noch verwendet wird. \\
+      USC08 & & Als Konfigurator will ich ein Projekt als Vorlage speichern, um dieses für ein weiteres Projekt als Vorlage zu verwenden \\
+      USC09 & & Als Konfigurator will ich eine Vorkonfiguration in Form einer Vorlage für ein Projekt wählen können, um nicht alle Einstellungen manuell durchführen zu müssen \\
+      USC10 & & Als Konfigurator will ich eine Liste aller meiner Vorlagen ansehen, um diese für ein Projekt auswählen zu können. \\
+      USC11 & & Als Konfigurator will ich eine Vorlage anhand des Namens oder den verwendeten Datenpunkten suchen können, um schnell eine passende Vorlage für mein Projekt zu finden. \\
+      USC12 & & Als Konfigurator will ich nach Projekten anhand ihres Namens, der Anzahl von Autos, oder dem Besitzer suchen, um schnell das richtige Projekt zu finden \\
+      USC13 & & Konfigurator, will ich einstellen können, welche Informationen in der Liste der Fahrzeuge für ein Projekt zu sehen sind, um den Wünschen des Entscheidungsträgers gerecht zu werden.
+
+      \textbf{Anmerkung:} Zur Auswahl stehen müssen VIN, Hersteller, Status, Kilometerstand, das nächste Ereignis, Modell und Tankstand
+      \\
+
       \bottomrule
     \end{longtable}
   \end{footnotesize}
