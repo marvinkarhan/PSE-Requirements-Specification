@@ -1,15 +1,19 @@
 \chapter{Open Issues}
 % Fragen des letzten Sprints
 
-\begin{itemize}
-    \item I1
-    \begin{itemize}
-        \item \textbf{Affected:} 
-        \item \textbf{Description:} 
-        \item \textbf{Resolution:}  
-    \end{itemize}
-\end{itemize}
-
-% Nicht genug widgets
-% Beschränkt auf eine Kundenart
-% 
+\sffamily
+\begin{footnotesize}
+    \begin{longtable}[i L L L]{ p{.1\textwidth} p{.17\textwidth} p{.3\textwidth} p{.3\textwidth}}
+        \caption                       % Caption für das Tabellenverzeichnis
+            {Open Issues} % Caption für die Tabelle selbs
+            \\
+        \toprule
+        \textbf{Issue ID} & \textbf{Affected Stakeholders} & \textbf{Description} & \textbf{Resolution} \\
+        \midrule
+        I\_01 & Configurator, Sales Employee & The current prototype and testing has only been done with a stakeholder representative of one customer group, namely fleet management. Other customer groups like insurance companies, roadside assistance companies and auto repair shops have not been prototyped or tested. & The interests of other customer groups can be understood either through the Sales Employee or by asking Decision Makers directly. For each type of company, a template must be implemented. \\
+        I\_02 & Configurator, Sales Employee & Because the current prototype has only been tested with fleet management companies in mind, widgets and data point that might interest the other customer groups have not yet been designed and implemented. & The interests of other customer groups can be understood either through the Sales Employee or by asking Decision Makers directly. New widgets must be designed, implemented and tested. \\
+        I\_03 & Configurator, Sales Employee & During testing, feedback shows that too many widgets on one page can be overwhelming and hinder the coherence of the data shown. & During testing, many widgets were shown on one page to test all of them. In practice, fewer widgets will appear on a single page. Further testing could show that fewer widgets are still too many for a page, in which case an alternate way to display the data, such as new pages or pop-up panels will have to be designed, implemented and tested. \\
+        \bottomrule
+    \end{longtable}
+\end{footnotesize}
+\rmfamily
