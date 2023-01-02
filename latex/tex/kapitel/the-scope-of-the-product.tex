@@ -1,7 +1,38 @@
 \chapter{The Scope of the Product}
-
+In diesem Kapitel werden die einzelnen Anwendungsfälle des Produkts vorgestellt. Dabei werden die Rollen des Entscheidungsträgers, Sales Mitarbeiters und Konfigurators betrachtet. Anschließend werden Beschreibungen für die einzelnen Uses Case aufgeführt und für jeden der Anwendungsfälle ein Walkthrough in Form eines High fidelity Prototypen dargestellt.
 \section{Product Boundary}
-
+Die folgende Abbildung \ref{SopeOfProduct:ContextDiagram} zeigt ein Anwendungsfalldiagramm für die Stakeholder der Core Target Group und ihren individuellen Anwendungsfällen mit dem Produkt Carvis. Alle Use Cases sind mit einer Id versehen, welche über die weiteren Kapitel referenziert werden.
+\begin{figure}[ht]
+  \centering
+  \includegraphics*[width=\textwidth]{./use_case_diagram.png}
+  \caption{Use Case Diagram}
+  \label{SopeOfProduct:ContextDiagram}
+\end{figure}
 \section{Product Use Case Table}
+\sffamily
+\begin{footnotesize}
+  \renewcommand{\arraystretch}{1.4}
+  \begin{longtable}[i i i L]{ p{.1\textwidth} p{.2\textwidth} p{.16\textwidth} p{.44\textwidth} }
+    \caption                       % Caption für das Tabellenverzeichnis
+        {Product Use Case Table} % Caption für die Tabelle selbs
+        \\
+    \toprule
+    \textbf{PUC ID} & \textbf{PUC Name} & \textbf{Actors}  & \textbf{Description}\\
+    \midrule
+    UC\_1 & View vehicle information & Decision Maker, Sales Employee & Der Decision Maker/Sales Employee wählt ein Fahrzeug aus und sieht sich die vorhandenen Information an. \\
+    UC\_2 & View all vehicles & Decision Maker, Sales Employee & Der Decision Maker/Sales Employee sieht in einer Liste alle Fahrzeuge für sein Projekt. \\
+    UC\_3 & View fleet information & Decision Maker, Sales Employee & Der Decision Maker/Sales Employee sieht Statistiken über alle Fahrzeuge in seiner Flotte. \\
+    UC\_4 & Choose project & Sales Employee & Der Sales Employee wählt das Projekt aus, für das er seine Präsentation halten will. \\
+    UC\_5 & Create template & Configurator & Der Configurator erstellt ein Template seines Projekts, um dieses für zukünftige Projekte wiederverwenden zu können. \\
+    UC\_6 & Choose template & Configurator & Der Configurator wählt ein Template für ein Projekt aus, um diesem eine Vorkonfiguration zuzuweisen. \\
+    UC\_7 & Delete template & Configurator & Der Configurator löscht ein Template. \\
+    UC\_8 & Delete project & Configurator & Der Configurator löscht ein Projekt, um seine aktiven Projekte aktuell zu halten. \\
+    UC\_9 & Create project & Configurator & Der Configurator erstellt ein Projekt für einen neuen Entscheidungsträger. \\
+    UC\_10 & Reset project & Configurator & Der Configurator setzt ein Projekt zurück, um die Konfiguration neu zu beginnen. \\
+    UC\_11 & Edit project & Configurator & Der Configurator bearbeitet den Projektnamen sowie die anzuzeigenden fahrzeugspezifischen Datenpunkte. \\
+    \bottomrule
+  \end{longtable}
+\end{footnotesize}
+\rmfamily
 
 \section{Individual Product Use Cases}
