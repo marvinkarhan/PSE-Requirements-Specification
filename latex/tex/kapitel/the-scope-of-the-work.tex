@@ -1,7 +1,7 @@
 \chapter{The Scope of the Work}
 % TODO intro?
 \section{The Current Situation}
-Der Ist-Zustand der Kundenakquieriung lässt sich anhand der Abbildung \ref{ScopeOfWork:Situation} beschreiben.
+The current way of acquiring new customers works as described in figure \ref{ScopeOfWork:Situation}.
 \begin{figure}[ht]
   \centering
   % TODO neu in TikZ erstellen
@@ -9,13 +9,13 @@ Der Ist-Zustand der Kundenakquieriung lässt sich anhand der Abbildung \ref{Scop
   \caption{Stakeholders}
   \label{ScopeOfWork:Situation}
 \end{figure}
-Damit ein neuer Vertrag für Caruso zustande kommen kann, werden derzeit drei Stakeholder benötigt, die Entscheidungsträger, die Caruso Sales Mitarbeiter sowie die Caruso Konfiguratoren. Der gesamte Prozess lässt sich in vier Phasen einteilen, die Kontaktaufnahe, die Überzeugungsphase, die Testphase und den Vertragsabschluss.
-Zu Beginn befinden sich der Entscheidungsträger und der Sales-Mitarbeiter in der Phase der Kontaktaufnahme. In der Phase fragt der Sales-Mitarbeiter den Entscheidungsträger an, ob Interesse an der Caruso Schnittstelle besteht. Andersherum kann die intiale Anfrage für einen Firmenaustausch auch vom Entscheidungsträger ausgehen. Daraufhin folgt die Zusage beider Stakeholder und ein Termin für ein erstes Treffen wird ausgemacht.
+Entry into a new contract currently requires three stakeholders: a decision maker, a Caruso sales employee and a Caruso configurator. The process can be split into four steps: first contact, persuasion, testing and conclusion. During first contact, the decision maker and sales employee enter into contact with each other. The sales employee gauges a decision makers interest in Caruso services or a decision maker becomes aware of Caruso through advertising, word of mouth or some other means.
 
-In der Überzeugungsphase präsentiert der Sales Mitarbeiter von Caruso in einem Pitch die visualiserten Daten von vorherigen Fahrzeugen bei Caruso. Dafür erhält der Sales Mitarbeiter derzeit HTML oder Excel-Berichte mit aggergierten Fahrzeuginformationen vergangener Fahrten vom Konfigurator. Dieser stellt die Informationen manuelle bereit, indem er Daten aus vergangen Fahrten aus deinem Zeitraum sammelt und zusammenfasst. Solche Daten sind beispielsweise die Anzahl der gefahrenen Kilometer pro Wochentag über eine gesamte Flotte von Autos.
+After contact is established, the sales employee of Caruso holds a meeting with one or multiple decision makers. Here data items of publicly accessible cars , Caruso vehicles or dummy cars are presented. For this purpose, a manually created HTML or Excel report of aggregated vehicle data of past rides are created. These include data such as distance driven per day of the week for an entire fleet of cars.
 
-Nach dem Sales Pitch ist der vertraut der Entscheidungsträger der Schnittstelle von Caruso, sodass er seine eignen Fahrzeuge beim Caruso Marketplace hinzufügen will. Dafür durchläuft er den Prozess der Marketplace Subscription und kann in der Testphase nach ein bis zwei Wochen aggregierte Fahrzeuginformationen vom Konfigurator erhalten. Dies beinhaltet in der Regel keine Live-Informationen.
-Sobald der Kunde von überzeugt ist, klärt er offene Fragen mit dem Sales-Mitarbeiter in einem Abschlussgespräch ab und es kommt daraufhin zum Vertragsabschluss.
+After the sales pitch, the decision makers trusts and wants to use Caruso's services. They can then create an account in the Caruso Marketplace and receive the aggregated data shown during the presentation to look at for themselves. This data usually isn't live.
+
+After the decision makers are convinced of the value of the data, a final meeting is held where any open questions can be discussed with the sales employee. Finally, a contract is entered by the two parties.
 
 \section{The Context of the Work}
 Figure \ref*{ScopeOfWork:ContextDiagram} shows the communication between the core target group, the Carvis and the neighbouring systems in the form of a context diagram.
@@ -29,11 +29,11 @@ Figure \ref*{ScopeOfWork:ContextDiagram} shows the communication between the cor
   \label{ScopeOfWork:ContextDiagram}
 \end{figure}
 
-The Decision Maker has access to both the Caruso Marketplace and Carvis. The access to the Marketplace is required as the Decision Maker needs to create an account and register vehicles before they can access Carvis.
+The decision maker has access to both the Caruso Marketplace and Carvis. The access to the Marketplace is required as the decision maker needs to create an account and register vehicles before they can access Carvis.
 
-The Sales Employee uses Carvis to present Caruso Data to the Decision Maker. They are not allowed to access the Decision Makers data but can use placeholder cars publically accessible in the Caruso Marketplace.
+The sales employee uses Carvis to present Caruso data to the decision maker. They are not allowed to access the decision makers data but can use placeholder cars publicly accessible in the Caruso Marketplace.
 
-The Configurator only needs access to Carvis in order to configure it for the Sales Employee.
+The configurator only needs access to Carvis in order to configure it for the sales employee.
 
-Both systems get their data from the Caruso API which recieves live data from the OEMs and standardizes it.
+Both systems get their data from the Caruso API which receives live data from the OEMs and standardises it.
 % TODO ausformulieren?
