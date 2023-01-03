@@ -1,6 +1,6 @@
 *.fdb_latexmk
 *.log
-*.pdf
+thesis.pdf
 !hsma-logo.pdf
 *.synctex.gz
 *.fls
