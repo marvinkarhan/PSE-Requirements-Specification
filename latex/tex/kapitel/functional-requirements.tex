@@ -1,70 +1,131 @@
 \chapter{Functional Requirements}
-
+Zur Erhebung der Anforderungen wurden User Stories entworfen, die den den jeweiligen Stakeholder, seine seine Wünsche und seine Ziele beinhalten. Die folgenden Tabellen beinhalten die Anforderungen gruppiert nach den einzelnen Stakeholdern der Core Target Group. Jede User Story besitzt eine ID, sowie eine Referenz auf die dazugehörigen Use Cases auf, welche sie sich beziehen. Außerdem beinhalten sie eine Beschreibung, welche die User Story im Detail darstellt.
   \sffamily
   \begin{footnotesize}
-    \begin{longtable}[i i L]{ p{.1\textwidth} p{.1\textwidth} p{.5\textwidth} }
+    \begin{longtable}[L L L]{ p{.1\textwidth} p{.1\textwidth} p{.7\textwidth} }
       \caption                       % Caption für das Tabellenverzeichnis
-          {Entscheidungsträger} % Caption für die Tabelle selbs
+          {User Stories des Entscheidungsträgers und Sales Employees} % Caption für die Tabelle selbs
           \\
       \toprule
-      \textbf{US ID} & \textbf{PUC} & \textbf{Description} \\
+      \textbf{US ID} & \textbf{UC} & \textbf{Description} \\
       \midrule
-      US\_01 & & As a Decision Maker, I want to see a list of all of my vehicles to see which vehicles are in my fleet.\\
-      US\_02 & & As a Decision Maker, I want to add a vehicle to my fleet to account to changes to my cars. \\
-      US\_03 & & Als Entscheidungsträger will ich sehen, ob mein Fahrzeug unterwegs ist oder steht, um zu wissen, ob das Fahrzeug derzeit verwendet wird. \\
-      US\_04 & & Als Entscheidungsträger will ich die VIN meines Fahrzeugs in der Liste meiner Fahrzeuge sehen, um mein Fahrzeug eindeutig zu identifizieren. \\
-      US\_05 & & Als Entscheidungsträger will ich Fahrzeuge anhand der, in der Fahrzeugliste vorhandenen Kriterien filtern können, um nur Informationen angezeigt zu bekommen, die mich aktuell interessieren \\
-      US\_06 & & Als Entscheidungsträger will ich einen Bericht zu einem aktuell ausgewählten Fahrzeug herunterladen, damit ich diesen persistieren kann. \\
-      US\_07 & & Als Entscheidungsträger will ich einen Bericht über alle meine Fahrzeuge herunterladen, um diesen mit anderen Mitarbeitern zu teilen. \\
+      \hypertarget{Ref:US1}{US\_01} & \hyperlink{Ref:UC2}{UC\_02} & As a Decision Maker and Sales Employee, I want to see a list of all of my vehicles to see which vehicles are in my fleet. \\ 
+      \hypertarget{Ref:US2}{US\_02} & \hyperlink{Ref:UC2}{UC\_02} & Als Entscheidungsträger und Sales Employee will ich sehen, wie viele Autos aus meiner Flotte derzeit verbunden sind, um auf einen Blick zu erkennen, ob noch Fahrzeuge fehlen. \\
+      \hypertarget{Ref:US3}{US\_03} & \hyperlink{Ref:UC2}{UC\_02} & Als Entscheidungsträger und Sales Employee will ich nach Anhand der vorkonfigurierten Einträge des Konfigurators nach Fahrzeugen suchen, um mein gewünschtes Auto zu finden. 
+      Beispiele vorkonfigurierten Einträge des Konfigurators sind in Abbildung (...) zu sehen.
+      \\
+      \hypertarget{Ref:US4}{US\_04} & \hyperlink{Ref:UC2}{UC\_02} & Als Entscheidungsträger und Sales Employee will ich Anhand der vorkonfigurierten Einträge des Konfigurators Fahrzeuge filtern, um nur die Fahrzeuge angezeigt zu bekommen, die meinen Kriterien entsprechen. \\
+      \hypertarget{Ref:US5}{US\_05} & \hyperlink{Ref:UC1}{UC\_01}, \newline \hyperlink{Ref:UC2}{UC\_02}, \newline \hyperlink{Ref:UC3}{UC\_03} & Als Entscheidungsträger und Sales Employee will ich meine Liste von Fahrzeugen, meine fahrzeugspezifischen Informationen sowie die Statistik über die gesamte Flotte als PDFs herunterladen, um die Daten anderen Mitarbeitern zu zeigen. \\
+      \hypertarget{Ref:US6}{US\_06} & \hyperlink{Ref:UC1}{UC\_01} & Als Entscheidungsträger und Sale Employee will ich Statistiken und aktuelle Fahrzeuginformationen zu einem einzelnen Auto einsehen können, um ein Verständnis für die Daten von Caruso zu erhalten. 
+      \newline\newline
+      \emph{Die angezeigten Datenpunkte werden in Form Widgets vom Konfigurator festgelegt. Eine Liste der möglichen Widgets ist in Tabelle \ref{FahrzeugWidgets} vorhanden. Dies verringert die Redundanz der User Stories, da sie nicht für den Entscheidungsträger wiederholt werden müssen.}
+      \\
+      \hypertarget{Ref:US7}{US\_07} & \hyperlink{Ref:UC3}{UC\_03} & Als Entscheidungsträger und Sales Employee will ich Statistiken und aktuelle Fahrzeuginformationen zu meiner gesamten Flotte auf einen Blick einsehen, um ein Verständnis über die gesamte Flotte und deren Zustand zu erhalten.
+      \newline\newline
+      \emph{Die angezeigten Datenpunkte werden in Form Widgets vom Konfigurator festgelegt. Eine Liste der möglichen Widgets ist in Tabelle \ref{FlottenWidgets} vorhanden. Dies verringert die Redundanz der User Stories, da sie nicht für den Entscheidungsträger wiederholt werden müssen.} \\
+      \hypertarget{Ref:US38}{US\_38} & \hyperlink{Ref:UC1}{UC\_01}, \newline \hyperlink{Ref:UC3}{UC\_03} & Als Decision Maker und Sales Employee  will ich sehen, wann die Fahrzeugsinformation eines Widgets das letzte Mal aktualisiert wurde, um zu verstehen, wie alt die Daten sind. \\
+      \hypertarget{Ref:US8}{US\_08} & \hyperlink{Ref:UC4}{UC\_04} & Als Sales Employee will ich ein Projekt von einem Entscheidungsträger auswählen, um mit diesem Projekt einen Sales Pitch durchführen zu können. \\
       \bottomrule
     \end{longtable}
   \end{footnotesize}
   \rmfamily
 
+  \sffamily
+  \begin{footnotesize}
+    \begin{longtable}[L L L]{ p{.1\textwidth} p{.1\textwidth} p{.7\textwidth} }
+      \caption                       % Caption für das Tabellenverzeichnis
+          {User Stories des Konfigurators} % Caption für die Tabelle selbs
+          \\
+      \toprule
+      \textbf{US ID} & \textbf{UC} & \textbf{Description} \\
+      \midrule
+      \hypertarget{Ref:US9}{US\_09} & \hyperlink{Ref:UC9}{UC\_9} & Als Konfigurator will ich ein neues Projekt für einen Entscheidungsträger erstellen, damit ich für diesen eine individuelle Präsentation vorbereiten kann. \\
+      \hypertarget{Ref:US10}{US\_10} & \hyperlink{Ref:UC9}{UC\_09}, \newline \hyperlink{Ref:UC11}{UC\_11} & Als Konfigurator will ich ein Marketplace-Konto mit einem Projekt verknüpfen, um die Fahrzeuge des Kontos mit der Anwendung zu verbinden.\\
+      \hypertarget{Ref:US12}{US\_12} & \hyperlink{Ref:UC9}{UC\_09}, \newline \hyperlink{Ref:UC11}{UC\_11} & Als Konfigurator will ich mehrere Marketplace-Konten zum Betrachten eines Projekts hinzufügen, um mehreren Mitarbeitern des Entscheidungsträgers Zugriff auf Carvis zu gewähren. \\
+      \hypertarget{Ref:US12}{US\_12} & \hyperlink{Ref:UC9}{UC\_09}, \newline \hyperlink{Ref:UC11}{UC\_11} & Als Konfigurator will ich das Logo für einen Entscheidungsträger in seinem Projekt hinterlegen, damit dieser mehr Vertrauen in die Anwendung erhält. 
+      \newline\newline
+      \emph{Das Logo soll sichtbar bei Verwendung der Applikation sein.}
+      \\
+      \hypertarget{Ref:US13}{US\_13} & \hyperlink{Ref:UC9}{UC\_09}, \newline \hyperlink{Ref:UC11}{UC\_11} & Als Konfigurator will ich eine Hauptfarbe und eine Akzentfarbe für das Projekt eines Entscheidungsträgers einstellen, damit dessen CI seines Unternehmens im Appetizer vertreten wird. \\
+      \hypertarget{Ref:US14}{US\_14} & \hyperlink{Ref:UC11}{UC\_11} & Als Konfigurator will ich einsehen, wer und wann die letzte Änderung an einem Projekt durchgeführt hat, um nachvollziehen zu können, auf welchem Stand sich das Projekt befindet. \\
+      \hypertarget{Ref:US15}{US\_15} & \hyperlink{Ref:UC8}{UC\_08} & Als Konfigurator will sehen, wer und wann das letzte Mal das Projekt eingesehen hat, um zu wissen, ob das Projekt noch verwendet wird und ich es löschen kann. \\
+      \hypertarget{Ref:US16}{US\_16} & \hyperlink{Ref:UC5}{UC\_05} & Als Konfigurator will ich ein Projekt als Vorlage speichern, um dieses für ein weiteres Projekt als Vorlage zu verwenden. \\
+      \hypertarget{Ref:US17}{US\_17} & \hyperlink{Ref:UC6}{UC\_06} & Als Konfigurator will ich eine Liste aller meiner Vorlagen ansehen, um diese für ein Projekt auswählen zu können. \\
+      \hypertarget{Ref:US18}{US\_18} & \hyperlink{Ref:UC6}{UC\_06} & Als Konfigurator will ich eine Vorlage anhand des Namens oder den verwendeten Datenpunkten suchen können, um schnell eine passende Vorlage für mein Projekt zu finden. \\
+      \hypertarget{Ref:US19}{US\_19} & \hyperlink{Ref:UC11}{UC\_11} & Als Konfigurator will ich nach Projekten anhand ihres Namens, der Anzahl von Autos, oder dem Besitzer suchen, um schnell das richtige Projekt zu finden \\
+      \hypertarget{Ref:US19}{US\_19} & \hyperlink{Ref:UC11}{UC\_11} & Als Konfigurator will ich einstellen, welche Informationen in der Liste der Fahrzeuge zu sehen sind, um für den Entscheidungsträger relevante Informationen auf einen Blick zur Verfügung zu stellen.
+      \newline\newline
+      \emph{Zur Auswahl stehen müssen VIN, Hersteller, Status, Kilometerstand, das nächste Ereignis, Modell und Tankstand} \\
+      \hypertarget{Ref:US20}{US\_20} & \hyperlink{Ref:UC7}{UC\_7} & Als Konfigurator will ich eine Vorlage löschen, um meine Liste an Vorlagen aktuell zu halten. \\
+      \hypertarget{Ref:US21}{US\_21} & \hyperlink{Ref:UC8}{UC\_8} & Als Konfigurator will ich ein Projekt löschen, um meine Liste an Projekten aktuell zu halten. \\
+      \hypertarget{Ref:US22}{US\_22} & \hyperlink{Ref:UC10}{UC\_10} & Als Konfigurator will ich ein Projekt auf eine Vorlage zurücksetzen, um mein Projekt neu zu konfigurieren. \\
+      \hypertarget{Ref:US34}{US\_34} & \hyperlink{Ref:UC11}{UC\_11} & Als Konfigurator will ich ein Widget löschen, um nicht benötigte Informationen für den Entscheidungsträger zu entfernen. \\
+      \hypertarget{Ref:US35}{US\_35} & \hyperlink{Ref:UC11}{UC\_11} & Als Konfigurator will ich ein Widget verschieben, damit ich die Reihenfolge für den Entscheidungsträger priorisieren kann. \\
+      \hypertarget{Ref:US36}{US\_36} & \hyperlink{Ref:UC11}{UC\_11} & Als Konfigurator will meine letzte Aktion rückgängig machen, um Fehler zu korrigieren. \\
+      \hypertarget{Ref:US37}{US\_37} & \hyperlink{Ref:UC11}{UC\_11} & Als Konfigurator will ich meine letzte Aktion wiederherstellen können, um versehentlich rückgängig gemachte Aktion zu korrigieren. \\
+      \bottomrule
+    \end{longtable}
+  \end{footnotesize}
+  \rmfamily
 
   \sffamily
   \begin{footnotesize}
-    \renewcommand{\arraystretch}{1.4}
-    \begin{longtable}[i i L]{ p{.1\textwidth} p{.1\textwidth} p{.7\textwidth} }
+    \label{FahrzeugWidgets}
+    \begin{longtable}[L L L]{ p{.1\textwidth} p{.1\textwidth} p{.7\textwidth} }
       \caption                       % Caption für das Tabellenverzeichnis
-          {Konfigurator} % Caption für die Tabelle selbs
+          {User Stories des Konfigurators für fahrzeugspezifische Widgets} % Caption für die Tabelle selbs
           \\
       \toprule
-      \textbf{US ID} & \textbf{PUC} & \textbf{Description} \\
+      \textbf{US ID} & \textbf{UC} & \textbf{Description} \\
       \midrule
-
-      USC01 & & Als Konfigurator will ich ein neues Projekt für einen Entscheidungsträger erstellen, damit ich für diesen eine individuelle Präsentation vorbereiten kann. \\
-      USC02 & & Als Konfigurator will ich ein Marketplace-Konto mit einem Projekt verknüpfen, um die Fahrzeuge des Kontos mit der Anwendung zu verbinden. \\
-      USC03 & & Als Konfigurator will ich mehrere Marketplace-Konten zum Betrachten eines Projekts hinzufügen, um mehreren Mitarbeitern des Entscheidungsträgers Zugriff auf den Data Appettizer zu gewähren. \\
-      USC04 & & Als Konfigurator will ich das Logo für einen Entscheidungsträger in seinem Projekt hinterlegen, damit dieser mehr Vertrauen in die Anwendung erhält. 
-      \textbf{Anmerkung:} Das Logo soll sichtbar bei Verwendung des Appetizers sein. \\
-      USC05 & & Als Konfigurator will ich eine Hauptfarbe und eine Akzentfarbe für das Projekt eines Entscheidungsträgers einstellen, damit dessen CI seines Unternehmens im Appetizer vertreten wird. \\
-      USC06 & & Als Konfigurator will ich einsehen, wer und wann die letzte Änderung an einem Projekt durchgeführt wurde, um nachvollziehen zu können, ob was geändert wurde. \\
-      USC07 & & Als Konfigurator will sehen, wer und wann das letzte Mal das Projekt eingesehen wurde, um zu wissen, ob das Projekt noch verwendet wird. \\
-      USC08 & & Als Konfigurator will ich ein Projekt als Vorlage speichern, um dieses für ein weiteres Projekt als Vorlage zu verwenden \\
-      USC09 & & Als Konfigurator will ich eine Vorkonfiguration in Form einer Vorlage für ein Projekt wählen können, um nicht alle Einstellungen manuell durchführen zu müssen \\
-      USC10 & & Als Konfigurator will ich eine Liste aller meiner Vorlagen ansehen, um diese für ein Projekt auswählen zu können. \\
-      USC11 & & Als Konfigurator will ich eine Vorlage anhand des Namens oder den verwendeten Datenpunkten suchen können, um schnell eine passende Vorlage für mein Projekt zu finden. \\
-      USC12 & & Als Konfigurator will ich nach Projekten anhand ihres Namens, der Anzahl von Autos, oder dem Besitzer suchen, um schnell das richtige Projekt zu finden \\
-      USC13 & & Als Konfigurator will ich einstellen, welche Informationen in der Liste der Fahrzeuge zu sehen sind, um den Wünschen des Entscheidungsträgers für ihn relevante Informationen auf einen Blick zur Verfügung zu stellen.
-
-      \textbf{Anmerkung:} Zur Auswahl stehen müssen VIN, Hersteller, Status, Kilometerstand, das nächste Ereignis, Modell und Tankstand \\
-      USC14 & & Als Konfigurator will ich eine Statistik über die Anzahl der in der Flotte vorhandenen Hersteller für den Entscheidungsträger hinzufügen können, damit dieser einen Überblick über alle Fahrzeughersteller in seiner Flotte bekommt \\
-      USC15 & & Als Konfigurator will ich eine chronologische Liste aller Fahrzeugereignisse über alle Autos für den Entscheidungsträger hinzufügen, damit dieser schnell erkennt, welches Fahrzeug Probleme hat 
-      
-      \textbf{Anmerkung:} Fahrzeugereignisse sind Unfälle oder aktive Kontrollleuchten \\ 
-      USC16 & & Als Konfigurator will ich eine Statistik über die Motortypen der Flottenfahrzeuge für den Entscheidungsträger hinzufügen, damit dieser besser planen kann, welche Fahrzeuge wie betankt werden müssen. 
-      
-      \textbf{Anmerkung:} Motortypen sind Benzin, Elektro oder Hybrid.
+      \hypertarget{Ref:US23}{US\_23} & \hyperlink{Ref:UC11}{UC\_11} & Als Konfigurator will ich ein Widget für den Entscheidungsträger hinzufügen, dass die VIN des Fahrzeugs, den Hersteller und den aktuellen Kilometerstand anzeigt, damit der Entscheidungsträger weiß, welches Fahrzeug er derzeit betrachtet. \\
+      \hypertarget{Ref:US24}{US\_24} & \hyperlink{Ref:UC11}{UC\_11} & Als Konfigurator will ich ein Widget für den Entscheidungsträger hinzufügen, dass den aktuellen Tankstand sowie die verbleibende Reichweite in Kilometer für das Fahrzeug anzeigt, damit der Entscheidungsträger weiß, ob das Fahrzeug betankt werden muss. \\
+      \hypertarget{Ref:US25}{US\_25} & \hyperlink{Ref:UC11}{UC\_11} & Als Konfigurator will ich ein Widget für den Entscheidungsträger hinzufügen, dass die nächsten Termine für das Fahrzeug darstellt, damit der Entscheidungsträger weiß, ob das Fahrzeug demnächst in die Werkstatt muss. 
+      \newline\newline
+      \emph{Termine sind anstehende Servicetermine, Hauptuntersuchungen oder Ölwechsel.} \\
+      \hypertarget{Ref:US26}{US\_26} & \hyperlink{Ref:UC11}{UC\_11} & Als Konfigurator will ich ein Widget für den Entscheidungsträger hinzufügen, dass die Position des Fahrzeugs, sowie seine aktuelle Geschwindigkeit auf einer Karte darstellt, damit der Entscheidungsträger weiß, wo sich das Fahrzeug befindet und wie schnell es sich derzeit bewegt. \\
+      \hypertarget{Ref:US27}{US\_27} & \hyperlink{Ref:UC11}{UC\_11} & Als Konfigurator will ich ein Widget für den Entscheidungsträger hinzufügen, dass vergangen Fahrten sowie die Stopps des Fahrzeugs auf der Karte darstellt, damit der Entscheidungsträger weiß, wie seine Fahrzeuge in der Vergangenheit gefahren sind. \\
+      \hypertarget{Ref:US28}{US\_28} & \hyperlink{Ref:UC11}{UC\_11} & Als Konfigurator will ich ein Widget für den Entscheidungsträger hinzufügen, dass eine Statistik der vergangenen gefahrenen Kilometer auf die Wochentage verteilt anzeigt, damit der Entscheidungsträger weiß, wie häufig das Fahrzeug verwendet wird. \\
+      \hypertarget{Ref:US29}{US\_29} & \hyperlink{Ref:UC11}{UC\_11} & Als Konfigurator will ich ein Widget für den Entscheidungsträger hinzufügen, dass eine chronologische Liste der Fahrzeugeregnisse anzeigt, damit der Entscheidungsträger weiß, wann etwas mit dem Fahrzeug passiert ist. 
+      \newline\newline
+      \emph{Fahrzeugereignisse beziehen sich auf Unfälle oder Kontrollleuchten. Unfälle sollen hevorgehoben werden, damit der Entscheidungsträger direkt weiß, ob das Fahrzeug einen Schaden hat.}
       \\
-      USC17 & & Als Konfigurator will ich eine Statistik über alle gefahrenen Kilometer aller Flottenfahrzeuge für den Entscheidungsträger hinzufügen, damit dieser weiß, welche Strecken an welchen Tagen hinterlegt wurden. \\
-      USC18 & & Als Konfigurator will ich eine Karte mit allen Fahrzeugen für den Entscheidungsträger hinzufügen, damit dieser die Position aller seiner Fahrzeug einsehen kann. \\
-      USC19 & & Als Konfigurator will ich meinen letzten Hinzufügen Schritt rückgängig machen können, um Fehler schneller zu beheben. \\
-      USC20 & & Als Konfigurator will ich meinen letzten rückgängig Schritt wiederholen könne, um Fehler zu beheben. \\
-      USC21 & & Als Konfigurator will ich hinzugefügte Widgets entfernen können, um die Ansicht für den Entscheidungsträger zu konfigurieren. \\
+      \hypertarget{Ref:US30}{US\_30} & \hyperlink{Ref:UC11}{UC\_11} & Als Konfigurator will ich ein Widget hinzufügen, dass eine Statistik über die vergangene Geschwindigkeit des Fahrzeugs anzeigt, damit der Entscheidungsträger weiß, wie sicher das Fahrzeug gefahren wird. \\
+      \hypertarget{Ref:US31}{US\_31} & \hyperlink{Ref:UC11}{UC\_11} & Als Konfigurator will ich eine Widget hinzufügen, dass die aktuellen Kontrollleuchten des Fahrzeugs darstellt, damit der Entscheidungsträger weiß, ob aktuell etwas am Fahrzeug fehlerhaft ist. \\
+      \hypertarget{Ref:US32}{US\_32} & \hyperlink{Ref:UC11}{UC\_11} & Als Konfigurator will ich ein Widget hinzufügen, dass aktuellen Fahrtinformationen anzeigt, damit der Entscheidungsträger weiß, wie lange das Fahrzeug unterwegs ist und mit welcher Geschwindigkeit es sich bewegt.
+      \newline\newline
+      \emph{Die aktuelle Fahrtinformation beinhaltet seit wann das Fahrzeug unterwegs ist und in welcher Straße es zuletzt gehalten hat.}\\
+      \hypertarget{Ref:US33}{US\_33} & \hyperlink{Ref:UC11}{UC\_11} & Als Konfigurator will ich ein Widget hinzufügen, dass den aktuellen Tankverbrauch des Fahrzeugs pro 100km anzeigt, damit der Entscheidungsträger weiß, wie hoch der Tankverbrauch seines Fahrzeugs ist. \\
 
+      \bottomrule
+    \end{longtable}
+  \end{footnotesize}
+  \rmfamily
+
+  \label{FlottenWidgets}
+  \sffamily
+  \begin{footnotesize}
+    \begin{longtable}[L L L]{ p{.1\textwidth} p{.1\textwidth} p{.7\textwidth} }
+      \caption                       % Caption für das Tabellenverzeichnis
+          {User Stories des Konfigurators für flottenspezifische Widgets} % Caption für die Tabelle selbs
+          \\
+      \toprule
+      \textbf{US ID} & \textbf{UC} & \textbf{Description} \\
+      \midrule
+      \hypertarget{Ref:US38}{US\_38} & \hyperlink{Ref:UC11}{UC\_11} & Als Konfigurator will ich ein Widget hinzufügen, dass eine Statistik über die Anzahl der in der Flotte vorhandenen Hersteller anzeigt, damit der Entscheidungsträger weiß, von welchem Hersteller sein Fahrzeuge sind. \\
+      \hypertarget{Ref:US39}{US\_39} & \hyperlink{Ref:UC11}{UC\_11} & Als Konfigurator will ich ein Widget hinzufügen, dass eine chronologische Liste aller Fahrzeugeregnisse über alle Fahrzeuge anzeigt, damit der Entscheidungsträger auf einen Blick erkennt, welches Auto vor kurzem ein Ereignis hatte.
+      \newline\newline
+      \emph{Fahrzeugereignisse beziehen sich auf Unfälle oder Kontrollleuchten. Unfälle sollen hevorgehoben werden, damit der Entscheidungsträger direkt weiß, ob das Fahrzeug einen Schaden hat.}\\
+      \hypertarget{Ref:US40}{US\_40} & \hyperlink{Ref:UC11}{UC\_11} & Als Konfigurator will ich ein Widget hinzufügen, welches eine Statistik über die Motortypen der Flottenfahrzeuge anzeigt, damit der Entscheidungsträger weiß, welche Motortypen seine Fahrzeuge beinhalten. 
+      \newline\newline
+      \emph{Motortypen sind Benziner, Elektromotoren oder Hybride.}\\
+      \hypertarget{Ref:US41}{US\_41} & \hyperlink{Ref:UC11}{UC\_11} & als Konfigurator will ich ein Widget hinzufügen, welches eine Statistik über alle gefahrenen Kilometer alle Flottenfahrzeuge anzeigt, damit der Entscheidungsträger weiß, wie welche Streckenlänge alle Fahrzeuge an welchen Tagen hinterlegen. \\
+      \hypertarget{Ref:US42}{US\_42} & \hyperlink{Ref:UC11}{UC\_11} & Als Konfigurator will ich ein Widget hinzufügen, welches eine Karte mit allen Fahrzeugen anzeigt, damit der Entscheidungsträger die Position aller seiner Fahrzeuge einsehen kann. \\
+      \hypertarget{Ref:US43}{US\_43} & \hyperlink{Ref:UC11}{UC\_11} & Als Konfigurator will ich ein Widget hinzufügen, welches den gesamten Kilometerstand aller Fahrzeuge zusammen und im Durchschnitt anzeigt, damit der Entscheidungsträger weiß, wie hoch der Gesamtkilometerstand seiner Fahrzeuge ist. \\
       \bottomrule
     \end{longtable}
   \end{footnotesize}
   \rmfamily
 % blub
+
+      
