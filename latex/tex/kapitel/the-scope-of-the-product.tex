@@ -2,7 +2,7 @@
 In diesem Kapitel werden die einzelnen Anwendungsfälle des Produkts vorgestellt. Dabei werden die Rollen des Entscheidungsträgers, Sales Mitarbeiters und Konfigurators betrachtet. Anschließend werden Beschreibungen für die einzelnen Uses Case aufgeführt und für jeden der Anwendungsfälle ein Walkthrough in Form eines High fidelity Prototypen dargestellt.
 \section{Product Boundary}
 Die folgende Abbildung \ref{SopeOfProduct:ContextDiagram} zeigt ein Anwendungsfalldiagramm für die Stakeholder der Core Target Group und ihren individuellen Anwendungsfällen mit dem Produkt Carvis. Alle Use Cases sind mit einer Id versehen, welche über die weiteren Kapitel referenziert werden.
-\begin{figure}[ht]
+\begin{figure}[H]
   \centering
   \includegraphics*[width=\textwidth]{./use_case_diagram.png}
   \caption{Use Case Diagram}
@@ -36,3 +36,125 @@ Die folgende Abbildung \ref{SopeOfProduct:ContextDiagram} zeigt ein Anwendungsfa
 \rmfamily
 
 \section{Individual Product Use Cases}
+Um den Ablauf der Use Cases besser zu verstehen, werden für alle Use Cases Abbildungen des Prototypen gezeigt, der im Laufe des Design Sprints erstellt wurde, um die Anforderungen zu erheben. Der Prototyp besteht aus zwei Perspektiven. Die erste Perspektive ist die Ansicht des Entscheidungsträgers, wenn er mit der Anwendung inteagiert. Die zweite Ansicht ist die es Sales Mitarbeiter und Konfigurators des Systems. Im Folgenden werden die einzelnen Ansichten des Prototypen aus der Perspektive des Entscheidungsträgers gezeigt.
+
+
+\subsection{Perspektive des Entscheidungsträgers}
+\begin{figure}[H]
+  \centering
+  \includegraphics*[width=\textwidth]{./prototyp/Default-View.png}
+  \caption{Perspektive Entscheidungsträger: Startseite}
+  \label{DecisionMaker:Homepage}
+\end{figure}
+
+Die Abbildung \ref{DecisionMaker:Homepage} zeigt die initiale Situation, aus welcher der Entscheidungsträger immer startet, nachdem er sich mit seinen Accountinformationen an der Applikation anmeldet. Auf dieser Seite wird der Use Case \hyperlink{Ref:UC2}{UC\_2} durchgeführt und die Möglichkeit der Ablauf für die Use Cases \hyperlink{Ref:UC1}{UC\_1} und \hyperlink{Ref:UC3}{UC\_3} ermöglicht. 
+
+
+\subsubsection{Use Case 2: View all vehicles}
+Das Szenario beginnt auf der initialen Ansicht in Abbildung \ref{DecisionMaker:Homepage}. Der Entscheidungsträger oder Sales Mitarbeiter sieht auf dieser Seite eine Tabelle mit mehreren Spalten, die alle Fahrzeuge beinhaltet, welche mit seinem Caruso-Marketplace-Konto verbunden sind. Die Tabelle beinhaltet mehrere Spalten zur genaueren Identifaktion der Fahrzeugs, beispielsweise den Hersteller oder den Status. Die Fahrzeuge lassen sich mit einem Klick auf den Spalten in aufsteigender oder absteigender Reihenfolge sortieren, damit die Fahrzeuge schnell gruppiert werden können. Außerdem ist es möglich spezifische Fahrzeuge zu suchen oder anhand der Filteroptionen Fahrzeuge auszublenden, die nicht betrachtet werden sollen.
+
+\subsubsection{Use Case 1: View vehicle information}
+Das Szenario beginnt auf der initialen Ansicht in Abbildung \ref{DecisionMaker:Homepage}. Der Entscheidungsträger oder der Sales Mitarbeiter wählt ein Fahrzeug über die Tabelle der Fahrezeuge aus. Wahlweise geschieht dies, nachdem ein Fahrzeug gesucht oder gefiltert wurde. Daraufhin befindet er sich auf der Fahrezugansicht in Abbildung \ref{DecisionMaker:DetailsRube}.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics*[width=\textwidth]{./prototyp/Details-Rübe.png}
+  \caption{Perspektive Entscheidungsträger: Fahrzeugansicht}
+  \label{DecisionMaker:DetailsRube}
+\end{figure}
+
+Auf dieser Seite befinden sich alle Fahrzeuginformationen, zu dem vorher ausgewählten Fahrzeug. Die Datenpunkte, die von Caruso für das Fahrezeug zur Verfügung gestellt werden, sind in Weißen Kästchen, sogenannten Widgets zusammengefasst und logisch gruppiert. Ein Beispiel für solch ein Widget ist die allgemeine Fahrzeuginformation mit der VIN und dem Hersteller des Fahrzeugs. Jedes Widget beinhaltet eine Information darüber, wann das letzte Mal eine Aktualisierung durchgeführt wurde, damit der Entscheidungsträger weiß, wie aktuell die Daten sind. Für den Fall, dass manche Datenpunkte vom Hersteller nicht an Caruso geliefert werden und somit das Widget keine Informationen anzeigen kann, wird eine entsprechende Information erscheinen, wie in Abbildung \ref{DecisionMaker:NotSupported}.
+
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics*[width=5cm]{./prototyp/Not-Supported.png}
+  \caption{Perspektive Entscheidungsträger: Nicht unterstützter Datenpunkt}
+  \label{DecisionMaker:NotSupported}
+\end{figure}
+
+\subsubsection{Use Case 3: View fleet information}
+Das Szenario beginnt auf der initialen Ansicht in Abbildung \ref{DecisionMaker:Homepage}. Von dieser Seite klickt der Entscheidungsträger oder der Sales Mitarbeiter auf den Reiter Flottenstatistik. Daraufhin öffnet sich die Ansicht auf Abbildung \ref{DecisionMaker:Fahrzeugstatistik}.
+\begin{figure}[H]
+  \centering
+  \includegraphics*[width=\textwidth]{./prototyp/Fahrzeugstatistik.png}
+  \caption{Perspektive Entscheidungsträger: Fahrzeugstatistik}
+  \label{DecisionMaker:Fahrzeugstatistik}
+\end{figure}
+Auf dieser Seite befinden sich die flottenspezifischen Informationen aller registrieten Fahrzeuge in Form von Widgets. Wie auch in der Listenansicht ist hier das Filtern und Suchen möglich.
+
+Die Widgets beinhalten beispielsweise eine Karte mit der Position aller Fahrzeuge, eine Statistik über die Hersteller der Fahrzeuge oder eine Liste mit vergangenen Ereignissen der Fahrzeuge. 
+
+Zusätzlich zum Aktualisierungszeitpunkt geben diese Widgets ebenfalls an, wie viele Fahrzeuge die notwendigen Datenpunkte für das Widget liefern. Dies erhöht das Verständnis bei der Interpretation der Daten, da die genaue Menge an verwendeten Fahrzeugen bekannt ist.
+
+\newpage
+\subsection{Perspektive Sales Mitarbeiter und Konfigurator}
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics*[width=\textwidth]{./prototyp/Project-Selection.png}
+  \caption{Perspektive Entscheidungsträger: Fahrzeugansicht}
+  \label{Configurator:ProjectSelection}
+\end{figure}
+Die Abbildung \ref{Configurator:ProjectSelection} zeigt die initiale Situation, aus welcher der Sales Mitarbeiter oder der Konfigurator starten, wenn sie sich erfolgreich am System angemeldet haben. Auf dieser Seite werden die Use Cases \hyperlink{Ref:UC4}{UC\_4},  \hyperlink{Ref:UC5}{UC\_5},  \hyperlink{Ref:UC6}{UC\_6},  \hyperlink{Ref:UC7}{UC\_7}, \hyperlink{Ref:UC8}{UC\_8},  \hyperlink{Ref:UC9}{UC\_9},  \hyperlink{Ref:UC10}{UC\_10} und  \hyperlink{Ref:UC11}{UC\_11} begonnen.
+
+\subsubsection{Use Case 4: Choose project}
+Das Szenario beginnt auf Abbildung \ref{Configurator:ProjectSelection}. Der Sales Mitarbeiter sieht die vorhandenen Projekte in Form von weißen Kacheln. Diese beinhalten Informationen über den Namen der Firma, sowie Informationen über die letzte Einsicht oder die letzte Änderung. Anhand des Namens oder Alternativ der Suchfunktion findet der Sales Mitarbeiter Das Projekt, für das er eine Präsentation durchführen will. Dafür klickt er auf die enstprechende Projektkachel. Im Anschluss öffnet sich die Ansicht ähnlich wie in Abbildung \ref{DecisionMaker:Homepage}. Damit ist das Projekt ausgewählt.
+
+\subsubsection{Use Case 5: Create template}
+Das Szenario beginnt auf Abbildung \ref{Configurator:ProjectSelection}. Der Konfigurator wählt ein Projekt aus, welches er als Vorlage speichern will. Dafür klickt er auf die drei vertikalen Punkten in der rechten oberen Ecke der Projektkachel. Daraufhin verändert sich die Projektkachel zu der Abbildung \ref{Configurator:ProjectTileEdit}.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics*[width=5cm]{./prototyp/ProjectTileEdit.png}
+  \caption{Perspektive Configurator: Projektkachel editieren}
+  \label{Configurator:ProjectTileEdit}
+\end{figure}
+Der Konfigurator klickt als Vorlage speichern. Daraufhin erscheint eine Möglichkeit einen Namen für die Vorlage zu vergeben und die Vorlage wird erstellt.
+
+\subsection{Use Case 9: Create project}
+Das Szenario beginnt auf Abbildung \ref{Configurator:ProjectSelection}. Der Konfigurator klickt auf die Projektkachel mit der Aufschrift Projekt erstellen.Daraufhin öffnet sich ein Popup wie in Abbildung \ref{Configurator:CreateProjectPopup}. 
+\begin{figure}[ht]
+  \centering
+  \includegraphics*[width=7cm]{./prototyp/Projekt-Erstellen-Popup.png}
+  \caption{Perspektive Entscheidungsträger: Fahrzeugansicht}
+  \label{Configurator:CreateProjectPopup}
+\end{figure}
+Hier trägt der Konfigurator ein Dataplace-Konto ein, welches er mit dem Projekt verknüpfen will, sowie weitere Dataplace-Konten die in der Lage sein sollen, dieses Projekt einsehen zu können. Außerdem fügt er das Logo für des Unternehmens sowie deren beiden Hauptfarben zur Personalisierung hinzu. Anschließend klickt der Konfigurator auf Speichern, worauf sich eine Liste mit Vorlagen wie in Abbildung \ref{Configurator:Template} öffnet, aus denen das Projekt intial erstellt wird.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics*[width=\textwidth]{./prototyp/Project-Selection-1.png}
+  \caption{Perspektive Entscheidungsträger: Fahrzeugansicht}
+  \label{Configurator:Template}
+\end{figure}
+In der Liste kann zusätzlich ein Vorlage über die Suche gefunden werden. Die Vorlagen besitzen eine Vorschau, damit der Konfigurator vor der Auswahl sieht, ob er sich für diese Vorlage entscheiden will. Der Konfigurator klickt eine Vorlage an. Daraufhin ist das Projekt erstellt.
+
+\subsection{Use Case 8: Delete project}
+Das Szenario beginnt in der Abbildung \ref{Configurator:ProjectSelection}. Der Konfigurator klickt auf die drei vertikalen Punkte in der rechten oberen Ecke des Projekts, dass er löschen will. Daraufhin verändert sich die Projektkachel wie in Abbildung \ref{Configurator:ProjectTileEdit}. Der Konfigurator klickt auf Löschen. Daraufhin ist das Projekt gelöscht.
+
+\subsection{Use Case 10: Reset project}
+Das Szenario beginnt in Abbildung \ref{Configurator:ProjectSelection}. Der Konfigurator klickt auf die drei vertikalen Punkte in der rechten oberen Ecke des Projekts, dass er zurücksetzen will. Daraufhin verändert sich die Projektkachel wie in Abbildung \ref{Configurator:ProjectTileEdit}. Der Konfigurator klickt auf Zurücksetzen. Es öffnet sich die Ansicht zur Auswahl einer neuen Vorlage aus Abbildung \ref{Configurator:Template}. Der Konfigurator klickt auf eine Vorlage. Das Projekt ist zurückgesetzt und basiert auf einer neuen Vorlage.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics*[width=\textwidth]{./prototyp/Default-View-Gwen.png}
+  \caption{Perspektive Entscheidungsträger: Fahrzeugansicht}
+  \label{DecisionMaker:DetailsRube}
+\end{figure}
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics*[width=\textwidth]{./prototyp/Fahrzeugstatistik-Gwen.png}
+  \caption{Perspektive Entscheidungsträger: Fahrzeugansicht}
+  \label{DecisionMaker:DetailsRube}
+\end{figure}
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics*[width=\textwidth]{./prototyp/Details-Gwen-Config.png}
+  \caption{Perspektive Entscheidungsträger: Fahrzeugansicht}
+  \label{DecisionMaker:DetailsRube}
+\end{figure}
+
+
