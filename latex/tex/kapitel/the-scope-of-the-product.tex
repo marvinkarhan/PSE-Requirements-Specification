@@ -1,13 +1,14 @@
 \chapter{The Scope of the Product}
-In diesem Kapitel werden die einzelnen Anwendungsfälle des Produkts vorgestellt. Dabei werden die Rollen des Entscheidungsträgers, Sales Mitarbeiters und Konfigurators betrachtet. Anschließend werden Beschreibungen für die einzelnen Uses Case aufgeführt und für jeden der Anwendungsfälle ein Walkthrough in Form eines High fidelity Prototypen dargestellt.
-\section{Product Boundary}
-Die folgende Abbildung \ref{SopeOfProduct:ContextDiagram} zeigt ein Anwendungsfalldiagramm für die Stakeholder der Core Target Group und ihren individuellen Anwendungsfällen mit dem Produkt Carvis. Alle Use Cases sind mit einer Id versehen, welche über die weiteren Kapitel referenziert werden.
+This chapter will present the use cases of Carvis under consideration of the decision maker, the sales employee and the configurator. The use cases will be given a description and a walkthrough in the form of a high fidelity prototype.
+\section{The Product Boundary}
+Figure \ref{SopeOfProduct:ContextDiagram} shows a use case diagram for the stakeholders of core target group and their use cases for Carvis. All use cases are given an id which will be referenced in future chapters.
 \begin{figure}[H]
   \centering
   \includegraphics*[width=\textwidth]{./use_case_diagram.png}
   \caption{Use Case Diagram}
   \label{SopeOfProduct:ContextDiagram}
 \end{figure}
+
 \section{Use Case Table}
 \sffamily
 \begin{footnotesize}
@@ -19,212 +20,208 @@ Die folgende Abbildung \ref{SopeOfProduct:ContextDiagram} zeigt ein Anwendungsfa
     \toprule
     \textbf{UC ID} & \textbf{UC Name} & \textbf{Actors}  & \textbf{Description}\\
     \midrule
-    \hypertarget{Ref:UC1}{UC\_1} & View vehicles & Decision Maker oder Sales Employee & Der Decision Maker/Sales Employee sieht in einer Liste alle Fahrzeuge für sein Projekt. \\
-    \hypertarget{Ref:UC2}{UC\_2} & View vehicle information & Decision Maker, Sales Employee & Der Decision Maker oder Sales Employee wählt ein Fahrzeug aus und sieht sich die vorhandenen Information an. \\
-    \hypertarget{Ref:UC3}{UC\_3}  & View fleet information & Decision Maker, Sales Employee & Der Decision Maker/Sales Employee sieht Statistiken über alle Fahrzeuge in seiner Flotte. \\
-    \hypertarget{Ref:UC4}{UC\_4}  & View projects & Sales Employee & Der Sales Employee sieht die Projekte, welche er bearbeiten will. \\
-    \hypertarget{Ref:UC5}{UC\_5} & Create project & Sales Employee & Der Sales Employee erstellt ein Projekt für einen neuen Entscheidungsträger. \\
-    \hypertarget{Ref:UC6}{UC\_6} & Edit project & Sales Employee & Der Sales Employee bearbeitet die Projektinformationen. \\
-    \hypertarget{Ref:UC7}{UC\_7} & Delete project & Sales Employee & Der Sales Employee löscht ein Projekt. \\
-    \hypertarget{Ref:UC8}{UC\_8} & Reset project & Sales Employee & Der Sales Employee setzt ein Projekt auf eine Vorlage zurück. \\
-    \hypertarget{Ref:UC9}{UC\_9} & Create template & Sales Employee & Der Sales Employee erstellt eine Vorlage aus einem Projekt. \\
-    \hypertarget{Ref:UC10}{UC\_10} & Edit table & Sales Employee & Der Sales Employee bearbeitet die Liste der Fahrzeuge. \\
-    \hypertarget{Ref:UC11}{UC\_11} & Create widget & Sales Employee & Der Sales Employee fügt die Visualisierung eines Datenpunkts für ein Fahrzeug oder eine Flotte hinzu. \\
-    \hypertarget{Ref:UC12}{UC\_12} & Delete widget & Sales Employee & Der Sales Employee löscht die Visualisierung eines Datenpunkts für ein Fahrzeug oder eine Flotte. \\
-    \hypertarget{Ref:UC13}{UC\_13} & Move widget & Sales Employee & Der Sales Employee passt die Position der Visualisierung eines Datenpunkts für ein Fahrzeug oder eine Flotte auf der Ansicht an. \\
+    \hypertarget{Ref:UC1}{UC\_1} & View vehicles & decision maker, sales employee & The decision maker or sales employee views all vehicles of their project in a list.\\
+    \hypertarget{Ref:UC2}{UC\_2} & View vehicle information & decision maker, sales employee & The decision maker or sales employee chooses a vehicle and views its given data items.\\
+    \hypertarget{Ref:UC3}{UC\_3}  & View fleet information & decision maker, sales employee & The decision maker or sales employee views statistics for all vehicles in a fleet.\\
+    \hypertarget{Ref:UC4}{UC\_4}  & View projects & sales employee & The sales employee views the projects which they want to configure.\\
+    \hypertarget{Ref:UC5}{UC\_5} & Create project & sales employee & The sales employee creates a project for a new decision maker.\\
+    \hypertarget{Ref:UC6}{UC\_6} & Edit project & sales employee & The sales employee edits a project.\\
+    \hypertarget{Ref:UC7}{UC\_7} & Delete project & sales employee & The sales employee deletes a project.\\
+    \hypertarget{Ref:UC8}{UC\_8} & Reset project & sales employee & The sales employee reverts a project to its template, resetting all changes.\\
+    \hypertarget{Ref:UC9}{UC\_9} & Create template & sales employee & The sales employee creates a template by taking a snapshot of a project.\\
+    \hypertarget{Ref:UC10}{UC\_10} & Edit table & sales employee & The sales employee edits the table in which all vehicles are shown.\\
+    \hypertarget{Ref:UC11}{UC\_11} & Create widget & sales employee & The sales employee adds a widget visualising a data item of a vehicle or fleet to a project.\\
+    \hypertarget{Ref:UC12}{UC\_12} & Delete widget & sales employee & The sales employee removes a widget visualising a data item of a vehicle or fleet from a project.\\
+    \hypertarget{Ref:UC13}{UC\_13} & Move widget & sales employee & The sales employee edits the position of a widget visualising a data item of a vehicle or fleet in a project.\\
     \bottomrule
   \end{longtable}
 \end{footnotesize}
 \rmfamily
 
 \section{Individual Product Use Cases}
+This chapter presents a variety of scenarios that demonstrate the various ways in which our application can be used. These scenarios will be broken down into reproducible steps and illustrated using our prototype as a reference point. The use cases are grouped into two main perspectives: the decision maker and the sales employee. The purpose of this chapter is to provide a clear and thorough understanding of how our application can be utilised in a variety of different situations. By walking through these use cases, we hope to give a sense of the flow and functionality of the application and how it can help decision makers and sales employees achieve their goals.
 
-This chapter presents a variety of scenarios that demonstrate the various ways in which our application can be used. These scenarios will be broken down into reproducible steps and illustrated using our prototype as a reference point. The use cases are grouped into two main perspectives: the decision maker and the sales employee. The purpose of this chapter is to provide a clear and thorough understanding of how our application can be utilized in a variety of different situations. By walking through these use cases, we hope to give a sense of the flow and functionality of the application and how it can help decision makers and sales employees achieve their goals.
 
-
-\subsection{Perspektive des Entscheidungsträgers}
+\subsection{The Decision Maker's View}
 \begin{figure}[H]
   \centering
   \includegraphics*[width=\textwidth]{./prototyp/Default-View.png}
-  \caption{Perspektive Entscheidungsträger: Startseite}
+  \caption{Decision maker's view: home page}
   \label{DecisionMaker:Homepage}
 \end{figure}
 
-Die Abbildung \ref{DecisionMaker:Homepage} zeigt die initiale Situation, aus welcher der Entscheidungsträger immer startet, nachdem er sich mit seinen Accountinformationen an der Applikation anmeldet. Auf dieser Seite wird der Use Case \hyperlink{Ref:UC2}{UC\_2} durchgeführt und die Möglichkeit der Ablauf für die Use Cases \hyperlink{Ref:UC1}{UC\_1} und \hyperlink{Ref:UC3}{UC\_3} ermöglicht. 
+Figure \ref{DecisionMaker:Homepage} shows the initial view from which the decision maker always starts after logging into Carvis. Use Case \hyperlink{Ref:UC2}{UC\_2} is carried out on this page and Use Cases \hyperlink{Ref:UC1}{UC\_1} and \hyperlink{Ref:UC3}{UC\_3} are facilitated as well. 
 
 
-\subsubsection{Use Case 1: View vehicles}
-Das Szenario beginnt auf der initialen Ansicht in Abbildung \ref{DecisionMaker:Homepage}. Der Entscheidungsträger oder Sales Mitarbeiter sieht auf dieser Seite eine Tabelle mit mehreren Spalten, die alle Fahrzeuge beinhaltet, welche mit seinem Caruso-Marketplace-Konto verbunden sind. Die Tabelle beinhaltet mehrere Spalten zur genaueren Identifaktion der Fahrzeugs, beispielsweise den Hersteller oder den Status. Die Fahrzeuge lassen sich mit einem Klick auf den Spalten in aufsteigender oder absteigender Reihenfolge sortieren, damit die Fahrzeuge schnell gruppiert werden können. Außerdem ist es möglich spezifische Fahrzeuge zu suchen oder anhand der Filteroptionen Fahrzeuge auszublenden, die nicht betrachtet werden sollen.
+\subsubsection{Use Case 1: View Vehicles}
+The scenario begins in the initial view seen in figure \ref{DecisionMaker:Homepage}. On this page, the decision maker or sales employee can view a chart of all vehicles linked to their Caruso Marketplace account. This table consists of columns to identify vehicles, for example listing the manufacturer or its current status. The vehicles can be sorted by column in ascending or descending order by clicking on the label. Vehicles can also be filtered by these categories, for example only showing vehicles from one manufacturer, or be searched directly through the search bar.
 
-\subsubsection{Use Case 2: View vehicle information}
-Das Szenario beginnt auf der initialen Ansicht in Abbildung \ref{DecisionMaker:Homepage}. Der Entscheidungsträger oder der Sales Mitarbeiter wählt ein Fahrzeug über die Tabelle der Fahrezeuge aus. Wahlweise geschieht dies, nachdem ein Fahrzeug gesucht oder gefiltert wurde. Daraufhin befindet er sich auf der Fahrezugansicht in Abbildung \ref{DecisionMaker:DetailsRube}.
+\subsubsection{Use Case 2: View Vehicle Information}
+This scenario begins in the initial view seen in figure \ref{DecisionMaker:Homepage}. The decision maker or sales employee chooses a vehicle which they wish to view in the table. Optionally, filters can be applied to find the desired vehicle. By clicking on it, the user reaches the vehicle page seen in figure \ref{DecisionMaker:DetailsRube}.
+% TODO heißt es vehicle page?
 
 \begin{figure}[ht]
   \centering
   \includegraphics*[width=\textwidth]{./prototyp/Details-Rübe.png}
-  \caption{Perspektive Entscheidungsträger: Fahrzeugansicht}
+  \caption{Decision maker's view: vehicle page}
   \label{DecisionMaker:DetailsRube}
 \end{figure}
 
-Auf dieser Seite befinden sich alle Fahrzeuginformationen, zu dem vorher ausgewählten Fahrzeug. Die Datenpunkte, die von Caruso für das Fahrezeug zur Verfügung gestellt werden, sind in Weißen Kästchen, sogenannten Widgets zusammengefasst und logisch gruppiert. Ein Beispiel für solch ein Widget ist die allgemeine Fahrzeuginformation mit der VIN und dem Hersteller des Fahrzeugs. Jedes Widget beinhaltet eine Information darüber, wann das letzte Mal eine Aktualisierung durchgeführt wurde, damit der Entscheidungsträger weiß, wie aktuell die Daten sind. Für den Fall, dass manche Datenpunkte vom Hersteller nicht an Caruso geliefert werden und somit das Widget keine Informationen anzeigen kann, wird eine entsprechende Information erscheinen, wie in Abbildung \ref{DecisionMaker:NotSupported}.
+This page contains all of the information relating to the selected vehicle. The data items which are made available by Caruso are grouped into white boxes called widgets. An example is the general information widget which includes the VIN and manufacturer. Every widget shows when the data was last updated so that the decision maker can see how current it is. In the case that a data item is not available either due to error or lack of support from the OEM, a text notifying the user is shown instead, as can be seen in figure \ref{DecisionMaker:NotSupported}.
 
 
 \begin{figure}[ht]
   \centering
   \includegraphics*[width=5cm]{./prototyp/Not-Supported.png}
-  \caption{Perspektive Entscheidungsträger: Nicht unterstützter Datenpunkt}
+  \caption{Decision maker's view: unsupported data item}
   \label{DecisionMaker:NotSupported}
 \end{figure}
 
 \subsubsection{Use Case 3: View fleet information}
-Das Szenario beginnt auf der initialen Ansicht in Abbildung \ref{DecisionMaker:Homepage}. Von dieser Seite klickt der Entscheidungsträger oder der Sales Mitarbeiter auf den Reiter Flottenstatistik. Daraufhin öffnet sich die Ansicht auf Abbildung \ref{DecisionMaker:Fahrzeugstatistik}.
+This scenario begins in the initial view seen in figure \ref{DecisionMaker:Homepage}. The decision maker or sales employee can click on the tab "Flottenstatistik". This opens the page seen in figure \ref{DecisionMaker:Fahrzeugstatistik}.
 \begin{figure}[H]
   \centering
   \includegraphics*[width=\textwidth]{./prototyp/Fahrzeugstatistik.png}
-  \caption{Perspektive Entscheidungsträger: Fahrzeugstatistik}
+  \caption{Decision maker's view: fleet statistics page}
   \label{DecisionMaker:Fahrzeugstatistik}
 \end{figure}
-Auf dieser Seite befinden sich die flottenspezifischen Informationen aller registrieten Fahrzeuge in Form von Widgets. Wie auch in der Listenansicht ist hier das Filtern und Suchen möglich.
+This page shows widgets of fleet-specific data where the fleet consists of all vehicles registered to the user. Like the main table, this view can be filtered and searched.
 
-Die Widgets beinhalten beispielsweise eine Karte mit der Position aller Fahrzeuge, eine Statistik über die Hersteller der Fahrzeuge oder eine Liste mit vergangenen Ereignissen der Fahrzeuge. 
+Widgets include a map showing the position of all vehicles, a chart showing the distribution of manufacturers in the fleet or a list of all past events.
 
-Zusätzlich zum Aktualisierungszeitpunkt geben diese Widgets ebenfalls an, wie viele Fahrzeuge die notwendigen Datenpunkte für das Widget liefern. Dies erhöht das Verständnis bei der Interpretation der Daten, da die genaue Menge an verwendeten Fahrzeugen bekannt ist.
+These widgets not only show the last update but also how many cars support the data item. Knowing the exact number of cars aides in the interpretation of the presented data and prevents misunderstandings.
 
 \newpage
-\subsection{Perspektive Sales Mitarbeiter}
 
+\subsection{The Sales Employee's View}
 \begin{figure}[ht]
   \centering
   \includegraphics*[width=\textwidth]{./prototyp/Project-Selection.png}
-  \caption{Perspektive Entscheidungsträger: Fahrzeugansicht}
+  \caption{Sales employee's view: vehicle page}
   \label{Configurator:ProjectSelection}
 \end{figure}
-Die Abbildung \ref{Configurator:ProjectSelection} zeigt die initiale Situation, aus welcher der Sales Mitarbeiter immert startet, wenn sie sich erfolgreich am System angemeldet haben und einen Use Case durchführen will.
-
-\subsubsection{Use Case 4: view projects}
-Das Szenario beginnt auf Abbildung \ref{Configurator:ProjectSelection}. Der Sales Mitarbeiter sieht die vorhandenen Projekte in Form von weißen Kacheln. Diese beinhalten Informationen über den Namen der Firma, sowie Informationen über die letzte Einsicht oder die letzte Änderung. Der Sales Mitarbeiter hat die Möglichkeit mithilfe der Suche die angezeigten Projekte zu reduzieren. Somit sieht er die Projekte, die ihn für seien Konfiguration am meisten interessieren.
+Figure \ref{Configurator:ProjectSelection} shows the initial view from which the sales employee starts their work once they have logged in.
 
 
-\subsubsection{Use Case 5: Create project}
+\subsubsection{Use Case 4: View Project}
+This scenario begins in the initial view seen in figure \ref{Configurator:ProjectSelection}. The sales employee sees the available projects shown in white tiles. These include information such as the company name, logo, as well as metadata such as when the project was last viewed or edited. The sales employee can filter the list of projects through the search bar to only see the projects in which they are currently interested.
 
-Das Szenario beginnt auf Abbildung \ref{Configurator:ProjectSelection}. Der Sales Mitarbeiter klickt auf die Projektkachel mit der Aufschrift Projekt erstellen.Daraufhin öffnet sich ein Popup wie in Abbildung \ref{Configurator:CreateProjectPopup}. 
+
+\subsubsection{Use Case 5: Create Project}
+This scenario begins in the initial view seen in figure \ref{Configurator:ProjectSelection}. The sales employee clicks the button labelled "Projekt erstellen". This opens a popup as seen in figure \ref{Configurator:CreateProjectPopup}. 
 
 \begin{figure}[ht]
   \centering
   \includegraphics*[width=7cm]{./prototyp/Projekt-Erstellen-Popup.png}
-  \caption{Perspektive Entscheidungsträger: Fahrzeugansicht}
+  \caption{Sales employee's view: vehicle view}
   \label{Configurator:CreateProjectPopup}
 \end{figure}
 
-Hier trägt der Sales Mitarbeiter ein Dataplace-Konto ein, welches er mit dem Projekt verknüpfen will, sowie weitere Dataplace-Konten die in der Lage sein sollen, dieses Projekt einsehen zu können. Außerdem fügt er das Logo für des Unternehmens sowie deren beiden Hauptfarben zur Personalisierung hinzu. Anschließend klickt der Sales Mitarbeiter auf Speichern, worauf sich eine Liste mit Vorlagen wie in Abbildung \ref{Configurator:Template} öffnet, aus denen das Projekt intial erstellt wird.
+The sales employee inputs a Caruso Marketplace account to be linked to the project, as well as any further accounts which should be allowed to view the project. They then input a logo, company name, and two primary colours which the company uses in their branding. Next, the sales employee clicks "Speichern", which opens the template view seen in figure \ref{Configurator:Template} to begin work on the configuration.
 
 \begin{figure}[ht]
   \centering
   \includegraphics*[width=\textwidth]{./prototyp/Project-Selection-1.png}
-  \caption{Perspektive Entscheidungsträger: Fahrzeugansicht}
+  \caption{Sales employee's view: vehicle view}
   \label{Configurator:Template}
 \end{figure}
-In der Liste kann zusätzlich ein Vorlage über die Suche gefunden werden. Die Vorlagen besitzen eine Vorschau, damit der Konfigurator vor der Auswahl sieht, ob er sich für diese Vorlage entscheiden will. Der Konfigurator klickt eine Vorlage an. Daraufhin ist das Projekt erstellt.
+This list can also be filtered via the search bar. Each template shows a preview so the sales employee can see which one best fits the new project. On clicking a new template, the new project is created. % früher stand hier configurator, ich hab alles auf sales employee vereinheitlicht
 
-\subsubsection{Use Case 6: Edit project}
 
-Das Szenario beginnt auf Abbildung \ref{Configurator:ProjectSelection}. Der Sales Mitarbeiter klickt auf die vertikalen Punkte in der rechten oberen Ecke einer Projektkachel. Daraufhin verändert sich die Projektkachel wie in Abbildung \ref{Configurator:ProjectTileEdit}.
+\subsubsection{Use Case 6: Edit Project}
+This scenario begins in the view seen in figure \ref{Configurator:ProjectSelection}. The sales employee clicks the vertical dots in the top right corner of the project box. This alters the project box as seen in figure \ref{Configurator:ProjectTileEdit}.
 
 \begin{figure}[ht]
   \centering
   \includegraphics*[width=5cm]{./prototyp/ProjectTileEdit.png}
-  \caption{Perspektive Configurator: Projektkachel editieren}
+  \caption{Sales employee's view: edit project} % früher stand hier configurator, ich hab alles auf sales employee vereinheitlicht
   \label{Configurator:ProjectTileEdit}
 \end{figure}
 
-Der Sales Mitarbeiter wählt Bearbeiten aus. Daraufhin öffnet sich ein Popup ähnlich zu Abbildung \ref{Configurator:CreateProjectPopup}, in welchem die Projektinformationen bearbeitet werden können. Sobald der Sales Mitarbeiter fertig ist, klickt er auf Speichern. Damit ist das Projekt editiert.
+The sales employee clicks "Bearbeiten" which opens a popup similar to figure \ref{Configurator:CreateProjectPopup} in which the project information can be edited Once done, the sales employee clicks "Speichern" and the project is successfully edited.
 
-\subsubsection{Use Case 7: Delete project}
 
-Das Szenario beginnt auf Abbildung \ref{Configurator:ProjectSelection}. Der Sales Mitarbeiter klickt auf die vertikalen Punkte in der rechten oberen Ecke einer Projektkachel. Daraufhin verändert sich die Projektkachel wie in Abbildung \ref{Configurator:ProjectTileEdit}. Der Sales Mitarbeiter klickt auf Löschen. Daraufhin verschwindet das Projekt aus der Liste der Projekte und das Projekt ist gelöscht.
+\subsubsection{Use Case 7: Delete Project}
+This scenario begins in the view seen in figure \ref{Configurator:ProjectSelection}. The sales employee clicks the vertical dots in the top right corner of the project box. This alters the project box as seen in figure \ref{Configurator:ProjectTileEdit}. The sales employee clicks "Löschen". After confirmation by the sales employee, the project is deleted and removed from the list of available projects.
+
+
 \subsubsection{Use Case 8: Reset project}
+This scenario begins in the view seen in figure \ref{Configurator:ProjectSelection}. The sales employee clicks the vertical dots in the top right corner of the project box. This alters the project box as seen in figure \ref{Configurator:ProjectTileEdit}. The sales employee clicks "Zurücksetzen". This opens a view of available templates as seen in figure \ref{Configurator:Template}. The sales employee chooses and clicks a template which resets the project to that template
 
-Das Szenario beginnt auf Abbildung \ref{Configurator:ProjectSelection}. Der Sales Mitarbeiter klickt auf die vertikalen Punkte in der rechten oberen Ecke einer Projektkachel. Daraufhin verändert sich die Projektkachel wie in Abbildung \ref{Configurator:ProjectTileEdit}. Der Sales Mitarbeiter klickt auf Zurücksetzen. Daraufhin öffnet sich eine Auswahl von Vorlagen wie in Abbildung \ref{Configurator:Template}. Der Sales Mitarbeiter wählt eine Vorlage aus, auf welche er die Ansicht zurücksetzen will. Damit ist das Projekt zurücksetzt.
 
-\subsubsection{Use Case 9: Create template}
+\subsubsection{Use Case 9: Create Template}
+This scenario begins in the view seen in figure \ref{Configurator:ProjectSelection}. The sales employee clicks the vertical dots in the top right corner of the project box. This alters the project box as seen in figure \ref{Configurator:ProjectTileEdit}. The sales employee clicks "Als Vorlage speichern". This offers the option to name the new template. Finally, the template is saved and available in the list of templates.
 
-Das Szenario beginnt auf Abbildung \ref{Configurator:ProjectSelection}. Der Sales Mitarbeiter klickt auf die vertikalen Punkte in der rechten oberen Ecke einer Projektkachel. Daraufhin verändert sich die Projektkachel wie in Abbildung \ref{Configurator:ProjectTileEdit}. Der Sales Mitarbeiter klickt auf Als Vorlage speichern. Daraufhin erhält er die Möglichkeit einen Namen für die Vorlage zu vergeben. Anschließend wird die Vorlage gespeichert und ist in der Liste der Vorlagen vorhanden.
 
-\subsubsection{Use Case 10: Edit table}
-
-Das Szenario beginnt auf Abbildung \ref{Configurator:ProjectSelection}. Der Sales Mitarbeiter klickt auf ein Projekt, dass er bearbeiten will. Daraufhin öffnet sich eine Projektansicht wie in Abbildung \ref{Sales:VehicleList}. 
+\subsubsection{Use Case 10: Edit Table}
+This scenario begins in the view seen in figure \ref{Configurator:ProjectSelection}. The sales employee clicks a project which they want to edit. This opens the project to the page seen in \ref{Sales:VehicleList}. 
 
 \begin{figure}[H]
   \centering
   \includegraphics*[width=\textwidth]{./prototyp/Default-View-Gwen.png}
-  \caption{Perspektive Sales Mitarbeiter: Flottenübersicht}
+  \caption{Sales employee's view: fleet statistics page}
   \label{Sales:VehicleList}
 \end{figure}
 
-Die Ansicht ähnelt der des Entscheidungsträgers auf Abbildung \ref{DecisionMaker:Homepage}, jedoch besitzt diese Ansicht die Möglichkeit zum Bearbeiten der Fahrzeugtabelle. Der Sales Mitarbeiter klickt auf Spalten Bearbeiten. Daraufhin öffnet sich ein Popup wie in Abbildung \ref{Sales:EditTable}.
+This view is similar to the decision maker's view seen in figure \ref{DecisionMaker:Homepage}, however it also includes the option to edit the vehicle table. The sales employee clicks "Spalten Bearbeiten". This opens a popup as seen in figure \ref{Sales:EditTable}.
 
 \begin{figure}[ht]
   \centering
   \includegraphics*[width=\textwidth]{./prototyp/Kopfzeile-Bearbeiten.png}
-  \caption{Perspektive Sales Mitarbeiter: Fahrzeugtabelle bearbeiten}
+  \caption{Sales employee's view: edit vehicle table}
   \label{Sales:EditTable}
 \end{figure}
 
-In dieser Ansicht ist der Sales Mitarbeiter in der Lage, die Reihenfolge der Spalteneinträge zu bearbeiten, sowie Elemente hinzuzufügen oder zu entfernen. Der Sales Mitarbeiter wählt z. B. das Modell aus und fügt es zu den angezeigten Elementen hinzu. Daraufhin klickt der Sales Mitarbeiter auf speichern und die Tabelle beinhaltet die neu festgelegten Spalten als Einträge.
+In this view, the sales employee can add or remove columns and change their order. For example, they can choose the vehicle model and add it to the shown elements. Then they click "Speichern" and the table includes the new column with the data for each vehicle.
 
-\subsubsection{Use Case 11: Create widget}
 
-Das Szenario beginnt auf Abbildung \ref{Configurator:ProjectSelection}. Der Sales Mitarbeiter klickt auf das Projekt, dass er bearbeiten will. Daraufhin öffnet sich die Fahrzeugübersicht aus Abbildung \ref{Sales:VehicleList}. Der Sales Mitarbeiter klickt auf ein Fahrzeug, wenn er fahrzeugspezifische Widgets hinzufügen will, oder auf die Flottenstatistik, wenn der flottenspezifische Widgets hinzufügen will. Die Ansicht für die Fahrzeugansicht sieht wie in Abbildung \ref{Sales:VehicleInformation} aus. 
+\subsubsection{Use Case 11: Create Widget}
+This scenario begins in the view seen in figure \ref{Configurator:ProjectSelection}. The sales employee clicks a project they want to edit. This opens the page seen in figure \ref{Sales:VehicleList}. The sales employee clicks on a vehicle to open the vehicle information seen in figure \ref{Sales:VehicleInformation} or the "Flottenstatistik" tab, depending on which widgets they want to add.
 
 \begin{figure}[ht]
   \centering
   \includegraphics*[width=\textwidth]{./prototyp/Details-Gwen-Config.png}
-  \caption{Perspektive Sales Mitarbeiter: Fahrzeugansicht}
+  \caption{Sales employee's view: vehicle page}
   \label{Sales:VehicleInformation}
 \end{figure}
 
-Die Ansicht ähnelt der des Entscheidungsträgers auf Abbildung \ref{DecisionMaker:DetailsRube}, jedoch beinhaltet sie weitere Funktionalität zum Hinzufügen oder Löschen eines Widgets sowie die Möglichkeit zum Rückgängig machen oder wiederholen einer Aktion.
+his view is similar to the decision maker's view seen in figure \ref{DecisionMaker:DetailsRube}, however it also includes the option to add or delete widgets, as well as to undo and redo actions.
 
-Der Sales Mitarbeiter klickt auf Hinzufügen. Daraufhin öffnet sich eine Auswahl von möglichen Widgets, die für die Ansicht hinzugefügt werden können. Die Abbildung \ref{Sales:AddWidget} zeigt diese Ansicht.
+The sales employee clicks "Hinzufügen" which opens a list of widgets to choose from. This can be seen in figure \ref{Sales:AddWidget}.
 
 \begin{figure}[ht]
   \centering
   \includegraphics*[width=8cm]{./prototyp/WidgetAdd.png}
-  \caption{Perspektive Sales Mitarbeiter: Fahrzeuginformation Hinzufügen}
+  \caption{Sales employee's view: add vehicle data item}
   \label{Sales:AddWidget}
 \end{figure}
 
-Der Sales Mitarbeiter wählt das entsprechende Widget aus und sieht eine Vorschau für dieses. Daraufhin klickt er auf Speichern und das Widget wird auf die Fahrezugansicht hinzugefügt.
+The sales employee chooses a widget and can see a preview of it. They then click "Speichern" and the widget is added to the vehicle page.
 
-Da der Ablauf der gleiche für die Fahrzeugstatistik ist, wird dies nicht als separater Use Case betrachtet. Sollte der Sales Mitarbeiter flottenspezifische Widgets hinzufügen wollen, klickt er In Abbildung \ref{Sales:VehicleList} auf Flottenstatistik und landet auf der Ansicht in Abbildung \ref{Sales:Fleet}.
+This process is identical for the fleet statistics page and thus not considered a separate use case. Clicking "Flottenstatistik" from the vehicle page in figure \ref{Sales:VehicleList} takes them to the fleet statistics page seen in figure \ref{Sales:Fleet}.
 
 \begin{figure}[ht]
   \centering
   \includegraphics*[width=\textwidth]{./prototyp/Fahrzeugstatistik-Gwen.png}
-  \caption{Perspektive Sales Mitarbeiter: Flottenstatistik}
+  \caption{Sales employee's view: fleet statistics page}
   \label{Sales:Fleet}
 \end{figure}
 
-Auf dieser Ansicht befindet sich wie in Abbildung \ref{Sales:VehicleInformation} die Möglichkeit zum Hinzufügen neuer Widgets. Der Sales Mitarbeiter klickt auf Hinzufügen und es öffnet sich eine Liste mit Widgets wie in Abbildung \ref{Sales:FleetWidget}
+Like in figure \ref{Sales:VehicleInformation}, this view has the option to add new widgets. The sale employee clicks "Hinzufügen" which opens a list of available widgets like in figure \ref{Sales:FleetWidget}.
 
 \begin{figure}[ht]
   \centering
   \includegraphics*[width=8cm]{./prototyp/WidgetAddFleet.png}
-  \caption{Perspektive Sales Mitarbeiter: Flotteninformation hinzufügen}
+  \caption{Sales employee's view: add fleet data item}
   \label{Sales:FleetWidget}
 \end{figure}
 
-Die Ansicht ist ähnlich zu der Farhzeugwidgetliste aus Abbildung \ref{Sales:AddWidget}. Es unterscheiden sich lediglich die zu hinzufügbaren Widgets, da diese sich auf Flotteninformation, also aggregierte Daten beziehen. Wenn der Sales Mitarbeiter ein Widget ausgewählt hat und auf Speichern klickt wird das Widget in der Flottenstatisitk hinzugefügt.
+This view is similar to the vehicle widget list from figure \ref{Sales:AddWidget}. Only the widgets which can be added are different as they are for fleet data, not individual vehicle data. Once the sales employee has chosen a widget and has clicked "Speichern", the widget is added to the fleet statistics page.
 
 
-\subsubsection{Use Case 12: Delete widget}
-Das Szenario beginnt in Abbildung \ref{Configurator:ProjectSelection}. Der Sales Mitarbeiter klickt das Projekt an, in welchem er ein Widget entfernen will. Daraufhin befindet sich auf Abbildung \ref{Sales:VehicleList}. Wie im vorherigen Use Case, kann hier ein Widget in der Flottenstatisitk oder Der Fahrzeugansicht entfernt werden. Auf der Abbildung \ref{Sales:VehicleInformation} und \ref{Sales:Fleet} besitzen alle Widgets ein Mülltonen-Symbol in der rechten oberen Ecke. Sobald der Sales Mitarbeiter auf dies klickt, wird das entsprechende Widget aus der Ansicht entfernt.
-
-\subsubsection{Use Case 13: Move widget}
-Das Szenario beginnt in Abbildung \ref{Configurator:ProjectSelection}. Der Sales Mitarbeiter klickt das Projekt an, in welchem er ein Widget bewegen will. Daraufhin befindet sich auf Abbildung \ref{Sales:VehicleList}. Wie im vorherigen Use Case, kann hier ein Widget in der Flottenstatisitk oder Der Fahrzeugansicht bewegt werden. Auf der Abbildung \ref{Sales:VehicleInformation} und \ref{Sales:Fleet} sind die Widgets vorhanden. Wenn der Sales Mitarbeiter ein Widget anklickt und gedrückt hält ist er in der Lage dessen Position in einem Raster zu verschieben. Beim Loslassen der Taste wird das Widget eingerastet und dessen Position ist verschoben.
+\subsubsection{Use Case 12: Delete Widget}
+This scenario begins in the view seen in figure \ref{Configurator:ProjectSelection}. The sales employee chooses the project in which they want to delete a widget. This leads to the page seen in figure \ref{Sales:VehicleList}. As in the previous use case, widgets can be deleted both in the fleet statistics page and the vehicle page. In figure \ref{Sales:VehicleInformation} and figure \ref{Sales:Fleet}, each widgets have a trashcan icon in the top right corner. Once the sales employee clicks it and confirms the decision, the widget is removed from the corresponding page.
 
 
-
-
-
-
+\subsubsection{Use Case 13: Move Widget}
+This scenario begins in the view seen in figure \ref{Configurator:ProjectSelection}. The sales employee chooses the project in which they want to move a widget. This leads to the page seen in figure \ref{Sales:VehicleList}. As in the previous use case, widgets can be moved both in the fleet statistics page and the vehicle page. Figure \ref{Sales:VehicleInformation} and \ref{Sales:Fleet} show widgets. If the sales employee clicks and holds on a widget, they can move the widget with their mouse along an invisible grid. When releasing the mouse, the widget clicks into place on the grid.
