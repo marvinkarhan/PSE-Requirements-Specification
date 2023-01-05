@@ -1,62 +1,57 @@
 \chapter{Functional Requirements}
-Zur Erhebung der Anforderungen wurden User Stories entworfen, die den den jeweiligen Stakeholder, seine Wünsche und seine Ziele beinhalten. Die folgenden Tabellen beinhalten die Anforderungen gruppiert nach den einzelnen Stakeholdern der Core Target Group. Jede User Story besitzt eine ID, sowie eine Referenz auf die dazugehörigen Use Cases auf, welche sie sich beziehen. Außerdem beinhalten sie eine Beschreibung, welche die User Story im Detail darstellt. Die Priorisierung der User Story ist anhand der MoSCoW-Priorisierung erfolgt. Die MoSCoW-Priorisierung beinhaltet Muss, Soll und Kann Kriterien. 
+User stories were created to collect the requirements to Carvis. They consist of a stakeholder of the core target group and their wishes and goals. The following tables include the requirements grouped by their stakeholder. Every user story has an id and a reference to associated use cases. They also have descriptions to present any details that are relevant. The user stories are prioritised according to the MoSCoW method into must, should and could have. There are no will not have stories. Must stories are required to be implemented for a succesful project, should have stories are important and could have stories are nice to have if there is time for them. 
 % TODO @JAD elaborieren pls %
 
   \sffamily
   \begin{footnotesize}
     \begin{longtable}[L L L L]{ p{.1\textwidth} p{.1\textwidth} p{.6\textwidth} p{.1\textwidth}}
       \caption                       % Caption für das Tabellenverzeichnis
-          {User Stories des Entscheidungsträgers und Sales Employees} % Caption für die Tabelle selbs
+          {User stories of the decision maker and sales employee} % Caption für die Tabelle selbs
           \\
       \toprule
       \textbf{US ID} & \textbf{UC} & \textbf{Description} & \textbf{Criteria} \\
       \midrule
 
-      \hypertarget{Ref:US1}{US\_01} & \hyperlink{Ref:UC1}{UC\_01} & As a Decision Maker and Sales Employee, I want to see a list of all of my vehicles to see which vehicles are in my fleet. & Must \\ 
+      \hypertarget{Ref:US1}{US\_01} & \hyperlink{Ref:UC1}{UC\_01} & As a decision maker and sales employee, I want to see a list of all of my vehicles to see which vehicles are in my fleet. & Must \\ 
 
-      \hypertarget{Ref:US2}{US\_02} & \hyperlink{Ref:UC1}{UC\_01} & Als Entscheidungsträger und Sales Employee will ich die Anzahl der Fahrzeuge sehen, die derzeit mit meinem Marketplace-Konto verbunden sind, um zu erkennen wie viel Fahrzeuge ich habe. & Should \\
+      \hypertarget{Ref:US2}{US\_02} & \hyperlink{Ref:UC1}{UC\_01} & As a decision maker and sales employee, I want to see the number of vehicles connected to my Caruso Marketplace account to see how many vehicles I have. & Should \\
 
-      \hypertarget{Ref:US3}{US\_03} & \hyperlink{Ref:UC1}{UC\_01} & Als Entscheidungsträger und Sales Employee will ich ein Fahrzeug suchen, um es in der Liste der Fahrzeuge zu finden.
+      \hypertarget{Ref:US3}{US\_03} & \hyperlink{Ref:UC1}{UC\_01} & As a decision maker and sales employee, I want to search for a vehicle to quickly find it in the list.
       \newline\newline
-      \emph{Die Suchkriterien entsprechen den Informationen, die in der Fahrzeugtablle vorhanden sind.} & Should
+      \emph{The search criteria correlate to the information which is shown in the vehicle table.} & Should
       \\
 
-      \hypertarget{Ref:US4}{US\_04} & \hyperlink{Ref:UC1}{UC\_01} & Als Entscheidungsträger und Sales Employee will ich Fahrzeuge in der Fahrzeugtabelle filtern, um nur die Fahrzeuge angezeigt zu bekommen, die meinen Kriterien entsprechen.
+      \hypertarget{Ref:US4}{US\_04} & \hyperlink{Ref:UC1}{UC\_01} & As a decision maker and sales employee, I want to filter vehicles in the vehicle table to only see the vehicles which fit my current criteria.
       \newline\newline
-      \emph{Die Filterkriterien entsprechen den Spalten in der Fahrzeugtabelle.}
-      & Should
+      \emph{The filter criteria correlate to the information which is shown in the vehicle table.} & Should
       \\
 
-      \hypertarget{Ref:US5}{US\_05} & \hyperlink{Ref:UC1}{UC\_01} & Als Entscheidungsträger und Sales Employee will ich Fahrzeuge in der Fahrzeugtabelle sortieren, um die Fahrzeuge gruppiert anzeigen zu können. 
+      \hypertarget{Ref:US5}{US\_05} & \hyperlink{Ref:UC1}{UC\_01} & As a decision maker and sales employee, I want to sort vehicles in the vehicle table to group them according to different criteria. 
       \newline\newline
-      \emph{Die Sortierung soll ab und aufsteigend und für alle Spalten in der Fahrzeugtabelle möglich sein.}
-      & Should
+      \emph{Sorting should be able in ascending and descending order for all columns of the vehicle table.} & Should
       \\
 
-      \hypertarget{Ref:US6}{US\_06} & \hyperlink{Ref:UC1}{UC\_01}, \newline \hyperlink{Ref:UC2}{UC\_02}, \newline \hyperlink{Ref:UC3}{UC\_03} & Als Entscheidungsträger und Sales Employee will ich meine Liste von Fahrzeugen, meine fahrzeugspezifischen Informationen sowie die Statistik über die gesamte Flotte als PDFs herunterladen, um die Daten anderen Mitarbeitern zu zeigen. & Can \\
+      \hypertarget{Ref:US6}{US\_06} & \hyperlink{Ref:UC1}{UC\_01}, \newline \hyperlink{Ref:UC2}{UC\_02}, \newline \hyperlink{Ref:UC3}{UC\_03} & As a decision maker and sales employee, I want to export and download a list of my vehicles, vehicle specific data and data for my whole fleet as a PDF to show my coworkers. & Can \\
 
-      \hypertarget{Ref:US7}{US\_07} & \hyperlink{Ref:UC2}{UC\_02} & Als Entscheidungsträger und Sale Employee will ich Statistiken und aktuelle Fahrzeuginformationen zu einem einzelnen Fahrzeug einsehen können, um ein Verständnis für die Daten von Caruso zu erhalten. 
+      \hypertarget{Ref:US7}{US\_07} & \hyperlink{Ref:UC2}{UC\_02} & As a decision maker and sales employee, I want to view statistics and current information of a vehicle to gain a better understanding of Caruso data. 
       \newline\newline
-      \emph{Die angezeigten Datenpunkte werden in Form Widgets vom Sales Mitarbeiter festgelegt. Eine Liste der möglichen Widgets ist in Tabelle \ref{FahrzeugWidgets} vorhanden. Dies verringert die Redundanz der User Stories, da sie nicht für den Entscheidungsträger wiederholt werden müssen.}
-      & Must \\
+      \emph{The shown data items are set by the sales employee in form of widgets. A list of all possible widgets can be found in table \ref{FahrzeugWidgets}. This reduces user story redundancy, as they don't have to be repeated for the decision maker.} & Must \\
 
-      \hypertarget{Ref:US8}{US\_08} & \hyperlink{Ref:UC2}{UC\_02} & Als Entscheidungsträger und Sales Employee will ich von einem fahrzeugspezifischen Widget angezeigt bekommen, ob das aktuelle Fahrzeug den Datenpunkt unterstützt, damit ich weiß, ob Daten über dieses Fahrzeug zur Verfügung stehen.
-      & Must
+      \hypertarget{Ref:US8}{US\_08} & \hyperlink{Ref:UC2}{UC\_02} & As a decision maker and sales employee, I want to see if a vehicle supports a vehicle-specific widget to know which data items are available for that vehicle. & Must
       \\
 
-      \hypertarget{Ref:US9}{US\_09} & \hyperlink{Ref:UC2}{UC\_02}, \newline \hyperlink{Ref:UC3}{UC\_03} & Als Entscheidungsträger und Sales Employee will ich wissen, wann die Informationen des Widgets das letzte Mal aktualisiert wurden, um mich über die Aktualität der Daten zu vergewissern.
-      & Must
+      \hypertarget{Ref:US9}{US\_09} & \hyperlink{Ref:UC2}{UC\_02}, \newline \hyperlink{Ref:UC3}{UC\_03} & As a decision maker and sales employee, I want to know when the data shown by widgets was last updated to be convinced of their recency. & Must
       \\
 
-      \hypertarget{Ref:US10}{US\_10} & \hyperlink{Ref:UC3}{UC\_03} & Als Entscheidungsträger und Sales Employee will ich Statistiken und aktuelle Fahrzeuginformationen zu meiner gesamten Flotte auf einen Blick einsehen, um ein Verständnis über die gesamte Flotte und deren Zustand zu erhalten.
+      \hypertarget{Ref:US10}{US\_10} & \hyperlink{Ref:UC3}{UC\_03} & As a decision maker and sales employee, I want to view statistics and current information of my whole fleet to gain an overview of my fleet and its status.
       \newline\newline
-      \emph{Die angezeigten Datenpunkte werden in Form Widgets vom Sales Mitarbeiter festgelegt. Eine Liste der möglichen Widgets ist in Tabelle \ref{FlottenWidgets} vorhanden. Dies verringert die Redundanz der User Stories, da sie nicht für den Entscheidungsträger wiederholt werden müssen.} & Must \\
+      \emph{The shown data items are set by the sales employee in form of widgets. A list of all possible widgets can be found in table \ref{FahrzeugWidgets}. This reduces user story redundancy, as they don't have to be repeated for the decision maker.} & Must \\
 
-      \hypertarget{Ref:US11}{US\_11} & \hyperlink{Ref:UC3}{UC\_03} & Als Entscheidungsträger und Sales Employee will ich sehen, wie viele Fahrzeuge von allen möglichen Fahrzeugen für ein flottenspezifisches Widget verwendet werden, damit ich weiß, aus welcher Menge die Daten erhoben werden. & Must \\
+      \hypertarget{Ref:US11}{US\_11} & \hyperlink{Ref:UC3}{UC\_03} & As a decision maker and sales employee, I want to how many of my vehicles provide data to a fleet-specific widget to know which proportion of my fleet supports it. & Must \\
 
-      \hypertarget{Ref:US12}{US\_12} & \hyperlink{Ref:UC3}{UC\_03} & Als Entscheidungsträger und Sales Employee will ich die Inhalte der flottenspezifischen Widgets filtern können, damit ich nur die Daten aus der Menge von Fahrzeugen erhalte, welche ich betrachten will.
+      \hypertarget{Ref:US12}{US\_12} & \hyperlink{Ref:UC3}{UC\_03} & As a decision maker and sales employee, I want to filter the contents of fleet-specific widgets to only see the data of vehicles which currently interest me.
       \newline\newline
-      \emph{Die Filterkriterien entsprechen den Spalten aus der Fahrzeugtabelle.}
+      \emph{The filter criteria correspond to the columns of the vehicle table.}
       & Should \\
 
       \bottomrule
@@ -68,42 +63,42 @@ Zur Erhebung der Anforderungen wurden User Stories entworfen, die den den jeweil
   \begin{footnotesize}
     \begin{longtable}[L L L L]{ p{.1\textwidth} p{.1\textwidth} p{.6\textwidth} p{.1\textwidth} }
       \caption                       % Caption für das Tabellenverzeichnis
-          {User Stories des Sales Mitarbeiters} % Caption für die Tabelle selbs
+          {User stories of the sales employee} % Caption für die Tabelle selbs
           \\
       \toprule
       \textbf{US ID} & \textbf{UC} & \textbf{Description} & \textbf{Criteria} \\
       \midrule
-      \hypertarget{Ref:US13}{US\_13} & \hyperlink{Ref:UC4}{UC\_04} & Als Sales Mitarbeiter will ich alle Projekte sehen, damit ich weiß, welche Projekte existieren. & Must \\
-      \hypertarget{Ref:US14}{US\_14} & \hyperlink{Ref:UC4}{UC\_04} & Als Sales Mitarbeiter will ich Projekte anhand ihres Namens suchen können, um das passende Projekt zu finden. & Should \\
-      \hypertarget{Ref:US15}{US\_15} & \hyperlink{Ref:UC4}{UC\_04} & Als Sales Mitarbeiter will ich die Anzahl meiner Projekte sehen, damit ich weiß, wie viele Projekte existieren. & Should \\
-      \hypertarget{Ref:US16}{US\_16} & \hyperlink{Ref:UC4}{UC\_04} & Als Sales Mitarbeiter will ich sehen, wann und von wem die letzte Änderung an einem Projekt durchgeführt wurde, damit ich weiß, ob an dem Projekt gearbeitet wurde. & Must \\
-      \hypertarget{Ref:US17}{US\_17} & \hyperlink{Ref:UC4}{UC\_04} & Als Sales Mitarbeiter will ich sehen, wann und wer das Projekt zuletzt eingesehen hat, um zu wissen, ob das Projekt noch verwendet wird & Must \\
-      \hypertarget{Ref:US18}{US\_18} & \hyperlink{Ref:UC5}{UC\_05} & Als Sales Mitarbeiter will ich ein Projekt erstellen, um neue Präsentationen für Entscheidungsträger vorbereiten zu können. & Must \\
-      \hypertarget{Ref:US19}{US\_19} & \hyperlink{Ref:UC6}{UC\_06} & Als Sales Mitarbeiter will ich ein Projekt bearbeiten, um Projekteinformationen nachträglich ändern zu können. & Must \\
-      \hypertarget{Ref:US20}{US\_20} & \hyperlink{Ref:UC5}{UC\_05}, \newline \hyperlink{Ref:UC6}{UC\_06} & Als Sales Mitarbeiter will ich ein Marketplace-Konto mit einem Projekt verknüpfen, um die Fahrzeuge des Kontos mit der Anwendung zu verbinden. & Must \\
-      \hypertarget{Ref:US21}{US\_21} & \hyperlink{Ref:UC5}{UC\_05}, \newline \hyperlink{Ref:UC6}{UC\_06} & Als Sales Mitarbeiter will ich mehrere Marketplace-Konten zum Betrachten eines Projekts hinzufügen, um mehreren Mitarbeitern des Entscheidungsträgers Zugriff auf das Projekt zu gewähren. & Should \\
-      \hypertarget{Ref:US22}{US\_22} & \hyperlink{Ref:UC5}{UC\_05}, \newline \hyperlink{Ref:UC6}{UC\_06} & Als Sales Mitarbeiter will ich das Logo für einen Entscheidungsträger in seinem Projekt hinterlegen, damit dessen CI im Projekt wiedergefunden wird. 
+      \hypertarget{Ref:US13}{US\_13} & \hyperlink{Ref:UC4}{UC\_04} & As a sales employee, I want to see all projects to know which ones exist. & Must \\
+      \hypertarget{Ref:US14}{US\_14} & \hyperlink{Ref:UC4}{UC\_04} & As a sales employee, I want to search for projects by name to find a specific project. & Should \\
+      \hypertarget{Ref:US15}{US\_15} & \hyperlink{Ref:UC4}{UC\_04} & As a sales employee, I want to see the amount of projects to know how many projects exist & Should \\
+      \hypertarget{Ref:US16}{US\_16} & \hyperlink{Ref:UC4}{UC\_04} & As a sales employee, I want to see who last changed the project and when to know when it was last updated. & Must \\
+      \hypertarget{Ref:US17}{US\_17} & \hyperlink{Ref:UC4}{UC\_04} & As a sales employee, I want to see who last viewed the project and when to know if it is still being used. & Must \\
+      \hypertarget{Ref:US18}{US\_18} & \hyperlink{Ref:UC5}{UC\_05} & As a sales employee, I want to create a project to prepare a new presentation for a decision maker. & Must \\
+      \hypertarget{Ref:US19}{US\_19} & \hyperlink{Ref:UC6}{UC\_06} & As a sales employee, I want to edit a project to change project information when needed. & Must \\
+      \hypertarget{Ref:US20}{US\_20} & \hyperlink{Ref:UC5}{UC\_05}, \newline \hyperlink{Ref:UC6}{UC\_06} & As a sales employee, I want to connect a Caruso Marketplace account to a project to connect the account's cars to Carvis. & Must \\
+      \hypertarget{Ref:US21}{US\_21} & \hyperlink{Ref:UC5}{UC\_05}, \newline \hyperlink{Ref:UC6}{UC\_06} & As a sales employee, I want to add multiple Caruso Marketplace accounts to a project to allow multiple employees to view it. & Should \\
+      \hypertarget{Ref:US22}{US\_22} & \hyperlink{Ref:UC5}{UC\_05}, \newline \hyperlink{Ref:UC6}{UC\_06} & As a sales employee, I want to add a company logo to the project to include the customers branding and corporate identity. 
       \newline\newline
-      \emph{Das Logo soll sichtbar bei Verwendung der Applikation sein.} & Should
+      \emph{The logo should be visible while using Carvis.} & Should
       \\
-      \hypertarget{Ref:US23}{US\_23} & \hyperlink{Ref:UC5}{UC\_05}, \newline \hyperlink{Ref:UC6}{UC\_06} & Als Sales Mitarbeiter will ich eine Hauptfarbe und eine Akzentfarbe für das Projekt eines Entscheidungsträgers einstellen, damit dessen CI seines Unternehmens im Projekt vertreten wird. & Should \\
-      \hypertarget{Ref:US24}{US\_24} & \hyperlink{Ref:UC5}{UC\_05}, \newline \hyperlink{Ref:UC8}{UC\_08} & Als Sales Mitarbeiter will ich eine Liste aller Vorlagen sehen, damit ich weiß welche Vorkonfigurationen für mein Projekt zur Verfügung stehen. & Must \\
-      \hypertarget{Ref:US25}{US\_25} & \hyperlink{Ref:UC5}{UC\_05}, \newline \hyperlink{Ref:UC8}{UC\_08} & Als Sales Mitarbeiter will ich eine Vorschau für meine Vorlagen sehen, um zu vorher zu wissen, ob die Konfiguration für mein Projekt sinnvoll ist & Should \\
-      \hypertarget{Ref:US26}{US\_26} & \hyperlink{Ref:UC5}{UC\_05}, \newline \hyperlink{Ref:UC8}{UC\_08} & Als Sales Mitarbeiter will ich eine Vorlage anhand des Namens suchen, um die Vorlage in der Liste der Vorlagen zu finden. & Should \\
-      \hypertarget{Ref:US27}{US\_27} & \hyperlink{Ref:UC7}{UC\_07} & Als Sales Mitarbeiter will ich ein Projekt löschen, um nicht benötigte Projekte zu entfernen & Must \\
-      \hypertarget{Ref:US28}{US\_28} & \hyperlink{Ref:UC8}{UC\_08} & Als Sales Mitarbeiter will ich ein Projekt zurücksetzen, um das Projekt neu zu konfigurieren. & Should \\
-      \hypertarget{Ref:US29}{US\_29} & \hyperlink{Ref:UC9}{UC\_09} & Als Sales Mitarbeiter will ich ein Projekt als Vorlage speichern, um dieses für zukünftige Projekte zu verwenden. & Must \\
-      \hypertarget{Ref:US30}{US\_30} & \hyperlink{Ref:UC10}{UC\_10} & Als Sales Mitarbeiter will ich neue Informationen zu der Fahrzeugtablle hinzufügen, um dem Entscheidungsträger für ihn relevante Informationen auf der Startseite anzuzeigen
+      \hypertarget{Ref:US23}{US\_23} & \hyperlink{Ref:UC5}{UC\_05}, \newline \hyperlink{Ref:UC6}{UC\_06} & As a sales employee, I want to choose a main and accent colour for a project to include the customers branding and corporate identity. & Should \\
+      \hypertarget{Ref:US24}{US\_24} & \hyperlink{Ref:UC5}{UC\_05}, \newline \hyperlink{Ref:UC8}{UC\_08} & As a sales employee, I want to see a list of all template to know which are available for creating a new project. & Must \\
+      \hypertarget{Ref:US25}{US\_25} & \hyperlink{Ref:UC5}{UC\_05}, \newline \hyperlink{Ref:UC8}{UC\_08} & As a sales employee, I want to see a preview of the templates to see which template is appropriate for a new project. & Should \\
+      \hypertarget{Ref:US26}{US\_26} & \hyperlink{Ref:UC5}{UC\_05}, \newline \hyperlink{Ref:UC8}{UC\_08} & As a sales employee, I want to search a template by its name to quickly find it in the list. & Should \\
+      \hypertarget{Ref:US27}{US\_27} & \hyperlink{Ref:UC7}{UC\_07} & As a sales employee, I want to delete a project to remove it when it is no longer needed. & Must \\
+      \hypertarget{Ref:US28}{US\_28} & \hyperlink{Ref:UC8}{UC\_08} & As a sales employee, I want to reset a project to start the configuration anew. & Should \\
+      \hypertarget{Ref:US29}{US\_29} & \hyperlink{Ref:UC9}{UC\_09} & As a sales employee, I want to save a project as a template to be able to use it for future projects. & Must \\
+      \hypertarget{Ref:US30}{US\_30} & \hyperlink{Ref:UC10}{UC\_10} & As a sales employee, I want to add new information to the vehicle table to show the decision maker relevant information on the home page.
       \newline\newline
-      \emph{Die angezeigten Informationen sind die Spalten der Tabell. Zur Verfügung stehen müssen VIN, Hersteller, Status, Kilometerstand, das nächste Ereignis, Modell und Tankstand} & Must  \\
-      \hypertarget{Ref:US31}{US\_31} & \hyperlink{Ref:UC10}{UC\_10} & Als Sales Mitarbeiter will ich Informationen von der Fahrzeugtablle entfernen, um für den Entscheidungsträger irrelevante Informationen zu versteckenn & Must  \\
-      \hypertarget{Ref:US32}{US\_32} & \hyperlink{Ref:UC10}{UC\_10} & Als Sales Mitarbeiter will ich die Reihenfolge der Informationen verändern, um die Informationen für den Entscheidungsträger zu priorisieren & Should  \\
+      \emph{The information corresponds to columns in the table. VIN, manufacturer, status, mileage, next event, model and fuel gauge.} & Must  \\
+      \hypertarget{Ref:US31}{US\_31} & \hyperlink{Ref:UC10}{UC\_10} & As a sales employee, I want to remove information from the vehicle table to show the decision maker only relevant information on the home page. & Must  \\
+      \hypertarget{Ref:US32}{US\_32} & \hyperlink{Ref:UC10}{UC\_10} & As a sales employee, I want to die change the order of information in the vehicle table to prioritise the information for the decision maker. & Should  \\
 
-      \hypertarget{Ref:US33}{US\_33} & \hyperlink{Ref:UC11}{UC\_11} & Als Sales Mitarbeiter will ich eine Vorschau für ein Widget haben, dass ich hinzufügen will, um zu wissen, wie es aussieht bevor ich es hinzufüge. & Should \\
-      \hypertarget{Ref:US34}{US\_34} & \hyperlink{Ref:UC12}{UC\_12} & Als Sales Mitarbeiter will ich ein Widget löschen, um nicht benötigte Informationen für den Entscheidungsträger zu entfernen. & Must \\
-      \hypertarget{Ref:US35}{US\_35} & \hyperlink{Ref:UC13}{UC\_13} \  & Als Sales Mitarbeiter will ich ein Widget verschieben, damit ich die Reihenfolge für den Entscheidungsträger priorisieren kann. & Should \\
-      \hypertarget{Ref:US36}{US\_36} & \hyperlink{Ref:UC11}{UC\_11}, \newline \hyperlink{Ref:UC12}{UC\_12}, \newline \hyperlink{Ref:UC13}{UC\_13} & Als Sales Mitarbeiter will meine letzte Aktion rückgängig machen, um Fehler zu korrigieren. & Should \\
-      \hypertarget{Ref:US37}{US\_37} & \hyperlink{Ref:UC11}{UC\_11}, \newline \hyperlink{Ref:UC12}{UC\_12}, \newline \hyperlink{Ref:UC13}{UC\_13} & Als Sales Mitarbeiter will ich meine letzte Aktion wiederherstellen können, um versehentlich rückgängig gemachte Aktion zu korrigieren. & Should \\
+      \hypertarget{Ref:US33}{US\_33} & \hyperlink{Ref:UC11}{UC\_11} & As a sales employee, I want to see a preview for a widget that I want to add to know how it will look before I add it. & Should \\
+      \hypertarget{Ref:US34}{US\_34} & \hyperlink{Ref:UC12}{UC\_12} & As a sales employee, I want to delete a widget to remove information that is not interesting for the decision maker. & Must \\
+      \hypertarget{Ref:US35}{US\_35} & \hyperlink{Ref:UC13}{UC\_13} \  & As a sales employee, I want to move a widget to prioritise their order for the decision maker. & Should \\
+      \hypertarget{Ref:US36}{US\_36} & \hyperlink{Ref:UC11}{UC\_11}, \newline \hyperlink{Ref:UC12}{UC\_12}, \newline \hyperlink{Ref:UC13}{UC\_13} & As a sales employee, I want to undo my last action to correct mistakes I have made. & Should \\
+      \hypertarget{Ref:US37}{US\_37} & \hyperlink{Ref:UC11}{UC\_11}, \newline \hyperlink{Ref:UC12}{UC\_12}, \newline \hyperlink{Ref:UC13}{UC\_13} & As a sales employee, I want to redo my last action to correct an accidentally undone action. & Should \\
       \bottomrule
     \end{longtable}
   \end{footnotesize}
@@ -114,29 +109,29 @@ Zur Erhebung der Anforderungen wurden User Stories entworfen, die den den jeweil
     \label{FahrzeugWidgets}
     \begin{longtable}[L L L]{ p{.1\textwidth} p{.1\textwidth} p{.6\textwidth} p{.1\textwidth} }
       \caption                       % Caption für das Tabellenverzeichnis
-          {User Stories des Sales Mitarbeiters für fahrzeugspezifische Widgets} % Caption für die Tabelle selbs
+          {User stories of the sales employee for vehicle-specific widgets} % Caption für die Tabelle selbs
           \\
       \toprule
       \textbf{US ID} & \textbf{UC} & \textbf{Description} & \textbf{Criteria} \\
       \midrule
-      \hypertarget{Ref:US38}{US\_38} & \hyperlink{Ref:UC11}{UC\_11} & Als Sales Mitarbeiter will ich ein Widget für den Entscheidungsträger hinzufügen, dass die VIN des Fahrzeugs, den Hersteller und den aktuellen Kilometerstand anzeigt, damit der Entscheidungsträger weiß, welches Fahrzeug er derzeit betrachtet. & Must \\
-      \hypertarget{Ref:US39}{US\_39} & \hyperlink{Ref:UC11}{UC\_11} & Als Sales Mitarbeiter will ich ein Widget für den Entscheidungsträger hinzufügen, dass den aktuellen Tankstand sowie die verbleibende Reichweite in Kilometer für das Fahrzeug anzeigt, damit der Entscheidungsträger weiß, ob das Fahrzeug betankt werden muss. & Must \\
-      \hypertarget{Ref:US40}{US\_40} & \hyperlink{Ref:UC11}{UC\_11} & Als Sales Mitarbeiter will ich ein Widget für den Entscheidungsträger hinzufügen, dass die nächsten Termine für das Fahrzeug darstellt, damit der Entscheidungsträger weiß, ob das Fahrzeug demnächst in die Werkstatt muss. 
+      \hypertarget{Ref:US38}{US\_38} & \hyperlink{Ref:UC11}{UC\_11} & As a sales employee, I want to add a widget for the decision maker which includes the VIN, manufacturer and mileage of a vehicle so that they know which vehicle is currently being viewed. & Must \\
+      \hypertarget{Ref:US39}{US\_39} & \hyperlink{Ref:UC11}{UC\_11} & As a sales employee, I want to add a widget add a widget for the decision maker which shows the current fuel gauge and remaining drivable distance in kilometres of a vehicle to know if the vehicle needs to be refuelled. & Must \\
+      \hypertarget{Ref:US40}{US\_40} & \hyperlink{Ref:UC11}{UC\_11} & As a sales employee, I want to add a widget for the decision maker which shows upcoming events of a vehicle to know if it will be out of commission soon.
       \newline\newline
-      \emph{Termine sind anstehende Servicetermine, Hauptuntersuchungen oder Ölwechsel.} & Must \\
-      \hypertarget{Ref:US41}{US\_41} & \hyperlink{Ref:UC11}{UC\_11} & Als Sales Mitarbeiter will ich ein Widget für den Entscheidungsträger hinzufügen, dass die Position des Fahrzeugs, sowie seine aktuelle Geschwindigkeit auf einer Karte darstellt, damit der Entscheidungsträger weiß, wo sich das Fahrzeug befindet und wie schnell es sich derzeit bewegt. & Must \\
-      \hypertarget{Ref:US42}{US\_42} & \hyperlink{Ref:UC11}{UC\_11} & Als Sales Mitarbeiter will ich ein Widget für den Entscheidungsträger hinzufügen, dass vergangen Fahrten sowie die Stopps des Fahrzeugs auf der Karte darstellt, damit der Entscheidungsträger weiß, wie seine Fahrzeuge in der Vergangenheit gefahren sind. & Must \\
-      \hypertarget{Ref:US43}{US\_43} & \hyperlink{Ref:UC11}{UC\_11} & Als Sales Mitarbeiter will ich ein Widget für den Entscheidungsträger hinzufügen, dass eine Statistik der vergangenen gefahrenen Kilometer auf die Wochentage verteilt anzeigt, damit der Entscheidungsträger weiß, wie häufig das Fahrzeug verwendet wird. & Must \\
-      \hypertarget{Ref:US44}{US\_44} & \hyperlink{Ref:UC11}{UC\_11} & Als Sales Mitarbeiter will ich ein Widget für den Entscheidungsträger hinzufügen, dass eine chronologische Liste der Fahrzeugeregnisse anzeigt, damit der Entscheidungsträger weiß, wann etwas mit dem Fahrzeug passiert ist. 
+      \emph{Events are service appointments, general inspections or oil changes.} & Must \\
+      \hypertarget{Ref:US41}{US\_41} & \hyperlink{Ref:UC11}{UC\_11} & As a sales employee, I want to add a widget for the decision maker which shows the current position and speed of a vehicle on a map to see where it is and if it is driving. & Must \\
+      \hypertarget{Ref:US42}{US\_42} & \hyperlink{Ref:UC11}{UC\_11} & As a sales employee, I want to add a widget for the decision maker which shows past rides and stops of a vehicle on a map to know how the vehicle was used in the past. & Must \\
+      \hypertarget{Ref:US43}{US\_43} & \hyperlink{Ref:UC11}{UC\_11} & As a sales employee, I want to add a widget for the decision maker which shows a statistic of driven kilometres per week day to know when it is being used. & Must \\
+      \hypertarget{Ref:US44}{US\_44} & \hyperlink{Ref:UC11}{UC\_11} & As a sales employee, I want to add a widget for the decision maker which shows a chronological list of vehicle events to know when something has happened to the vehicle. 
       \newline\newline
-      \emph{Fahrzeugereignisse beziehen sich auf Unfälle oder Kontrollleuchten. Unfälle sollen hevorgehoben werden, damit der Entscheidungsträger direkt weiß, ob das Fahrzeug einen Schaden hat.} & Must
+      \emph{Vehicle events refers to accidents or indicator lamps. Accidents should be highlighted to alert the decision maker of possible damage to the vehicle.} & Must
       \\
-      \hypertarget{Ref:US45}{US\_45} & \hyperlink{Ref:UC11}{UC\_11} & Als Sales Mitarbeiter will ich ein Widget hinzufügen, dass eine Statistik über die vergangene Geschwindigkeit des Fahrzeugs anzeigt, damit der Entscheidungsträger weiß, wie sicher das Fahrzeug gefahren wird. & Must \\
-      \hypertarget{Ref:US46}{US\_46} & \hyperlink{Ref:UC11}{UC\_11} & Als Sales Mitarbeiter will ich eine Widget hinzufügen, dass die aktuellen Kontrollleuchten des Fahrzeugs darstellt, damit der Entscheidungsträger weiß, ob aktuell etwas am Fahrzeug fehlerhaft ist. & Must \\
-      \hypertarget{Ref:US47}{US\_47} & \hyperlink{Ref:UC11}{UC\_11} & Als Sales Mitarbeiter will ich ein Widget hinzufügen, dass aktuellen Fahrtinformationen anzeigt, damit der Entscheidungsträger weiß, wie lange das Fahrzeug unterwegs ist und mit welcher Geschwindigkeit es sich bewegt.
+      \hypertarget{Ref:US45}{US\_45} & \hyperlink{Ref:UC11}{UC\_11} & As a sales employee, I want to add a widget for the decision maker which shows a history of driven speeds to know how safely the vehicle is being driven. & Must \\
+      \hypertarget{Ref:US46}{US\_46} & \hyperlink{Ref:UC11}{UC\_11} & As a sales employee, I want to add a widget for the decision maker which shows the current indicator lamps of a vehicle to know if something is wrong and needs attention. & Must \\
+      \hypertarget{Ref:US47}{US\_47} & \hyperlink{Ref:UC11}{UC\_11} & As a sales employee, I want to add a widget for the decision maker which shows information about the current ride to know where the vehicle is and what it is doing.
       \newline\newline
-      \emph{Die aktuelle Fahrtinformation beinhaltet seit wann das Fahrzeug unterwegs ist und in welcher Straße es zuletzt gehalten hat.} & Must \\
-      \hypertarget{Ref:US48}{US\_48} & \hyperlink{Ref:UC11}{UC\_11} & Als Konfigurator will ich ein Widget hinzufügen, dass den aktuellen Tankverbrauch des Fahrzeugs pro 100km anzeigt, damit der Entscheidungsträger weiß, wie hoch der Tankverbrauch seines Fahrzeugs ist. & Must \\
+      \emph{Current information about rides includes the start time and which street it has last stopped in.} & Must \\
+      \hypertarget{Ref:US48}{US\_48} & \hyperlink{Ref:UC11}{UC\_11} & As a configurator, I want to add a widget for the decision maker which shows the current fuel consumption per 100 kilometres to know how high it is. & Must \\
 
       \bottomrule
     \end{longtable}
@@ -148,25 +143,23 @@ Zur Erhebung der Anforderungen wurden User Stories entworfen, die den den jeweil
   \begin{footnotesize}
     \begin{longtable}[L L L L ]{ p{.1\textwidth} p{.1\textwidth} p{.6\textwidth} p{.1\textwidth}}
       \caption                       % Caption für das Tabellenverzeichnis
-          {User Stories des Konfigurators für flottenspezifische Widgets} % Caption für die Tabelle selbs
+          {User stories of sales employee for fleet-specific widgets} % Caption für die Tabelle selbs
           \\
       \toprule
       \textbf{US ID} & \textbf{UC} & \textbf{Description} & \textbf{Criteria} \\
       \midrule
-      \hypertarget{Ref:US49}{US\_49} & \hyperlink{Ref:UC11}{UC\_11} & Als Sales Mitarbeiter will ich ein Widget hinzufügen, dass eine Statistik über die Anzahl der in der Flotte vorhandenen Hersteller anzeigt, damit der Entscheidungsträger weiß, von welchem Hersteller sein Fahrzeuge sind. & Must  \\
-      \hypertarget{Ref:US50}{US\_50} & \hyperlink{Ref:UC11}{UC\_11} & Als Sales Mitarbeiter will ich ein Widget hinzufügen, dass eine chronologische Liste aller Fahrzeugeregnisse über alle Fahrzeuge anzeigt, damit der Entscheidungsträger auf einen Blick erkennt, welches Auto vor kurzem ein Ereignis hatte.
+      \hypertarget{Ref:US49}{US\_49} & \hyperlink{Ref:UC11}{UC\_11} & As a sales employee, I want to add a widget for the decision maker which shows the distribution of vehicles from different manufacturers to know how many of the vehicles are from which one. & Must  \\
+      \hypertarget{Ref:US50}{US\_50} & \hyperlink{Ref:UC11}{UC\_11} & As a sales employee, I want to add a widget for the decision maker which shows a chronological list of all vehicle events to know which vehicle recently had an event.
       \newline\newline
-      \emph{Fahrzeugereignisse beziehen sich auf Unfälle oder Kontrollleuchten. Unfälle sollen hevorgehoben werden, damit der Entscheidungsträger direkt weiß, ob das Fahrzeug einen Schaden hat.} & Must \\
-      \hypertarget{Ref:US51}{US\_51} & \hyperlink{Ref:UC11}{UC\_11} & Als Konfigurator will ich ein Widget hinzufügen, welches eine Statistik über die Motortypen der Flottenfahrzeuge anzeigt, damit der Entscheidungsträger weiß, welche Motortypen seine Fahrzeuge beinhalten. 
+      \emph{Vehicle events refers to accidents or indicator lamps. Accidents should be highlighted to alert the decision maker of possible damage to the vehicle.} & Must \\
+      \hypertarget{Ref:US51}{US\_51} & \hyperlink{Ref:UC11}{UC\_11} & As a configurator, I want add a widget which shows the distribution of engine types to know how many vehicles have which type. 
       \newline\newline
-      \emph{Motortypen sind Benziner, Elektromotoren oder Hybride.} & Must \\
-      \hypertarget{Ref:US52}{US\_52} & \hyperlink{Ref:UC11}{UC\_11} & als Konfigurator will ich ein Widget hinzufügen, welches eine Statistik über alle gefahrenen Kilometer alle Flottenfahrzeuge anzeigt, damit der Entscheidungsträger weiß, wie welche Streckenlänge alle Fahrzeuge an welchen Tagen hinterlegen. & Must \\
-      \hypertarget{Ref:US53}{US\_53} & \hyperlink{Ref:UC11}{UC\_11} & Als Konfigurator will ich ein Widget hinzufügen, welches eine Karte mit allen Fahrzeugen anzeigt, damit der Entscheidungsträger die Position aller seiner Fahrzeuge einsehen kann. & Must \\
-      \hypertarget{Ref:US54}{US\_54} & \hyperlink{Ref:UC11}{UC\_11} & Als Konfigurator will ich ein Widget hinzufügen, welches den gesamten Kilometerstand aller Fahrzeuge zusammen und im Durchschnitt anzeigt, damit der Entscheidungsträger weiß, wie hoch der Gesamtkilometerstand seiner Fahrzeuge ist. & Must \\
+      \emph{Engine types are fuel, electric or hybrid.} & Must \\
+      \hypertarget{Ref:US52}{US\_52} & \hyperlink{Ref:UC11}{UC\_11} & As a configurator, I want to add a widget for the decision maker which shows a statistic of driven kilometres per week day of all vehicles to know when they are being used. & Must \\
+      \hypertarget{Ref:US53}{US\_53} & \hyperlink{Ref:UC11}{UC\_11} & As a configurator, I want to add a widget for the decision maker which shows a map of all vehicle positions to know where they are. & Must \\
+      \hypertarget{Ref:US54}{US\_54} & \hyperlink{Ref:UC11}{UC\_11} & As a configurator, I want to add a widget for the decision maker which shows the total mileage of all vehicles as well as the average mileage to know how high it is. & Must \\
       \bottomrule
     \end{longtable}
   \end{footnotesize}
   \rmfamily
 % blub
-
-      
