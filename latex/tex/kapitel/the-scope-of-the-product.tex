@@ -1,7 +1,7 @@
 \chapter{The Scope of the Product}
-This chapter will present the use cases of Carvis under consideration of the decision maker, the sales employee and the configurator. The use cases will be given a description and a walkthrough in the form of a high fidelity prototype.
+This chapter will present the \glspl{usecase} of Carvis under consideration of the decision maker, the sales employee and the configurator. The \glspl{usecase} will be given a description and a walkthrough in the form of a high fidelity prototype.
 \section{The Product Boundary}
-Figure \ref{SopeOfProduct:ContextDiagram} shows a use case diagram for the stakeholders of core target group and their use cases for Carvis. All use cases are given an id which will be referenced in future chapters.
+Figure \ref{SopeOfProduct:ContextDiagram} shows a \gls{usecase} diagram for the \glspl{stakeholder} of core target group and their \glspl{usecase} for Carvis. All \glspl{usecase} are given an id which will be referenced in future chapters.
 \begin{figure}[H]
   \centering
   \includegraphics*[width=\textwidth]{./use_case_diagram.png}
@@ -21,7 +21,7 @@ Figure \ref{SopeOfProduct:ContextDiagram} shows a use case diagram for the stake
     \textbf{UC ID} & \textbf{UC Name} & \textbf{Actors}  & \textbf{Description}\\
     \midrule
     \hypertarget{Ref:UC1}{UC\_1} & View vehicles & Decision maker, sales employee & The decision maker or sales employee views all vehicles of their project in a list.\\
-    \hypertarget{Ref:UC2}{UC\_2} & View vehicle information & Decision maker, sales employee & The decision maker or sales employee chooses a vehicle and views its given data items.\\
+    \hypertarget{Ref:UC2}{UC\_2} & View vehicle information & Decision maker, sales employee & The decision maker or sales employee chooses a vehicle and views its given \glspl{data}.\\
     \hypertarget{Ref:UC3}{UC\_3}  & View fleet information & Decision maker, sales employee & The decision maker or sales employee views statistics for all vehicles in a fleet.\\
     \hypertarget{Ref:UC4}{UC\_4}  & View projects & Sales employee & The sales employee views the projects which they want to configure.\\
     \hypertarget{Ref:UC5}{UC\_5} & Create project & Sales employee & The sales employee creates a project for a new decision maker.\\
@@ -30,16 +30,16 @@ Figure \ref{SopeOfProduct:ContextDiagram} shows a use case diagram for the stake
     \hypertarget{Ref:UC8}{UC\_8} & Reset project & Sales employee & The sales employee reverts a project to its template, resetting all changes.\\
     \hypertarget{Ref:UC9}{UC\_9} & Create template & Sales employee & The sales employee creates a template by taking a snapshot of a project.\\
     \hypertarget{Ref:UC10}{UC\_10} & Edit table & Sales employee & The sales employee edits the table in which all vehicles are shown.\\
-    \hypertarget{Ref:UC11}{UC\_11} & Create widget & Sales employee & The sales employee adds a widget visualising a data item of a vehicle or fleet to a project.\\
-    \hypertarget{Ref:UC12}{UC\_12} & Delete widget & Sales employee & The sales employee removes a widget visualising a data item of a vehicle or fleet from a project.\\
-    \hypertarget{Ref:UC13}{UC\_13} & Move widget & Sales employee & The sales employee edits the position of a widget visualising a data item of a vehicle or fleet in a project.\\
+    \hypertarget{Ref:UC11}{UC\_11} & Create \gls{widget} & Sales employee & The sales employee adds a \gls{widget} visualising a \gls{data} of a vehicle or fleet to a project.\\
+    \hypertarget{Ref:UC12}{UC\_12} & Delete \gls{widget} & Sales employee & The sales employee removes a \gls{widget} visualising a \gls{data} of a vehicle or fleet from a project.\\
+    \hypertarget{Ref:UC13}{UC\_13} & Move \gls{widget} & Sales employee & The sales employee edits the position of a \gls{widget} visualising a \gls{data} of a vehicle or fleet in a project.\\
     \bottomrule
   \end{longtable}
 \end{footnotesize}
 \rmfamily
 
 \section{Individual Product Use Cases}
-This chapter presents a variety of scenarios that demonstrate the various ways in which our application can be used. These scenarios will be broken down into reproducible steps and illustrated using our prototype as a reference point. The use cases are grouped into two main perspectives: the decision maker and the sales employee. The purpose of this chapter is to provide a clear and thorough understanding of how our application can be utilised in a variety of different situations. By walking through these use cases, we hope to give a sense of the flow and functionality of the application and how it can help decision makers and sales employees achieve their goals.
+This chapter presents a variety of scenarios that demonstrate the various ways in which our application can be used. These scenarios will be broken down into reproducible steps and illustrated using our prototype as a reference point. The \glspl{usecase} are grouped into two main perspectives: the decision maker and the sales employee. The purpose of this chapter is to provide a clear and thorough understanding of how our application can be utilised in a variety of different situations. By walking through these \glspl{usecase}, we hope to give a sense of the flow and functionality of the application and how it can help decision makers and sales employees achieve their goals.
 
 
 \subsection{The Decision Maker's View}
@@ -50,11 +50,11 @@ This chapter presents a variety of scenarios that demonstrate the various ways i
   \label{DecisionMaker:Homepage}
 \end{figure}
 
-Figure \ref{DecisionMaker:Homepage} shows the initial view from which the decision maker always starts after logging into Carvis. Use case \hyperlink{Ref:UC2}{UC\_2} is carried out on this page and use cases \hyperlink{Ref:UC1}{UC\_1} and \hyperlink{Ref:UC3}{UC\_3} are facilitated as well. 
+Figure \ref{DecisionMaker:Homepage} shows the initial view from which the decision maker always starts after logging into Carvis. \Gls{usecase} \hyperlink{Ref:UC2}{UC\_2} is carried out on this page and \glspl{usecase} \hyperlink{Ref:UC1}{UC\_1} and \hyperlink{Ref:UC3}{UC\_3} are facilitated as well. 
 
 
 \subsubsection{Use Case 1: View Vehicles}
-The scenario begins in the initial view seen in figure \ref{DecisionMaker:Homepage}. On this page, the decision maker or sales employee can view a chart of all vehicles linked to their Caruso dataplace account. This table consists of columns to identify vehicles, for example listing the manufacturer or its current status. The vehicles can be sorted by column in ascending or descending order by clicking on the label. Vehicles can also be filtered by these categories, for example only showing vehicles from one manufacturer, or be searched directly through the search bar.
+The scenario begins in the initial view seen in figure \ref{DecisionMaker:Homepage}. On this page, the decision maker or sales employee can view a chart of all vehicles linked to their \gls{dataplace} account. This table consists of columns to identify vehicles, for example listing the manufacturer or its current status. The vehicles can be sorted by column in ascending or descending order by clicking on the label. Vehicles can also be filtered by these categories, for example only showing vehicles from one manufacturer, or be searched directly through the search bar.
 
 \subsubsection{Use Case 2: View Vehicle Information}
 This scenario begins in the initial view seen in figure \ref{DecisionMaker:Homepage}. The decision maker or sales employee chooses a vehicle which they wish to view in the table. Optionally, filters can be applied to find the desired vehicle. By clicking on it, the user reaches the vehicle page seen in figure \ref{DecisionMaker:DetailsRube}.
@@ -67,13 +67,13 @@ This scenario begins in the initial view seen in figure \ref{DecisionMaker:Homep
   \label{DecisionMaker:DetailsRube}
 \end{figure}
 
-This page contains all of the information relating to the selected vehicle. The data items which are made available by Caruso are grouped into white boxes called widgets. An example is the general information widget which includes the VIN and manufacturer. Every widget shows when the data was last updated so that the decision maker can see how current it is. In the case that a data item is not available either due to error or lack of support from the OEM, a text notifying the user is shown instead, as can be seen in figure \ref{DecisionMaker:NotSupported}.
+This page contains all of the information relating to the selected vehicle. The \glspl{data} which are made available by Caruso are grouped into white boxes called \glspl{widget}. An example is the general information \gls{widget} which includes the \gls{vin}and manufacturer. Every \gls{widget} shows when the data was last updated so that the decision maker can see how current it is. In the case that a \gls{data} is not available either due to error or lack of support from the \gls{oem}, a text notifying the user is shown instead, as can be seen in figure \ref{DecisionMaker:NotSupported}.
 
 
 \begin{figure}[ht]
   \centering
   \includegraphics*[width=5cm]{./prototyp/Not-Supported.png}
-  \caption{Decision maker's view: unsupported data item}
+  \caption{Decision maker's view: unsupported \gls{data}}
   \label{DecisionMaker:NotSupported}
 \end{figure}
 
@@ -85,11 +85,11 @@ This scenario begins in the initial view seen in figure \ref{DecisionMaker:Homep
   \caption{Decision maker's view: fleet statistics page}
   \label{DecisionMaker:Fahrzeugstatistik}
 \end{figure}
-This page shows widgets of fleet-specific data where the fleet consists of all vehicles registered to the user. Like the main table, this view can be filtered and searched.
+This page shows \glspl{widget} of fleet-specific data where the fleet consists of all vehicles registered to the user. Like the main table, this view can be filtered and searched.
 
-Widgets include a map showing the position of all vehicles, a chart showing the distribution of manufacturers in the fleet or a list of all past events.
+\Glspl{widget} include a map showing the position of all vehicles, a chart showing the distribution of manufacturers in the fleet or a list of all past events.
 
-These widgets not only show the last update but also how many cars support the data item. Knowing the exact number of cars aides in the interpretation of the presented data and prevents misunderstandings.
+These \glspl{widget} not only show the last update but also how many cars support the \gls{data}. Knowing the exact number of cars aides in the interpretation of the presented data and prevents misunderstandings.
 
 \newpage
 
@@ -117,7 +117,7 @@ This scenario begins in the initial view seen in figure \ref{Configurator:Projec
   \label{Configurator:CreateProjectPopup}
 \end{figure}
 
-The sales employee inputs a Caruso dataplace account to be linked to the project, as well as any further accounts which should be allowed to view the project. They then input a logo, company name, and two primary colours which the company uses in their branding. Next, the sales employee clicks "Speichern", which opens the template view seen in figure \ref{Configurator:Template} to begin work on the configuration.
+The sales employee inputs a \gls{dataplace} account to be linked to the project, as well as any further accounts which should be allowed to view the project. They then input a logo, company name, and two primary colours which the company uses in their branding. Next, the sales employee clicks "Speichern", which opens the template view seen in figure \ref{Configurator:Template} to begin work on the configuration.
 
 \begin{figure}[ht]
   \centering
@@ -175,8 +175,8 @@ This view is similar to the decision maker's view seen in figure \ref{DecisionMa
 In this view, the sales employee can add or remove columns and change their order. For example, they can choose the vehicle model and add it to the shown elements. Then they click "Speichern" and the table includes the new column with the data for each vehicle.
 
 
-\subsubsection{Use Case 11: Create Widget}
-This scenario begins in the view seen in figure \ref{Configurator:ProjectSelection}. The sales employee clicks a project they want to edit. This opens the page seen in figure \ref{Sales:VehicleList}. The sales employee clicks on a vehicle to open the vehicle information seen in figure \ref{Sales:VehicleInformation} or the "Flottenstatistik" tab, depending on which widgets they want to add.
+\subsubsection{Use Case 11: Create \Gls{widget}}
+This scenario begins in the view seen in figure \ref{Configurator:ProjectSelection}. The sales employee clicks a project they want to edit. This opens the page seen in figure \ref{Sales:VehicleList}. The sales employee clicks on a vehicle to open the vehicle information seen in figure \ref{Sales:VehicleInformation} or the "Flottenstatistik" tab, depending on which \glspl{widget} they want to add.
 
 \begin{figure}[ht]
   \centering
@@ -185,20 +185,20 @@ This scenario begins in the view seen in figure \ref{Configurator:ProjectSelecti
   \label{Sales:VehicleInformation}
 \end{figure}
 
-his view is similar to the decision maker's view seen in figure \ref{DecisionMaker:DetailsRube}, however it also includes the option to add or delete widgets, as well as to undo and redo actions.
+his view is similar to the decision maker's view seen in figure \ref{DecisionMaker:DetailsRube}, however it also includes the option to add or delete \glspl{widget}, as well as to undo and redo actions.
 
-The sales employee clicks "Hinzufügen" which opens a list of widgets to choose from. This can be seen in figure \ref{Sales:AddWidget}.
+The sales employee clicks "Hinzufügen" which opens a list of \glspl{widget} to choose from. This can be seen in figure \ref{Sales:AddWidget}.
 
 \begin{figure}[ht]
   \centering
   \includegraphics*[width=8cm]{./prototyp/WidgetAdd.png}
-  \caption{Sales employee's view: add vehicle data item}
+  \caption{Sales employee's view: add vehicle \gls{data}}
   \label{Sales:AddWidget}
 \end{figure}
 
-The sales employee chooses a widget and can see a preview of it. They then click "Speichern" and the widget is added to the vehicle page.
+The sales employee chooses a \gls{widget} and can see a preview of it. They then click "Speichern" and the \gls{widget} is added to the vehicle page.
 
-This process is identical for the fleet statistics page and thus not considered a separate use case. Clicking "Flottenstatistik" from the vehicle page in figure \ref{Sales:VehicleList} takes them to the fleet statistics page seen in figure \ref{Sales:Fleet}.
+This process is identical for the fleet statistics page and thus not considered a separate \gls{usecase}. Clicking "Flottenstatistik" from the vehicle page in figure \ref{Sales:VehicleList} takes them to the fleet statistics page seen in figure \ref{Sales:Fleet}.
 
 \begin{figure}[ht]
   \centering
@@ -207,21 +207,21 @@ This process is identical for the fleet statistics page and thus not considered 
   \label{Sales:Fleet}
 \end{figure}
 
-Like in figure \ref{Sales:VehicleInformation}, this view has the option to add new widgets. The sale employee clicks "Hinzufügen" which opens a list of available widgets like in figure \ref{Sales:FleetWidget}.
+Like in figure \ref{Sales:VehicleInformation}, this view has the option to add new \glspl{widget}. The sale employee clicks "Hinzufügen" which opens a list of available \glspl{widget} like in figure \ref{Sales:FleetWidget}.
 
 \begin{figure}[ht]
   \centering
   \includegraphics*[width=8cm]{./prototyp/WidgetAddFleet.png}
-  \caption{Sales employee's view: add fleet data item}
+  \caption{Sales employee's view: add fleet \gls{data}}
   \label{Sales:FleetWidget}
 \end{figure}
 
-This view is similar to the vehicle widget list from figure \ref{Sales:AddWidget}. Only the widgets which can be added are different as they are for fleet data, not individual vehicle data. Once the sales employee has chosen a widget and has clicked "Speichern", the widget is added to the fleet statistics page.
+This view is similar to the vehicle \gls{widget} list from figure \ref{Sales:AddWidget}. Only the \glspl{widget} which can be added are different as they are for fleet data, not individual vehicle data. Once the sales employee has chosen a \gls{widget} and has clicked "Speichern", the \gls{widget} is added to the fleet statistics page.
 
 
 \subsubsection{Use Case 12: Delete Widget}
-This scenario begins in the view seen in figure \ref{Configurator:ProjectSelection}. The sales employee chooses the project in which they want to delete a widget. This leads to the page seen in figure \ref{Sales:VehicleList}. As in the previous use case, widgets can be deleted both in the fleet statistics page and the vehicle page. In figure \ref{Sales:VehicleInformation} and figure \ref{Sales:Fleet}, each widgets have a trashcan icon in the top right corner. Once the sales employee clicks it and confirms the decision, the widget is removed from the corresponding page.
+This scenario begins in the view seen in figure \ref{Configurator:ProjectSelection}. The sales employee chooses the project in which they want to delete a widget. This leads to the page seen in figure \ref{Sales:VehicleList}. As in the previous \gls{usecase}, \glspl{widget} can be deleted both in the fleet statistics page and the vehicle page. In figure \ref{Sales:VehicleInformation} and figure \ref{Sales:Fleet}, each \glspl{widget} have a trashcan icon in the top right corner. Once the sales employee clicks it and confirms the decision, the \gls{widget} is removed from the corresponding page.
 
 
 \subsubsection{Use Case 13: Move Widget}
-This scenario begins in the view seen in figure \ref{Configurator:ProjectSelection}. The sales employee chooses the project in which they want to move a widget. This leads to the page seen in figure \ref{Sales:VehicleList}. As in the previous use case, widgets can be moved both in the fleet statistics page and the vehicle page. Figure \ref{Sales:VehicleInformation} and \ref{Sales:Fleet} show widgets. If the sales employee clicks and holds on a widget, they can move the widget with their mouse along an invisible grid. When releasing the mouse, the widget clicks into place on the grid.
+This scenario begins in the view seen in figure \ref{Configurator:ProjectSelection}. The sales employee chooses the project in which they want to move a widget. This leads to the page seen in figure \ref{Sales:VehicleList}. As in the previous \gls{usecase}, \glspl{widget} can be moved both in the fleet statistics page and the vehicle page. Figure \ref{Sales:VehicleInformation} and \ref{Sales:Fleet} show \glspl{widget}. If the sales employee clicks and holds on a widget, they can move the \gls{widget} with their mouse along an invisible grid. When releasing the mouse, the \gls{widget} clicks into place on the grid.
