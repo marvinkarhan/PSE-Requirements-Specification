@@ -311,6 +311,7 @@
 
 \newcommand{\hsmaautorbib}{\hsmaautornname \ \hsmaautorvname} % Autor Nachname, Vorname
 \newcommand{\hsmaautor}{\hsmaautorvname \ \hsmaautornname} % Autor Vorname Nachname
+\newcommand{\hsmacontact}{Contact us at: \hsmaautorcontact} % Autor Vorname Nachname
 
 \ifthenelse{\equal{\hsmasprache}{de}}%
   {\newcommand{\hsmatyp}{\hsmatypde}%
@@ -435,7 +436,9 @@
 % Name
 \begin{textblock*}{128mm}(\hsmafenster,\seitenanfang + 103mm)
   \centering\large\sffamily
-  \hsmaautor
+  \hsmaautor\\
+  \vspace{2mm}
+  \hsmacontact
   
 \includegraphics*[width=5cm]{./8eyes.png}
 \end{textblock*}
