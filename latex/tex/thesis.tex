@@ -172,7 +172,7 @@
 
 % Glossar ausgeben
 % Wenn Sie kein Glossar haben, kommentieren Sie die folgende Zeile aus
-% \input{kapitel/glossar.tex}
+\input{kapitel/glossar.tex}
 \printglossary[style=altlist, nonumberlist, title=\hsmaglossary]
 
 % Symbolverzeichnis ausgeben
@@ -199,20 +199,20 @@
 % \lstlistoflistings
 
 % Literaturverzeichnis erzeugen
-\begingroup
-\cleardoublepage
-\begin{flushleft}
-\let\clearpage\relax % Fix für leere Seiten (issue #25)
-\printbibliography
-\end{flushleft}
-\endgroup
+% \begingroup
+% \cleardoublepage
+% \begin{flushleft}
+% \let\clearpage\relax % Fix für leere Seiten (issue #25)
+% \printbibliography
+% \end{flushleft}
+% \endgroup
 
 % Index ausgeben. Wenn Sie keinen Index haben, entfernen Sie einfach
 % diesen Teil. Die meisten Abschlussarbeiten haben *keinen* Index.
-\cleardoublepage
-\phantomsection
-\addcontentsline{toc}{chapter}{\hsmaindex}
-\printindex
+% \cleardoublepage
+% \phantomsection
+% \addcontentsline{toc}{chapter}{\hsmaindex}
+% \printindex
 
 % Anhang. Wenn Sie keinen Anhang haben, entfernen Sie einfach
 % diesen Teil.
