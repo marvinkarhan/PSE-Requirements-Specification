@@ -21,7 +21,7 @@ Figure \ref{SopeOfProduct:ContextDiagram} shows a \gls{usecase} diagram for the 
     \textbf{UC ID} & \textbf{UC Name} & \textbf{Actors}  & \textbf{Description}\\
     \midrule
     \hypertarget{Ref:UC1}{UC\_1} & View vehicles & Decision maker, sales employee & The decision maker or sales employee views all vehicles of their project in a list.\\
-    \hypertarget{Ref:UC2}{UC\_2} & View vehicle information & Decision maker, sales employee & The decision maker or sales employee chooses a vehicle and views its given \glspl{data}.\\
+    \hypertarget{Ref:UC2}{UC\_2} & View vehicle information & Decision maker, sales employee & The decision maker or sales employee chooses a vehicle and views its given \glspl{widget}.\\
     \hypertarget{Ref:UC3}{UC\_3}  & View fleet information & Decision maker, sales employee & The decision maker or sales employee views statistics for all vehicles in a fleet.\\
     \hypertarget{Ref:UC4}{UC\_4}  & View projects & Sales employee & The sales employee views the projects which they want to configure.\\
     \hypertarget{Ref:UC5}{UC\_5} & Create project & Sales employee & The sales employee creates a project for a new decision maker.\\
@@ -50,7 +50,7 @@ The clickable prototype is available \href{https://www.figma.com/proto/QnshySDvR
   \label{DecisionMaker:Homepage}
 \end{figure}
 
-Figure \ref{DecisionMaker:Homepage} shows the initial view from which the decision maker always starts after logging into Carvis. \Gls{usecase} \hyperlink{Ref:UC2}{UC\_2} is carried out on this page and \glspl{usecase} \hyperlink{Ref:UC1}{UC\_1} and \hyperlink{Ref:UC3}{UC\_3} are facilitated as well. 
+Figure \ref{DecisionMaker:Homepage} shows the initial view from which the decision maker always starts after logging into Carvis. \Gls{usecase} \hyperlink{Ref:UC2}{UC\_2} is carried out on this page and \glspl{usecase} \hyperlink{Ref:UC1}{UC\_1} and \hyperlink{Ref:UC3}{UC\_3} are facilitated as well. The login is not shown because it is supposed to be a simple view, which requires an username and password for the \gls{dataplace} account.
 
 
 \subsubsection{Use Case 1: View Vehicles}
@@ -67,7 +67,7 @@ This scenario begins in the initial view seen in figure \ref{DecisionMaker:Homep
   \label{DecisionMaker:DetailsRube}
 \end{figure}
 
-This page contains all of the information relating to the selected vehicle. The \glspl{data} which are made available by Caruso are grouped into white boxes called \glspl{widget}. An example is the general information \gls{widget} which includes the \gls{vin}and manufacturer. Every \gls{widget} shows when the data was last updated so that the decision maker can see how current it is. In the case that a \gls{data} is not available either due to error or lack of support from the \gls{oem}, a text notifying the user is shown instead, as can be seen in figure \ref{DecisionMaker:NotSupported}.
+This page contains all of the information relating to the selected vehicle. The \glspl{data} which are made available by Caruso are grouped into white boxes called \glspl{widget}. An example is the general information \gls{widget} which includes the \gls{vin}and manufacturer. Every \gls{widget} shows when the data was last updated so that the decision maker can see how current it is. In the case that a \gls{data} is not available either due to error or lack of support from the \gls{oem}, a text notifying the user is shown instead, as can be seen in figure \ref{DecisionMaker:NotSupported}. If multiple \glspl{data} are required for a \gls{widget}, it will indicate that that particular \gls{data} is not supported.
 
 
 \begin{figure}[ht]

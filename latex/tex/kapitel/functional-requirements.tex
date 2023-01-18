@@ -17,7 +17,7 @@
 
       \hypertarget{Ref:US3}{US\_03} & \hyperlink{Ref:UC1}{UC\_01} & As a decision maker and sales employee, I want to search for a vehicle to quickly find it in the list.
       \newline
-      \emph{The search criteria correlate to the information which is shown in the vehicle table.} & Should
+      \emph{The search criteria correlate to the information which is shown in the vehicle list. This means that vehicles can be hidden or shown if the search text corresponds to the vehicle list entry.} & Should
       \\
 
       \hypertarget{Ref:US4}{US\_04} & \hyperlink{Ref:UC1}{UC\_01} & As a decision maker and sales employee, I want to filter vehicles in the vehicle table to only see the vehicles which fit my current criteria.
@@ -50,7 +50,7 @@
 
       \hypertarget{Ref:US12}{US\_12} & \hyperlink{Ref:UC3}{UC\_03} & As a decision maker and sales employee, I want to filter the contents of fleet-specific \glspl{widget} to only see the data of vehicles which currently interest me.
       \newline
-      \emph{The filter criteria correspond to the columns of the vehicle table.}
+      \emph{The filter criteria correspond to the columns of the vehicle table. This means that information presented in the vehicle list can be used to show or hide vehicles.}
       & Should \\
 
       \bottomrule
@@ -71,7 +71,9 @@
       \hypertarget{Ref:US14}{US\_14} & \hyperlink{Ref:UC4}{UC\_04} & As a sales employee, I want to search for projects by name to find a specific project. & Should \\
       \hypertarget{Ref:US15}{US\_15} & \hyperlink{Ref:UC4}{UC\_04} & As a sales employee, I want to see the amount of projects to know how many projects exist & Should \\
       \hypertarget{Ref:US16}{US\_16} & \hyperlink{Ref:UC4}{UC\_04} & As a sales employee, I want to see who last changed the project and when to know when it was last updated. & Must \\
-      \hypertarget{Ref:US17}{US\_17} & \hyperlink{Ref:UC4}{UC\_04} & As a sales employee, I want to see who last viewed the project and when to know if it is still being used. & Must \\
+      \hypertarget{Ref:US17}{US\_17} & \hyperlink{Ref:UC4}{UC\_04} & As a sales employee, I want to see who last viewed the project and when to know if it is still being used.
+      \newline
+      \emph{A project counts as visited if the decision maker views his project.} & Must \\
       \hypertarget{Ref:US18}{US\_18} & \hyperlink{Ref:UC5}{UC\_05} & As a sales employee, I want to create a project to prepare a new presentation for a decision maker. & Must \\
       \hypertarget{Ref:US19}{US\_19} & \hyperlink{Ref:UC6}{UC\_06} & As a sales employee, I want to edit a project to change project information when needed. & Must \\
       \hypertarget{Ref:US20}{US\_20} & \hyperlink{Ref:UC5}{UC\_05}, \newline \hyperlink{Ref:UC6}{UC\_06} & As a sales employee, I want to connect a \gls{dataplace} account to a project to connect the account's cars to Carvis. & Must \\
@@ -85,9 +87,11 @@
       \hypertarget{Ref:US25}{US\_25} & \hyperlink{Ref:UC5}{UC\_05}, \newline \hyperlink{Ref:UC8}{UC\_08} & As a sales employee, I want to see a preview of the templates to see which template is appropriate for a new project. & Should \\
       \hypertarget{Ref:US26}{US\_26} & \hyperlink{Ref:UC5}{UC\_05}, \newline \hyperlink{Ref:UC8}{UC\_08} & As a sales employee, I want to search a template by its name to quickly find it in the list. & Should \\
       \hypertarget{Ref:US27}{US\_27} & \hyperlink{Ref:UC7}{UC\_07} & As a sales employee, I want to delete a project to remove it when it is no longer needed. & Must \\
-      \hypertarget{Ref:US28}{US\_28} & \hyperlink{Ref:UC8}{UC\_08} & As a sales employee, I want to reset a project to start the configuration anew. & Should \\
+      \hypertarget{Ref:US28}{US\_28} & \hyperlink{Ref:UC8}{UC\_08} & As a sales employee, I want to reset a project to start the configuration anew. 
+      \newline
+      \emph{A project reset only allows changing the original template for the fleet statistic, vehicle list and details view. It does not reset the project name or used colors.} & Should \\
       \hypertarget{Ref:US29}{US\_29} & \hyperlink{Ref:UC9}{UC\_09} & As a sales employee, I want to save a project as a template to be able to use it for future projects. & Must \\
-      \hypertarget{Ref:US30}{US\_30} & \hyperlink{Ref:UC10}{UC\_10} & As a sales employee, I want to add new information to the vehicle table to show the decision maker relevant information on the home page.
+      \hypertarget{Ref:US30}{US\_30} & \hyperlink{Ref:UC10}{UC\_10} & As a sales employee, I want to add new columns to the vehicle table to show the decision maker relevant vehicle data on the home page.
       \newline
       \emph{The information corresponds to columns in the table. \gls{vin}, manufacturer, status, mileage, next event, model and fuel gauge.} & Must  \\
       \hypertarget{Ref:US31}{US\_31} & \hyperlink{Ref:UC10}{UC\_10} & As a sales employee, I want to remove information from the vehicle table to show the decision maker only relevant information on the home page. & Must  \\
