@@ -1,17 +1,17 @@
 \chapter{Constraints}
 
-In this chapter, we will explore the constraints that must be considered in the design of our product. These constraints represent limitations that apply to the entire product, and must be taken into account no matter how we choose to solve the problem at hand. In this section, we will discuss the description, rationale, and fit criterion for each constraint, and how they are written in the same format as functional and non-functional requirements. Understanding and adhering to these constraints will be crucial to the success of this project.
+In this chapter, we will explore the constraints that must be considered in the design of our product. These constraints represent limitations that apply to the entire product, and must be taken into account no matter how we choose to solve the problem at hand. In this section, we will discuss the description, rationale, and fit criterion for each constraint.
 
-\section{Partner or Collaborative Applications}
+\section{Partner or Collaborative Applications Constraints}
 
 This chapter explores applications that the product will collaborate with, namely the \gls{dataplace}. By examining these partner applications, we can identify potential integration issues and design constraints. The dataplace can be found \href{https://www.caruso-dataplace.com/developer-zone/}{\emph{here}}\footnote{https://www.caruso-dataplace.com/developer-zone/}.
 
-% Examples of these applications can be provided through descriptions, models, or references to specifications that include all interfaces impacting the product
-As Carvis is a data appetiser for connected car data provided by Caruso, this constraint affects the data sources and the type of data that can be used. As the data provided by Caruso is ever evolving it is best to check the available \glspl{data} on the \gls{dataplace} platform. 
-
 % \gls{dataplace}
 % only use data for cars supported by caruso
-The \gls{dataplace} provides a data catalogue and a \gls{api} documentation. The data catalogue provides a list of all available \glspl{data} and their description. The \gls{api} documentation provides a list of all available \gls{api} endpoints and their description and examples. The data catalogue and the \gls{api} documentation are available on the \gls{dataplace} developer zone. The data provided by Caruso is only available for cars that are supported by Caruso. The list of supported cars is available on the \gls{dataplace}.
+The \gls{dataplace} provides a data catalogue and a \gls{api} documentation. The data catalogue provides a list of all available \glspl{data} and their description. The \gls{api} documentation provides a list of all available \gls{api} endpoints and their description and examples. The data catalogue and the \gls{api} documentation is available on the \gls{dataplace} developer zone. The data provided by Caruso is only available for cars that are supported by Caruso. The list of supported cars is available on the \gls{dataplace}.
+
+% Examples of these applications can be provided through descriptions, models, or references to specifications that include all interfaces impacting the product
+As Carvis is a data appetiser for connected car data provided by Caruso, this constraint affects the data sources and the type of data that can be used. As the data provided by Caruso is ever evolving it is best to check the available \glspl{data} on the \gls{dataplace} platform. 
 
 \section{Schedule Constraints}
 
@@ -29,4 +29,4 @@ By focusing on the fleet management \gls{usecase}, we have been able to maximize
 % Rationale: This is a demo application that will only be used for a short time frame, and as such, budget constraints do not need to be considered.
 % Fit criterion: The product shall not exceed the allocated budget for the demo application.
 
-One constraint that we will not need to consider in the design of our product is budget constraints. Because this is a demo application that will only be used for a short time frame per user. As such, we do not need to worry about staying within a specific budget. By not having to worry about budget constraints, we will have more flexibility in our design choices and can focus on creating a product that meets the needs and expectations of the \glspl{stakeholder}.
+One constraint that we will not need to consider in the design of our product is budget constraints. Because this is a demo application that will only be used for a short time frame per user. As such, we do not need to worry about staying within a specific budget.
