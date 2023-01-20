@@ -566,7 +566,7 @@ Eine Vervielfältigung und Veröffentlichung der Arbeit ohne ausdrückliche Gene
 % }
 
 \newcounter{snowcardcounter}
-\newcommand{\snowcard}[9]{
+\newcommand{\snowcard}[5]{
   \begin{table}[ht!]
     \stepcounter{snowcardcounter}
     \caption{\hsmasnowcardanforderung\ NFR{\arabic{snowcardcounter}} -- #3}\label{NFR{\arabic{snowcardcounter}}}
@@ -581,12 +581,9 @@ Eine Vervielfältigung und Veröffentlichung der Arbeit ohne ausdrückliche Gene
     \addlinespace
     \multicolumn{6}{l}{\textbf{\hsmasnowcardbeschreibung}} \\
     \multicolumn{6}{l}{\parbox[t]{13.5cm}{#4}} \\
-    \ifx&#6&%
-    \else
     \addlinespace
     \multicolumn{6}{l}{\textbf{\hsmasnowcardfitkriterium}} \\
     \multicolumn{6}{l}{\parbox{13.5cm}{#5}} \\
-    \fi
     \bottomrule
     \end{tabularx}
     \end{footnotesize}
