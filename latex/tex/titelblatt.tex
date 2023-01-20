@@ -565,30 +565,31 @@ Eine Vervielfältigung und Veröffentlichung der Arbeit ohne ausdrückliche Gene
 %   \end{otherlanguage}
 % }
 
+\newcounter{snowcardcounter}
 \newcommand{\snowcard}[9]{
   \begin{table}[ht!]
-    \caption{\hsmasnowcardanforderung\ #1 -- #4}\label{#1}
+    \stepcounter{snowcardcounter}
+    \caption{\hsmasnowcardanforderung\ NFR{\arabic{snowcardcounter}} -- #3}\label{NFR{\arabic{snowcardcounter}}}
     \centering
     \sffamily
     \begin{footnotesize}
- 
-  \begin{tabularx}{\linewidth}{sssssb}
-  \toprule
-  \textbf{\hsmasnowcardno} & #1 & \textbf{\hsmasnowcardart} & #2 & \textbf{\hsmasnowcardprio} & #3 \\
-  \midrule
-  \multicolumn{2}{l}{\textbf{\hsmasnowcardtitel}} & \multicolumn{4}{l}{\parbox[t]{11.8cm}{#4}} \\
-  \addlinespace
-  \multicolumn{6}{l}{\textbf{\hsmasnowcardbeschreibung}} \\
-  \multicolumn{6}{l}{\parbox[t]{13.5cm}{#5}} \\
-  \ifx&#6&%
-  \else
-  \addlinespace
-  \multicolumn{6}{l}{\textbf{\hsmasnowcardfitkriterium}} \\
-  \multicolumn{6}{l}{\parbox{13.5cm}{#6}} \\
-  \fi
-  \bottomrule
-  \end{tabularx}
-  \end{footnotesize}
+    \begin{tabularx}{\linewidth}{sssssb}
+    \toprule
+    \textbf{\hsmasnowcardno} & NFR{\arabic{snowcardcounter}} & \textbf{\hsmasnowcardart} & #1 & \textbf{\hsmasnowcardprio} & #2 \\
+    \midrule
+    \multicolumn{2}{l}{\textbf{\hsmasnowcardtitel}} & \multicolumn{4}{l}{\parbox[t]{11.8cm}{#3}} \\
+    \addlinespace
+    \multicolumn{6}{l}{\textbf{\hsmasnowcardbeschreibung}} \\
+    \multicolumn{6}{l}{\parbox[t]{13.5cm}{#4}} \\
+    \ifx&#6&%
+    \else
+    \addlinespace
+    \multicolumn{6}{l}{\textbf{\hsmasnowcardfitkriterium}} \\
+    \multicolumn{6}{l}{\parbox{13.5cm}{#5}} \\
+    \fi
+    \bottomrule
+    \end{tabularx}
+    \end{footnotesize}
   \end{table}
  }
 
