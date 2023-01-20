@@ -1,9 +1,12 @@
 \chapter{The Scope of the Product}
 This chapter will present the \glspl{usecase} of Carvis under consideration of the decision maker, the sales employee and the configurator. The \glspl{usecase} will be given a description and a walkthrough in the form of a high fidelity prototype.
+
 \section{The Product Boundary}
+
 Figure \ref{SopeOfProduct:ContextDiagram} shows a \gls{usecase} diagram for the \glspl{stakeholder} of core target group and their \glspl{usecase} for Carvis. All \glspl{usecase} are given an id which will be referenced in future chapters.
 
-In order to understand the use cases of the sales employee in terms of project and tempalte, let's briefly start with the basic idea of the application for the sales employee. The sales employee can create a project for each customer, in which the dashboard with the respective widgets can be built individually. To speed up the creation of the dashboard, Tempaltes are introduced, which contains prefabricated dashboards and can be used initially for a project. Projects can be reset to a template state or a project can be saved as a template.
+In order to understand the use cases of the sales employee in terms of project and template, let's briefly start with the basic idea of the application for the sales employee. The sales employee can create a project for each customer, in which the dashboard with the respective \gls{widget} can be built individually. \gls{widget} are self-contained elements that are easy to replace and facilitate modularity. To speed up the creation of the dashboard, templates are introduced, which contains prefabricated dashboards and can be used initially for a project. Projects can be reset to a template state or a project can be saved as a template.
+
 \begin{figure}[H]
   \centering
   \includegraphics*[width=\textwidth]{./use_case_diagram.png}
@@ -12,6 +15,7 @@ In order to understand the use cases of the sales employee in terms of project a
 \end{figure}
 
 \section{Use Case Table}
+
 \sffamily
 \begin{footnotesize}
   \renewcommand{\arraystretch}{1.4}
@@ -23,17 +27,35 @@ In order to understand the use cases of the sales employee in terms of project a
     \textbf{UC ID} & \textbf{UC Name} & \textbf{Actors}  & \textbf{Description}\\
     \midrule
     \hypertarget{Ref:UC1}{UC\_1} & View vehicles & Decision maker, sales employee & The decision maker or sales employee views all vehicles of their project in a list.\\
+    
+    \rowcolor{Gray}
     \hypertarget{Ref:UC2}{UC\_2} & View vehicle information & Decision maker, sales employee & The decision maker or sales employee chooses a vehicle and views its given \glspl{widget}.\\
+    
     \hypertarget{Ref:UC3}{UC\_3}  & View fleet information & Decision maker, sales employee & The decision maker or sales employee views statistics for all vehicles in a fleet.\\
+    
+    \rowcolor{Gray}
     \hypertarget{Ref:UC4}{UC\_4}  & View projects & Sales employee & The sales employee views the projects which they want to configure.\\
+    
     \hypertarget{Ref:UC5}{UC\_5} & Create project & Sales employee & The sales employee creates a project for a new decision maker.\\
+    
+    \rowcolor{Gray}
     \hypertarget{Ref:UC6}{UC\_6} & Edit project & Sales employee & The sales employee edits a project.\\
+    
     \hypertarget{Ref:UC7}{UC\_7} & Delete project & Sales employee & The sales employee deletes a project.\\
+    
+    \rowcolor{Gray}
     \hypertarget{Ref:UC8}{UC\_8} & Reset project & Sales employee & The sales employee reverts a project to its template, resetting all changes.\\
+    
     \hypertarget{Ref:UC9}{UC\_9} & Create template & Sales employee & The sales employee creates a template by taking a snapshot of a project.\\
+    
+    \rowcolor{Gray}
     \hypertarget{Ref:UC10}{UC\_10} & Edit table & Sales employee & The sales employee edits the table in which all vehicles are shown.\\
-    \hypertarget{Ref:UC11}{UC\_11} & Create \gls{widget} & Sales employee & The sales employee adds a \gls{widget} visualising a \gls{data} of a vehicle or fleet to a project.\\
+    
+    \hypertarget{Ref:UC11}{UC\_11} & Add \gls{widget} & Sales employee & The sales employee adds a \gls{widget} visualising a \gls{data} of a vehicle or fleet to a project.\\
+    
+    \rowcolor{Gray}
     \hypertarget{Ref:UC12}{UC\_12} & Delete \gls{widget} & Sales employee & The sales employee removes a \gls{widget} visualising a \gls{data} of a vehicle or fleet from a project.\\
+    
     \hypertarget{Ref:UC13}{UC\_13} & Move \gls{widget} & Sales employee & The sales employee edits the position of a \gls{widget} visualising a \gls{data} of a vehicle or fleet in a project.\\
     \bottomrule
   \end{longtable}
@@ -41,10 +63,12 @@ In order to understand the use cases of the sales employee in terms of project a
 \rmfamily
 
 \section{Individual Product Use Cases}
+
 This chapter presents a variety of scenarios that demonstrate the various ways in which our application can be used. These scenarios will be broken down into reproducible steps and illustrated using our prototype as a reference point. The \glspl{usecase} are grouped into two main perspectives: the decision maker and the sales employee. The purpose of this chapter is to provide a clear and thorough understanding of how our application can be utilised in a variety of different situations. By walking through these \glspl{usecase}, we hope to give a sense of the flow and functionality of the application and how it can help decision makers and sales employees achieve their goals.
 The clickable prototype is available \href{https://www.figma.com/proto/QnshySDvR2A5jazPugjKq7/Carvis?scaling=scale-down&show-proto-sidebar=1&node-id=560%3A2807&starting-point-node-id=709%3A5104}{\emph{here}}\footnote[2]{https://www.figma.com/proto/QnshySDvR2A5jazPugjKq7/Carvis?scaling=scale-down\&show-proto-sidebar=1\&node-id=560\%3A2807\&starting-point-node-id=709\%3A5104}.
 
 \subsection{The Decision Maker's View}
+
 \begin{figure}[H]
   \centering
   \includegraphics*[width=\textwidth]{./prototyp/Default-View.png}
@@ -56,9 +80,11 @@ Figure \ref{DecisionMaker:Homepage} shows the initial view from which the decisi
 
 
 \subsubsection{Use Case 1: View Vehicles}
+
 The scenario begins in the initial view seen in figure \ref{DecisionMaker:Homepage}. On this page, the decision maker or sales employee can view a chart of all vehicles linked to their \gls{dataplace} account. This table consists of columns to identify vehicles, for example listing the manufacturer or its current status. The vehicles can be sorted by column in ascending or descending order by clicking on the label. Vehicles can also be filtered by these categories, for example only showing vehicles from one manufacturer, or be searched directly through the search bar.
 
 \subsubsection{Use Case 2: View Vehicle Information}
+
 This scenario begins in the initial view seen in figure \ref{DecisionMaker:Homepage}. The decision maker or sales employee chooses a vehicle which they wish to view in the table. Optionally, filters can be applied to find the desired vehicle. By clicking on it, the user reaches the vehicle page seen in figure \ref{DecisionMaker:DetailsRube}.
 % TODO heißt es vehicle page?
 
@@ -69,7 +95,7 @@ This scenario begins in the initial view seen in figure \ref{DecisionMaker:Homep
   \label{DecisionMaker:DetailsRube}
 \end{figure}
 
-This page contains all of the information relating to the selected vehicle. The \glspl{data} which are made available by Caruso are grouped into white boxes called \glspl{widget}. An example is the general information \gls{widget} which includes the \gls{vin}and manufacturer. Every \gls{widget} shows when the data was last updated so that the decision maker can see how current it is. In the case that a \gls{data} is not available either due to error or lack of support from the \gls{oem}, a text notifying the user is shown instead, as can be seen in figure \ref{DecisionMaker:NotSupported}. If multiple \glspl{data} are required for a \gls{widget}, it will indicate that that particular \gls{data} is not supported.
+This page contains all of the information relating to the selected vehicle. The \glspl{data} which are made available by Caruso are grouped into white boxes called \glspl{widget}. An example is the general information \gls{widget} which includes the \gls{vin} and manufacturer. Every \gls{widget} shows when the data was last updated so that the decision maker can see how current it is. In the case that a \gls{data} is not available either due to error or lack of support from the \gls{oem}, a text notifying the user is shown instead, as can be seen in figure \ref{DecisionMaker:NotSupported}. If multiple \glspl{data} are required for a \gls{widget}, it will indicate that that particular \gls{data} is not supported.
 
 
 \begin{figure}[ht]
@@ -80,13 +106,14 @@ This page contains all of the information relating to the selected vehicle. The 
 \end{figure}
 
 \subsubsection{Use Case 3: View fleet information}
-This scenario begins in the initial view seen in figure \ref{DecisionMaker:Homepage}. The decision maker or sales employee can click on the tab "Flottenstatistik". This opens the page seen in figure \ref{DecisionMaker:Fahrzeugstatistik}.
+This scenario begins in the initial view seen in figure \ref{DecisionMaker:Homepage}. The decision maker or sales employee can click on the tab \enquote{Fleet statistics}. This opens the page seen in figure \ref{DecisionMaker:Fahrzeugstatistik}.
 \begin{figure}[H]
   \centering
   \includegraphics*[width=\textwidth]{./prototyp/Fahrzeugstatistik.png}
   \caption{Decision maker's view: fleet statistics page}
   \label{DecisionMaker:Fahrzeugstatistik}
 \end{figure}
+
 This page shows \glspl{widget} of fleet-specific data where the fleet consists of all vehicles registered to the user. Like the main table, this view can be filtered and searched.
 
 \Glspl{widget} include a map showing the position of all vehicles, a chart showing the distribution of manufacturers in the fleet or a list of all past events.
@@ -96,41 +123,46 @@ These \glspl{widget} not only show the last update but also how many cars suppor
 \newpage
 
 \subsection{The Sales Employee's View}
+
 \begin{figure}[ht]
   \centering
   \includegraphics*[width=\textwidth]{./prototyp/Project-Selection.png}
-  \caption{Sales employee's view: vehicle page}
+  \caption{Sales employee's view: project selection page}
   \label{Configurator:ProjectSelection}
 \end{figure}
+
 Figure \ref{Configurator:ProjectSelection} shows the initial view from which the sales employee starts their work once they have logged in.
 
 
 \subsubsection{Use Case 4: View Project}
+
 This scenario begins in the initial view seen in figure \ref{Configurator:ProjectSelection}. The sales employee sees the available projects shown in white tiles. These include information such as the company name, logo, as well as metadata such as when the project was last viewed or edited. The sales employee can filter the list of projects through the search bar to only see the projects in which they are currently interested.
 
 
 \subsubsection{Use Case 5: Create Project}
-This scenario begins in the initial view seen in figure \ref{Configurator:ProjectSelection}. The sales employee clicks the button labelled "Projekt erstellen". This opens a popup as seen in figure \ref{Configurator:CreateProjectPopup}. 
+This scenario begins in the initial view seen in figure \ref{Configurator:ProjectSelection}. The sales employee clicks the button labelled \enquote{New project}. This opens a popup as seen in figure \ref{Configurator:CreateProjectPopup}. 
 
 \begin{figure}[ht]
   \centering
   \includegraphics*[width=7cm]{./prototyp/Projekt-Erstellen-Popup.png}
-  \caption{Sales employee's view: vehicle view}
+  \caption{Sales employee's view: project details}
   \label{Configurator:CreateProjectPopup}
 \end{figure}
 
-The sales employee inputs a \gls{dataplace} account to be linked to the project, as well as any further accounts which should be allowed to view the project. They then input a logo, company name, and two primary colours which the company uses in their branding. Next, the sales employee clicks "Speichern", which opens the template view seen in figure \ref{Configurator:Template} to begin work on the configuration.
+The sales employee inputs a \gls{dataplace} account to be linked to the project, as well as any further accounts which should be allowed to view the project. They then input a logo, company name, and two primary colours which the company uses in their branding. Next, the sales employee clicks \enquote{Save}, which opens the template view seen in figure \ref{Configurator:Template} to begin work on the configuration.
 
 \begin{figure}[ht]
   \centering
   \includegraphics*[width=\textwidth]{./prototyp/Project-Selection-1.png}
-  \caption{Sales employee's view: vehicle view}
+  \caption{Sales employee's view: template page}
   \label{Configurator:Template}
 \end{figure}
+
 This list can also be filtered via the search bar. Each template shows a preview so the sales employee can see which one best fits the new project. On clicking a new template, the new project is created. % früher stand hier configurator, ich hab alles auf sales employee vereinheitlicht
 
 
 \subsubsection{Use Case 6: Edit Project}
+
 This scenario begins in the view seen in figure \ref{Configurator:ProjectSelection}. The sales employee clicks the vertical dots in the top right corner of the project box. This alters the project box as seen in figure \ref{Configurator:ProjectTileEdit}.
 
 \begin{figure}[ht]
@@ -140,32 +172,33 @@ This scenario begins in the view seen in figure \ref{Configurator:ProjectSelecti
   \label{Configurator:ProjectTileEdit}
 \end{figure}
 
-The sales employee clicks "Bearbeiten" which opens a popup similar to figure \ref{Configurator:CreateProjectPopup} in which the project information can be edited Once done, the sales employee clicks "Speichern" and the project is successfully edited.
+The sales employee clicks \enquote{Edit} which opens a popup similar to figure \ref{Configurator:CreateProjectPopup} in which the project information can be edited Once done, the sales employee clicks \enquote{Save} and the project is successfully edited.
 
 
 \subsubsection{Use Case 7: Delete Project}
-This scenario begins in the view seen in figure \ref{Configurator:ProjectSelection}. The sales employee clicks the vertical dots in the top right corner of the project box. This alters the project box as seen in figure \ref{Configurator:ProjectTileEdit}. The sales employee clicks "Löschen". After confirmation by the sales employee, the project is deleted and removed from the list of available projects.
+This scenario begins in the view seen in figure \ref{Configurator:ProjectSelection}. The sales employee clicks the vertical dots in the top right corner of the project box. This alters the project box as seen in figure \ref{Configurator:ProjectTileEdit}. The sales employee clicks \enquote{Delete}. After confirmation by the sales employee, the project is deleted and removed from the list of available projects.
 
 
 \subsubsection{Use Case 8: Reset project}
-This scenario begins in the view seen in figure \ref{Configurator:ProjectSelection}. The sales employee clicks the vertical dots in the top right corner of the project box. This alters the project box as seen in figure \ref{Configurator:ProjectTileEdit}. The sales employee clicks "Zurücksetzen". This opens a view of available templates as seen in figure \ref{Configurator:Template}. The sales employee chooses and clicks a template which resets the project to that template
+This scenario begins in the view seen in figure \ref{Configurator:ProjectSelection}. The sales employee clicks the vertical dots in the top right corner of the project box. This alters the project box as seen in figure \ref{Configurator:ProjectTileEdit}. The sales employee clicks \enquote{Reset}. This opens a view of available templates as seen in figure \ref{Configurator:Template}. The sales employee chooses and clicks a template which resets the project to that template
 
 
 \subsubsection{Use Case 9: Create Template}
-This scenario begins in the view seen in figure \ref{Configurator:ProjectSelection}. The sales employee clicks the vertical dots in the top right corner of the project box. This alters the project box as seen in figure \ref{Configurator:ProjectTileEdit}. The sales employee clicks "Als Vorlage speichern". This offers the option to name the new template. Finally, the template is saved and available in the list of templates.
+This scenario begins in the view seen in figure \ref{Configurator:ProjectSelection}. The sales employee clicks the vertical dots in the top right corner of the project box. This alters the project box as seen in figure \ref{Configurator:ProjectTileEdit}. The sales employee clicks \enquote{Save as template}. This offers the option to name the new template. Finally, the template is saved and available in the list of templates.
 
 
 \subsubsection{Use Case 10: Edit Table}
+
 This scenario begins in the view seen in figure \ref{Configurator:ProjectSelection}. The sales employee clicks a project which they want to edit. This opens the project to the page seen in \ref{Sales:VehicleList}. 
 
 \begin{figure}[H]
   \centering
   \includegraphics*[width=\textwidth]{./prototyp/Default-View-Gwen.png}
-  \caption{Sales employee's view: fleet statistics page}
+  \caption{Sales employee's view: home page}
   \label{Sales:VehicleList}
 \end{figure}
 
-This view is similar to the decision maker's view seen in figure \ref{DecisionMaker:Homepage}, however it also includes the option to edit the vehicle table. The sales employee clicks "Spalten Bearbeiten". This opens a popup as seen in figure \ref{Sales:EditTable}.
+This view is similar to the decision maker's view seen in figure \ref{DecisionMaker:Homepage}, however it also includes the option to edit the vehicle table. The sales employee clicks \enquote{Edit columns}. This opens a popup as seen in figure \ref{Sales:EditTable}.
 
 \begin{figure}[ht]
   \centering
@@ -174,11 +207,11 @@ This view is similar to the decision maker's view seen in figure \ref{DecisionMa
   \label{Sales:EditTable}
 \end{figure}
 
-In this view, the sales employee can add or remove columns and change their order. For example, they can choose the vehicle model and add it to the shown elements. Then they click "Speichern" and the table includes the new column with the data for each vehicle.
+In this view, the sales employee can add or remove columns and change their order. For example, they can choose the vehicle model and add it to the shown elements. Then they click \enquote{Save} and the table includes the new column with the data for each vehicle.
 
 
-\subsubsection{Use Case 11: Create \Gls{widget}}
-This scenario begins in the view seen in figure \ref{Configurator:ProjectSelection}. The sales employee clicks a project they want to edit. This opens the page seen in figure \ref{Sales:VehicleList}. The sales employee clicks on a vehicle to open the vehicle information seen in figure \ref{Sales:VehicleInformation} or the "Flottenstatistik" tab, depending on which \glspl{widget} they want to add.
+\subsubsection{Use Case 11: Add \Gls{widget}}
+This scenario begins in the view seen in figure \ref{Configurator:ProjectSelection}. The sales employee clicks a project they want to edit. This opens the page seen in figure \ref{Sales:VehicleList}. The sales employee clicks on a vehicle to open the vehicle information seen in figure \ref{Sales:VehicleInformation} or the \enquote{Fleet statistics} tab, depending on which \glspl{widget} they want to add.
 
 \begin{figure}[ht]
   \centering
@@ -189,7 +222,7 @@ This scenario begins in the view seen in figure \ref{Configurator:ProjectSelecti
 
 his view is similar to the decision maker's view seen in figure \ref{DecisionMaker:DetailsRube}, however it also includes the option to add or delete \glspl{widget}, as well as to undo and redo actions.
 
-The sales employee clicks "Hinzufügen" which opens a list of \glspl{widget} to choose from. This can be seen in figure \ref{Sales:AddWidget}.
+The sales employee clicks \enquote{Add} which opens a list of \glspl{widget} to choose from. This can be seen in figure \ref{Sales:AddWidget}.
 
 \begin{figure}[ht]
   \centering
@@ -198,9 +231,9 @@ The sales employee clicks "Hinzufügen" which opens a list of \glspl{widget} to 
   \label{Sales:AddWidget}
 \end{figure}
 
-The sales employee chooses a \gls{widget} and can see a preview of it. They then click "Speichern" and the \gls{widget} is added to the vehicle page.
+The sales employee chooses a \gls{widget} and can see a preview of it. They then click \enquote{Save} and the \gls{widget} is added to the vehicle page.
 
-This process is identical for the fleet statistics page and thus not considered a separate \gls{usecase}. Clicking "Flottenstatistik" from the vehicle page in figure \ref{Sales:VehicleList} takes them to the fleet statistics page seen in figure \ref{Sales:Fleet}.
+This process is identical for the fleet statistics page and thus not considered a separate \gls{usecase}. Clicking \enquote{Fleet statistics} from the vehicle page in figure \ref{Sales:VehicleList} takes them to the fleet statistics page seen in figure \ref{Sales:Fleet}.
 
 \begin{figure}[ht]
   \centering
@@ -209,7 +242,7 @@ This process is identical for the fleet statistics page and thus not considered 
   \label{Sales:Fleet}
 \end{figure}
 
-Like in figure \ref{Sales:VehicleInformation}, this view has the option to add new \glspl{widget}. The sale employee clicks "Hinzufügen" which opens a list of available \glspl{widget} like in figure \ref{Sales:FleetWidget}.
+Like in figure \ref{Sales:VehicleInformation}, this view has the option to add new \glspl{widget}. The sale employee clicks \enquote{Add} which opens a list of available \glspl{widget} like in figure \ref{Sales:FleetWidget}.
 
 \begin{figure}[ht]
   \centering
@@ -218,12 +251,14 @@ Like in figure \ref{Sales:VehicleInformation}, this view has the option to add n
   \label{Sales:FleetWidget}
 \end{figure}
 
-This view is similar to the vehicle \gls{widget} list from figure \ref{Sales:AddWidget}. Only the \glspl{widget} which can be added are different as they are for fleet data, not individual vehicle data. Once the sales employee has chosen a \gls{widget} and has clicked "Speichern", the \gls{widget} is added to the fleet statistics page.
+This view is similar to the vehicle \gls{widget} list from figure \ref{Sales:AddWidget}. Only the \glspl{widget} which can be added are different as they are for fleet data, not individual vehicle data. Once the sales employee has chosen a \gls{widget} and has clicked \enquote{Save}, the \gls{widget} is added to the fleet statistics page.
 
 
 \subsubsection{Use Case 12: Delete Widget}
+
 This scenario begins in the view seen in figure \ref{Configurator:ProjectSelection}. The sales employee chooses the project in which they want to delete a widget. This leads to the page seen in figure \ref{Sales:VehicleList}. As in the previous \gls{usecase}, \glspl{widget} can be deleted both in the fleet statistics page and the vehicle page. In figure \ref{Sales:VehicleInformation} and figure \ref{Sales:Fleet}, each \glspl{widget} have a trashcan icon in the top right corner. Once the sales employee clicks it and confirms the decision, the \gls{widget} is removed from the corresponding page.
 
 
 \subsubsection{Use Case 13: Move Widget}
+
 This scenario begins in the view seen in figure \ref{Configurator:ProjectSelection}. The sales employee chooses the project in which they want to move a widget. This leads to the page seen in figure \ref{Sales:VehicleList}. As in the previous \gls{usecase}, \glspl{widget} can be moved both in the fleet statistics page and the vehicle page. Figure \ref{Sales:VehicleInformation} and \ref{Sales:Fleet} show \glspl{widget}. If the sales employee clicks and holds on a widget, they can move the \gls{widget} with their mouse along an invisible grid. When releasing the mouse, the \gls{widget} clicks into place on the grid.
