@@ -565,48 +565,76 @@ Eine Vervielfältigung und Veröffentlichung der Arbeit ohne ausdrückliche Gene
 %   \end{otherlanguage}
 % }
 
+\newcommand{\snowcard}[9]{
+  \begin{table}[ht!]
+    \caption{\hsmasnowcardanforderung\ #1 -- #4}\label{#1}
+    \centering
+    \sffamily
+    \begin{footnotesize}
+ 
+  \begin{tabularx}{\linewidth}{sssssb}
+  \toprule
+  \textbf{\hsmasnowcardno} & #1 & \textbf{\hsmasnowcardart} & #2 & \textbf{\hsmasnowcardprio} & #3 \\
+  \midrule
+  \multicolumn{2}{l}{\textbf{\hsmasnowcardtitel}} & \multicolumn{4}{l}{\parbox[t]{11.8cm}{#4}} \\
+  \addlinespace
+  \multicolumn{6}{l}{\textbf{\hsmasnowcardbeschreibung}} \\
+  \multicolumn{6}{l}{\parbox[t]{13.5cm}{#5}} \\
+  \ifx&#6&%
+  \else
+  \addlinespace
+  \multicolumn{6}{l}{\textbf{\hsmasnowcardfitkriterium}} \\
+  \multicolumn{6}{l}{\parbox{13.5cm}{#6}} \\
+  \fi
+  \bottomrule
+  \end{tabularx}
+  \end{footnotesize}
+  \end{table}
+ }
+
+
 % % Snowcard
-% \newcommand{\snowcard}[9]{
-%   \begin{table}[ht!]
-% \caption{\hsmasnowcardanforderung\ #1 -- #4}\label{#1}
-% \renewcommand{\arraystretch}{1.2}
-% \centering
-% \sffamily
-%   \begin{footnotesize}
+%  \newcommand{\snowcard}[9]{
+%    \begin{table}[ht!]
+%  \caption{\hsmasnowcardanforderung\ #1 -- #4}\label{#1}
+%  \renewcommand{\arraystretch}{1.2}
+%  \centering
+%  \sffamily
+%    \begin{footnotesize}
 
-% \begin{tabularx}{\linewidth}{sssssb}
-% \toprule
-% \textbf{\hsmasnowcardno} & #1 & \textbf{\hsmasnowcardart} & #2 & \textbf{\hsmasnowcardprio} & #3 \\
-% \midrule
-% \multicolumn{2}{l}{\textbf{\hsmasnowcardtitel}} & \multicolumn{4}{l}{\parbox[t]{11.8cm}{#4}} \\
-% \ifx&#5&%
-% \else
-% \multicolumn{2}{l}{\textbf{\hsmasnowcardherkunft}} & \multicolumn{4}{l}{\parbox[t]{11.8cm}{#5}} \\
-% \fi
-% \ifx&#6&%
-% \else
-% \multicolumn{2}{l}{\textbf{\hsmasnowcardkonflikt}} & \multicolumn{4}{l}{\parbox[t]{11.8cm}{#6}} \\
-% \fi
-% \addlinespace
-% \multicolumn{6}{l}{\textbf{\hsmasnowcardbeschreibung}} \\
-% \multicolumn{6}{l}{\parbox[t]{13.5cm}{#7}} \\
-% \ifx&#8&%
-% \else
-% \addlinespace
-% \multicolumn{6}{l}{\textbf{\hsmasnowcardfitkriterium}} \\
-% \multicolumn{6}{l}{\parbox{13.5cm}{#8}} \\
-% \fi
-% \ifx&#9&%
+%  \begin{tabularx}{\linewidth}{sssssb}
+%  \toprule
+%  \textbf{\hsmasnowcardno} & #1 & \textbf{\hsmasnowcardart} & #2 & \textbf{\hsmasnowcardprio} & #3 \\
+%  \midrule
+%  \multicolumn{2}{l}{\textbf{\hsmasnowcardtitel}} & \multicolumn{4}{l}{\parbox[t]{11.8cm}{#4}} \\
+%  \ifx&#5&%
+%  \else
+%  \multicolumn{2}{l}{\textbf{\hsmasnowcardherkunft}} & \multicolumn{4}{l}{\parbox[t]{11.8cm}{#5}} \\
+%  \fi
+%  \ifx&#6&%
+%  \else
+%  \multicolumn{2}{l}{\textbf{\hsmasnowcardkonflikt}} & \multicolumn{4}{l}{\parbox[t]{11.8cm}{#6}} \\
+%  \fi
+%  \addlinespace
+%  \multicolumn{6}{l}{\textbf{\hsmasnowcardbeschreibung}} \\
+%  \multicolumn{6}{l}{\parbox[t]{13.5cm}{#7}} \\
+%  \ifx&#8&%
+%  \else
+%  \addlinespace
+%  \multicolumn{6}{l}{\textbf{\hsmasnowcardfitkriterium}} \\
+%  \multicolumn{6}{l}{\parbox{13.5cm}{#8}} \\
+%  \fi
+%  \ifx&#9&%
 
-% \else
-%   \addlinespace
-%   \multicolumn{6}{l}{\textbf{\hsmasnowcardmaterial}} \\
-%   \multicolumn{6}{l}{\parbox{13.5cm}{#9}} \\
-% \fi
-% \bottomrule
-% \end{tabularx}
-% \end{footnotesize}
-% \end{table}
+%  \else
+%    \addlinespace
+%    \multicolumn{6}{l}{\textbf{\hsmasnowcardmaterial}} \\
+%    \multicolumn{6}{l}{\parbox{13.5cm}{#9}} \\
+%  \fi
+%  \bottomrule
+%  \end{tabularx}
+%  \end{footnotesize}
+%  \end{table}
 % }
 
 % % Quality Attribute Scenario
