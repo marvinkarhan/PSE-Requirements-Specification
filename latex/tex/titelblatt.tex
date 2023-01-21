@@ -346,7 +346,7 @@
    \newcommand{\hsmaqasanforderung}{QAS}%
    \newcommand{\hsmaqasno}{Nr}%
    \newcommand{\hsmaqasart}{Art}%
-   \newcommand{\hsmaqasprio}{Prio}%
+   \newcommand{\hsmaqasprio}{Priority}%
    \newcommand{\hsmaqastitel}{Titel}%
    \newcommand{\hsmaqasquelle}{Quelle}%
    \newcommand{\hsmaqasstimulus}{Stimulus}%
@@ -569,13 +569,13 @@ Eine Vervielfältigung und Veröffentlichung der Arbeit ohne ausdrückliche Gene
 \newcommand{\snowcard}[5]{
   \begin{table}[ht!]
     \stepcounter{snowcardcounter}
-    \caption{\hsmasnowcardanforderung\ NFR{\arabic{snowcardcounter}} -- #3}\label{NFR{\arabic{snowcardcounter}}}
+    \caption{\hsmasnowcardanforderung\ NFR\_{\arabic{snowcardcounter}} -- #3}\label{NFR{\arabic{snowcardcounter}}}
     \centering
     \sffamily
     \begin{footnotesize}
     \begin{tabularx}{\linewidth}{sssssb}
     \toprule
-    \textbf{\hsmasnowcardno} & NFR{\arabic{snowcardcounter}} & \textbf{\hsmasnowcardart} & #1 & \textbf{\hsmasnowcardprio} & #2 \\
+    \textbf{\hsmasnowcardno} & NFR\_{\arabic{snowcardcounter}} & \textbf{\hsmasnowcardart} & #1 & \textbf{\hsmasnowcardprio} & #2 \\
     \midrule
     \multicolumn{2}{l}{\textbf{\hsmasnowcardtitel}} & \multicolumn{4}{l}{\parbox[t]{11.8cm}{#3}} \\
     \addlinespace
