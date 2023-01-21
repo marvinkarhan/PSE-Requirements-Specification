@@ -1,6 +1,6 @@
 \chapter{Functional Requirements}
 
-\Glspl{userstory} were created to collect the requirements of Carvis. They consist of a \gls{stakeholder} of the core target group and their wishes and goals. The following tables include the requirements grouped by their \gls{stakeholder}. Every \gls{userstory} has an id and a reference to associated use cases. They also have descriptions to present any details that are relevant. The \glspl{userstory} are prioritised according to the \gls{moscow} into \enquote{must have}, \enquote{should have} and \enquote{could have}. There are no \enquote{will not have} stories. \enquote{Must} stories are required for the success of the project, allowing the presentation of visualised data items for the decision maker. \enquote{Should} stories improve the workflow and further assist the presentation of data items, but are not required. \enquote{Could} criteria are nice-to-have features.
+\Glspl{userstory} were created to collect the requirements of Carvis. They consist of a \gls{stakeholder} of the core target group and their wishes and goals. The following tables include the requirements grouped by their \gls{stakeholder}. Every \gls{userstory} has an id and a reference to associated use cases. They also have descriptions to present any details that are relevant. The \glspl{userstory} are prioritised according to the \gls{moscow} into \enquote{must have}, \enquote{should have}, \enquote{could have} and \enquote{will not have} stories. \enquote{Must} stories are required for the success of the project, allowing the presentation of visualised data items for the decision maker. \enquote{Should} stories improve the workflow and further assist the presentation of data items, but are not required. \enquote{Could} criteria are nice-to-have features. \enquote{Will not} criteria have been considered and actively decided against.
 
   \sffamily
   \begin{footnotesize}
@@ -12,52 +12,52 @@
       \textbf{US ID} & \textbf{UC} & \textbf{Description} & \textbf{Criteria} \\
       \midrule
 
-      \hypertarget{Ref:US1}{US\_01} & \hyperlink{Ref:UC1}{UC\_01} & As a decision maker and sales employee, I want to see a list of all of my vehicles to see which vehicles are in my fleet. & Must \\ 
+      \hypertarget{Ref:US1}{US\_01} & \hyperlink{Ref:UC1}{UC\_01} & As a decision maker or sales employee, I want to see a list of all of my vehicles to see which vehicles are in my fleet. & Must \\ 
       
       \rowcolor{Gray}
-      \hypertarget{Ref:US2}{US\_02} & \hyperlink{Ref:UC1}{UC\_01} & As a decision maker and sales employee, I want to see the number of vehicles connected to my \gls{dataplace} account to see how many vehicles I have. & Should \\
+      \hypertarget{Ref:US2}{US\_02} & \hyperlink{Ref:UC1}{UC\_01} & As a decision maker or sales employee, I want to see the number of vehicles connected to my \gls{dataplace} account to see how many vehicles I have. & Should \\
 
-      \hypertarget{Ref:US3}{US\_03} & \hyperlink{Ref:UC1}{UC\_01} & As a decision maker and sales employee, I want to search for a vehicle to quickly find it in the list.
+      \hypertarget{Ref:US3}{US\_03} & \hyperlink{Ref:UC1}{UC\_01} & As a decision maker or sales employee, I want to search for a vehicle to quickly find it in the table.
       \newline
-      \emph{The search criteria correlate to the information which is shown in the vehicle list. This means that vehicles can be hidden or shown if the search text corresponds to the vehicle list entry.} & Should
+      \emph{The search criteria correlate to the information which is shown in the vehicle table. This means that vehicles can be hidden or shown if the search text corresponds to the vehicle table entry.} & Should
       \\
       
       \rowcolor{Gray}
-      \hypertarget{Ref:US4}{US\_04} & \hyperlink{Ref:UC1}{UC\_01} & As a decision maker and sales employee, I want to filter vehicles in the vehicle table to only see the vehicles which fit my current criteria.
+      \hypertarget{Ref:US4}{US\_04} & \hyperlink{Ref:UC1}{UC\_01} & As a decision maker or sales employee, I want to filter vehicles in the vehicle table to only see the vehicles which fit my current criteria.
       \newline
       \emph{The filter criteria correlate to the information which is shown in the vehicle table.} & Should
       \\
 
-      \hypertarget{Ref:US5}{US\_05} & \hyperlink{Ref:UC1}{UC\_01} & As a decision maker and sales employee, I want to sort vehicles in the vehicle table to group them according to different criteria. 
+      \hypertarget{Ref:US5}{US\_05} & \hyperlink{Ref:UC1}{UC\_01} & As a decision maker or sales employee, I want to sort vehicles in the vehicle table to group them according to different criteria. 
       \newline
-      \emph{Sorting should be able in ascending and descending order for all columns of the vehicle table.} & Should
+      \emph{Sorting should be available in ascending and descending order for all columns of the vehicle table.} & Should
       \\
 
       \rowcolor{Gray}
-      \hypertarget{Ref:US6}{US\_06} & \hyperlink{Ref:UC1}{UC\_01}, \newline \hyperlink{Ref:UC2}{UC\_02}, \newline \hyperlink{Ref:UC3}{UC\_03} & As a decision maker and sales employee, I want to export and download a list of my vehicles, vehicle specific data and data for my whole fleet as a PDF to show my coworkers. & Could \\
+      \hypertarget{Ref:US6}{US\_06} & \hyperlink{Ref:UC1}{UC\_01}, \newline \hyperlink{Ref:UC2}{UC\_02}, \newline \hyperlink{Ref:UC3}{UC\_03} & As a decision maker or sales employee, I want to export and download a list of my vehicles, vehicle specific data and data for my whole fleet as a PDF to show my coworkers. & Could \\
 
-      \hypertarget{Ref:US7}{US\_07} & \hyperlink{Ref:UC2}{UC\_02} & As a decision maker and sales employee, I want to view statistics and current information of a vehicle to gain a better understanding of Caruso data. 
+      \hypertarget{Ref:US7}{US\_07} & \hyperlink{Ref:UC2}{UC\_02} & As a decision maker or sales employee, I want to view statistics and current information of a vehicle to gain a better understanding of Caruso data. 
       \newline
       \emph{The shown \glspl{data} are set by the sales employee in form of \glspl{widget}. A list of all possible \glspl{widget} can be found in table \ref{FahrzeugWidgets}. This reduces \gls{userstory} redundancy, as they don't have to be repeated for the decision maker.} & Must \\
 
       \rowcolor{Gray}
-      \hypertarget{Ref:US8}{US\_08} & \hyperlink{Ref:UC2}{UC\_02} & As a decision maker and sales employee, I want to see if a vehicle supports a vehicle-specific \gls{widget} to know which \glspl{data} are available for that vehicle. & Must
+      \hypertarget{Ref:US8}{US\_08} & \hyperlink{Ref:UC2}{UC\_02} & As a decision maker or sales employee, I want to see if a vehicle supports a vehicle-specific \gls{widget} to know which \glspl{data} are available for that vehicle. & Must
       \\
 
-      \hypertarget{Ref:US9}{US\_09} & \hyperlink{Ref:UC2}{UC\_02}, \newline \hyperlink{Ref:UC3}{UC\_03} & As a decision maker and sales employee, I want to know when the data shown by \glspl{widget} was last updated to be convinced of their recency. & Must
+      \hypertarget{Ref:US9}{US\_09} & \hyperlink{Ref:UC2}{UC\_02}, \newline \hyperlink{Ref:UC3}{UC\_03} & As a decision maker or sales employee, I want to know when the data shown by \glspl{widget} was last updated to be convinced of their recency. & Must
       \\
 
       \rowcolor{Gray}
-      \hypertarget{Ref:US10}{US\_10} & \hyperlink{Ref:UC3}{UC\_03} & As a decision maker and sales employee, I want to view statistics and current information of my whole fleet to gain an overview of my fleet and its status.
+      \hypertarget{Ref:US10}{US\_10} & \hyperlink{Ref:UC3}{UC\_03} & As a decision maker or sales employee, I want to view statistics and current information of my whole fleet to gain an overview of my fleet and its status.
       \newline
-      \emph{The shown \glspl{data} are set by the sales employee in form of \glspl{widget}. A list of all possible \glspl{widget} can be found in table \ref{FahrzeugWidgets}. This reduces \gls{userstory} redundancy, as they don't have to be repeated for the decision maker.} & Must \\
+      \emph{The shown \glspl{data} are set by the sales employee in form of \glspl{widget}. A list of all possible \glspl{widget} can be found in table \ref{FlottenWidgets}. This reduces \gls{userstory} redundancy, as they don't have to be repeated for the decision maker.} & Must \\
 
-      \hypertarget{Ref:US11}{US\_11} & \hyperlink{Ref:UC3}{UC\_03} & As a decision maker and sales employee, I want to see how many of my vehicles provide data to a fleet-specific \gls{widget} to know which proportion of my fleet supports the data item. & Must \\
+      \hypertarget{Ref:US11}{US\_11} & \hyperlink{Ref:UC3}{UC\_03} & As a decision maker or sales employee, I want to see how many of my vehicles provide data to a fleet-specific \gls{widget} to know which proportion of my fleet supports the data item. & Must \\
 
       \rowcolor{Gray}
-      \hypertarget{Ref:US12}{US\_12} & \hyperlink{Ref:UC3}{UC\_03} & As a decision maker and sales employee, I want to filter the contents of fleet-specific \glspl{widget} to only see the data of vehicles which currently interest me.
+      \hypertarget{Ref:US12}{US\_12} & \hyperlink{Ref:UC3}{UC\_03} & As a decision maker or sales employee, I want to filter the contents of fleet-specific \glspl{widget} to only see the data of vehicles which currently interest me.
       \newline
-      \emph{The filter criteria correspond to the columns of the vehicle table. This means that information presented in the vehicle list can be used to show or hide vehicles.}
+      \emph{The filter criteria correspond to the columns of the vehicle table. This means that information presented in the vehicle table can be used to show or hide vehicles.}
       & Should \\
 
       \bottomrule
@@ -84,9 +84,9 @@
       
       \rowcolor{Gray}
       \hypertarget{Ref:US16}{US\_16} & \hyperlink{Ref:UC4}{UC\_04} & As a sales employee, I want to see who last changed the project and when to know when it was last updated. & Must \\
-      \hypertarget{Ref:US17}{US\_17} & \hyperlink{Ref:UC4}{UC\_04} & As a sales employee, I want to see who last viewed the project and when to know if it is still being used. Usage is considered to be when someone has opened the project in the application, regardless of whether they are editing something or not.
+      \hypertarget{Ref:US17}{US\_17} & \hyperlink{Ref:UC4}{UC\_04} & As a sales employee, I want to see who last viewed the project and when to know if it is still being used.
       \newline
-      \emph{A project counts as visited if the decision maker views his project.} & Must \\
+      \emph{It is considered still in use when the decision maker has opened the project in the application, regardless of whether they are editing something or not.} & Must \\
       
       \rowcolor{Gray}
       \hypertarget{Ref:US18}{US\_18} & \hyperlink{Ref:UC5}{UC\_05} & As a sales employee, I want to create a project to prepare a new presentation for a decision maker. & Must \\
@@ -107,7 +107,7 @@
       \hypertarget{Ref:US23}{US\_23} & \hyperlink{Ref:UC5}{UC\_05}, \newline \hyperlink{Ref:UC6}{UC\_06} & As a sales employee, I want to choose a main and accent colour for a project to incorporate the customer's \gls{ci}. & Should \\
       
       \rowcolor{Gray}
-      \hypertarget{Ref:US24}{US\_24} & \hyperlink{Ref:UC5}{UC\_05}, \newline \hyperlink{Ref:UC8}{UC\_08} & As a sales employee, I want to see a list of all template to know which are available for creating a new project. & Must \\
+      \hypertarget{Ref:US24}{US\_24} & \hyperlink{Ref:UC5}{UC\_05}, \newline \hyperlink{Ref:UC8}{UC\_08} & As a sales employee, I want to see a list of all templates to know which are available for creating a new project. & Must \\
       
       \hypertarget{Ref:US25}{US\_25} & \hyperlink{Ref:UC5}{UC\_05}, \newline \hyperlink{Ref:UC8}{UC\_08} & As a sales employee, I want to see a preview of the templates to see which template is appropriate for a new project. & Should \\
       
@@ -119,14 +119,14 @@
       \rowcolor{Gray}
       \hypertarget{Ref:US28}{US\_28} & \hyperlink{Ref:UC8}{UC\_08} & As a sales employee, I want to reset a project to start the configuration anew. 
       \newline
-      \emph{A project reset only allows changing the original template for the fleet statistic, vehicle list and details view. It does not reset the project name or used colors.} & Should \\
+      \emph{A project reset only allows changing the original template for the fleet statistic, vehicle table and details view. It does not reset project information such as users, name, colours or logo.} & Should \\
       
       \hypertarget{Ref:US29}{US\_29} & \hyperlink{Ref:UC9}{UC\_09} & As a sales employee, I want to save a project as a template to be able to use it for future projects. & Must \\
       
       \rowcolor{Gray}
       \hypertarget{Ref:US30}{US\_30} & \hyperlink{Ref:UC10}{UC\_10} & As a sales employee, I want to add new columns to the vehicle table to show the decision maker relevant vehicle data on the home page.
       \newline
-      \emph{The information corresponds to columns in the table. \gls{vin}, manufacturer, status, mileage, next event, model and fuel gauge.} & Must  \\
+      \emph{Relevant data that can be shown in the table is the \gls{vin}, manufacturer, status, mileage, next event, model and fuel gauge.} & Must  \\
       
       \hypertarget{Ref:US31}{US\_31} & \hyperlink{Ref:UC10}{UC\_10} & As a sales employee, I want to remove information from the vehicle table to show the decision maker only relevant information on the home page. & Must  \\
       
@@ -151,80 +151,80 @@
 
   \sffamily
   \begin{footnotesize}
-    \label{FahrzeugWidgets}
     \begin{longtable}[L L L]{ p{.1\textwidth} p{.1\textwidth} p{.6\textwidth} p{.1\textwidth} }
       \caption                       % Caption für das Tabellenverzeichnis
           {\Glspl{userstory} of the sales employee for vehicle-specific \glspl{widget}} % Caption für die Tabelle selbs
+          \label{FahrzeugWidgets}      
           \\
       \toprule
       \textbf{US ID} & \textbf{UC} & \textbf{Description} & \textbf{Criteria} \\
       \midrule
-      \hypertarget{Ref:US38}{US\_38} & \hyperlink{Ref:UC11}{UC\_11} & As a sales employee, I want to add a \gls{widget} for the decision maker which includes the \gls{vin}, manufacturer and mileage of a vehicle so that they know which vehicle is currently being viewed. & Must \\
+      \hypertarget{Ref:US38}{US\_38} & \hyperlink{Ref:UC11}{UC\_11} & As a sales employee, I want to add a \gls{widget} to the decision maker's project which includes the \gls{vin}, manufacturer and mileage of a vehicle so that they know which vehicle is currently being viewed. & Should \\
       
       \rowcolor{Gray}
-      \hypertarget{Ref:US39}{US\_39} & \hyperlink{Ref:UC11}{UC\_11} & As a sales employee, I want to add a \gls{widget} for the decision maker which shows the current fuel gauge and remaining drivable distance in kilometres of a vehicle to know if the vehicle needs to be refuelled. & Must \\
+      \hypertarget{Ref:US39}{US\_39} & \hyperlink{Ref:UC11}{UC\_11} & As a sales employee, I want to add a \gls{widget} to the decision maker's project which shows the current fuel gauge and remaining drivable distance in kilometres of a vehicle to know if the vehicle needs to be refuelled. & Should \\
       
-      \hypertarget{Ref:US40}{US\_40} & \hyperlink{Ref:UC11}{UC\_11} & As a sales employee, I want to add a \gls{widget} for the decision maker which shows upcoming events of a vehicle to know if it will be out of commission soon.
+      \hypertarget{Ref:US40}{US\_40} & \hyperlink{Ref:UC11}{UC\_11} & As a sales employee, I want to add a \gls{widget} to the decision maker's project which shows upcoming events of a vehicle to know if it will be out of commission soon.
       \newline
-      \emph{Events are service appointments, general inspections or oil changes.} & Must \\
+      \emph{Events are service appointments, general inspections or oil changes.} & Should \\
       
       \rowcolor{Gray}
-      \hypertarget{Ref:US41}{US\_41} & \hyperlink{Ref:UC11}{UC\_11} & As a sales employee, I want to add a \gls{widget} for the decision maker which shows the current position and speed of a vehicle on a map to see where it is and if it is driving. & Must \\
+      \hypertarget{Ref:US41}{US\_41} & \hyperlink{Ref:UC11}{UC\_11} & As a sales employee, I want to add a \gls{widget} to the decision maker's project which shows the current position and speed of a vehicle on a map to see where it is and if it is driving. & Should \\
       
-      \hypertarget{Ref:US42}{US\_42} & \hyperlink{Ref:UC11}{UC\_11} & As a sales employee, I want to add a \gls{widget} for the decision maker which shows past rides and stops of a vehicle on a map to know how the vehicle was used in the past. & Must \\
+      \hypertarget{Ref:US42}{US\_42} & \hyperlink{Ref:UC11}{UC\_11} & As a sales employee, I want to add a \gls{widget} to the decision maker's project which shows past rides and stops of a vehicle on a map to know how the vehicle was used in the past. & Should \\
       
       \rowcolor{Gray}
-      \hypertarget{Ref:US43}{US\_43} & \hyperlink{Ref:UC11}{UC\_11} & As a sales employee, I want to add a \gls{widget} for the decision maker which shows a statistic of driven kilometres per week day to know when it is being used. & Must \\
+      \hypertarget{Ref:US43}{US\_43} & \hyperlink{Ref:UC11}{UC\_11} & As a sales employee, I want to add a \gls{widget} to the decision maker's project which shows a statistic of driven kilometres per week day to know when it is being used. & Should \\
       
-      \hypertarget{Ref:US44}{US\_44} & \hyperlink{Ref:UC11}{UC\_11} & As a sales employee, I want to add a \gls{widget} for the decision maker which shows a chronological list of vehicle events to know when something has happened to the vehicle. 
+      \hypertarget{Ref:US44}{US\_44} & \hyperlink{Ref:UC11}{UC\_11} & As a sales employee, I want to add a \gls{widget} to the decision maker's project which shows a chronological list of vehicle events to know when something has happened to the vehicle. 
       \newline
-      \emph{Vehicle events refers to accidents or indicator lamps. Accidents should be highlighted to alert the decision maker of possible damage to the vehicle.} & Must
+      \emph{Vehicle events refers to accidents or indicator lamps. Accidents should be highlighted to alert the decision maker of possible damage to the vehicle.} & Should
       \\
 
       \rowcolor{Gray}
-      \hypertarget{Ref:US45}{US\_45} & \hyperlink{Ref:UC11}{UC\_11} & As a sales employee, I want to add a \gls{widget} for the decision maker which shows a history of driven speeds to know how safely the vehicle is being driven. & Must \\
+      \hypertarget{Ref:US45}{US\_45} & \hyperlink{Ref:UC11}{UC\_11} & As a sales employee, I want to add a \gls{widget} to the decision maker's project which shows a history of driven speeds to know how safely the vehicle is being driven. & Should \\
       
-      \hypertarget{Ref:US46}{US\_46} & \hyperlink{Ref:UC11}{UC\_11} & As a sales employee, I want to add a \gls{widget} for the decision maker which shows the current indicator lamps of a vehicle to know if something is wrong and needs attention. & Must \\
+      \hypertarget{Ref:US46}{US\_46} & \hyperlink{Ref:UC11}{UC\_11} & As a sales employee, I want to add a \gls{widget} to the decision maker's project which shows the current indicator lamps of a vehicle to know if something is wrong and needs attention. & Should \\
       
       \rowcolor{Gray}
-      \hypertarget{Ref:US47}{US\_47} & \hyperlink{Ref:UC11}{UC\_11} & As a sales employee, I want to add a \gls{widget} for the decision maker which shows information about the current ride to know where the vehicle is and what it is doing.
+      \hypertarget{Ref:US47}{US\_47} & \hyperlink{Ref:UC11}{UC\_11} & As a sales employee, I want to add a \gls{widget} to the decision maker's project which shows information about the current ride to know where the vehicle is and what it is doing.
       \newline
-      \emph{Current information about rides includes the start time and which street it has last stopped in.} & Must \\
+      \emph{Current information about rides includes the start time and which street it has last stopped in.} & Should \\
       
-      \hypertarget{Ref:US48}{US\_48} & \hyperlink{Ref:UC11}{UC\_11} & As a sales employee, I want to add a \gls{widget} for the decision maker which shows the current fuel consumption per 100 kilometres to know how high it is. & Must \\
+      \hypertarget{Ref:US48}{US\_48} & \hyperlink{Ref:UC11}{UC\_11} & As a sales employee, I want to add a \gls{widget} to the decision maker's project which shows the current fuel consumption per 100 kilometres to know how high it is. & Should \\
       \bottomrule
     \end{longtable}
   \end{footnotesize}
   \rmfamily
 
-  \label{FlottenWidgets}
   \sffamily
   \begin{footnotesize}
     \begin{longtable}[L L L L ]{ p{.1\textwidth} p{.1\textwidth} p{.6\textwidth} p{.1\textwidth}}
       \caption                       % Caption für das Tabellenverzeichnis
-          {\Glspl{userstory} of sales employee for fleet-specific \glspl{widget}} % Caption für die Tabelle selbs
+          {\Glspl{userstory} of the sales employee for fleet-specific \glspl{widget}} % Caption für die Tabelle selbs
+          \label{FlottenWidgets}
           \\
       \toprule
       \textbf{US ID} & \textbf{UC} & \textbf{Description} & \textbf{Criteria} \\
       \midrule
-      \hypertarget{Ref:US49}{US\_49} & \hyperlink{Ref:UC11}{UC\_11} & As a sales employee, I want to add a \gls{widget} for the decision maker which shows the distribution of vehicles from different manufacturers to know how many of the vehicles are from which one. & Must  \\
+      \hypertarget{Ref:US49}{US\_49} & \hyperlink{Ref:UC11}{UC\_11} & As a sales employee, I want to add a \gls{widget} to the decision maker's project which shows the distribution of vehicles from different manufacturers to know how many of the vehicles are from which one. & Should  \\
       
       \rowcolor{Gray}
-      \hypertarget{Ref:US50}{US\_50} & \hyperlink{Ref:UC11}{UC\_11} & As a sales employee, I want to add a \gls{widget} for the decision maker which shows a chronological list of all vehicle events to know which vehicle recently had an event.
+      \hypertarget{Ref:US50}{US\_50} & \hyperlink{Ref:UC11}{UC\_11} & As a sales employee, I want to add a \gls{widget} to the decision maker's project which shows a chronological list of all vehicle events to know which vehicle recently had an event.
       \newline
-      \emph{Vehicle events refers to accidents or indicator lamps. Accidents should be highlighted to alert the decision maker of possible damage to the vehicle.} & Must \\
+      \emph{Vehicle events refers to accidents or indicator lamps. Accidents should be highlighted to alert the decision maker of possible damage to the vehicle.} & Should \\
       
       \hypertarget{Ref:US51}{US\_51} & \hyperlink{Ref:UC11}{UC\_11} & As a sales employee, I want add a \gls{widget} which shows the distribution of engine types to know how many vehicles have which type. 
       \newline
-      \emph{Engine types are fuel, electric or hybrid.} & Must \\
+      \emph{Engine types are fuel, electric or hybrid.} & Should \\
       
       \rowcolor{Gray}
-      \hypertarget{Ref:US52}{US\_52} & \hyperlink{Ref:UC11}{UC\_11} & As a sales employee, I want to add a \gls{widget} for the decision maker which shows a statistic of driven kilometres per week day of all vehicles to know when they are being used. & Must \\
+      \hypertarget{Ref:US52}{US\_52} & \hyperlink{Ref:UC11}{UC\_11} & As a sales employee, I want to add a \gls{widget} to the decision maker's project which shows a statistic of driven kilometres per week day of all vehicles to know when they are being used. & Should \\
       
-      \hypertarget{Ref:US53}{US\_53} & \hyperlink{Ref:UC11}{UC\_11} & As a sales employee, I want to add a \gls{widget} for the decision maker which shows a map of all vehicle positions to know where they are. & Must \\
+      \hypertarget{Ref:US53}{US\_53} & \hyperlink{Ref:UC11}{UC\_11} & As a sales employee, I want to add a \gls{widget} to the decision maker's project which shows a map of all vehicle positions to know where they are. & Should \\
       
       \rowcolor{Gray}
-      \hypertarget{Ref:US54}{US\_54} & \hyperlink{Ref:UC11}{UC\_11} & As a sales employee, I want to add a \gls{widget} for the decision maker which shows the total mileage of all vehicles as well as the average mileage to know how high it is. & Must \\
+      \hypertarget{Ref:US54}{US\_54} & \hyperlink{Ref:UC11}{UC\_11} & As a sales employee, I want to add a \gls{widget} to the decision maker's project which shows the total mileage of all vehicles as well as the average mileage to know how high it is. & Should \\
       \bottomrule
     \end{longtable}
   \end{footnotesize}

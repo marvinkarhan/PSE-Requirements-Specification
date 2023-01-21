@@ -1,4 +1,5 @@
 \chapter{Non-Functional Requirements}
+This chapter will introduce all non-functional requirements of the project. They are grouped according to the \href{https://www.volere.org/}{Volere template}\footnote[3]{https://www.volere.org/} and presented as snowcards, including an id, a name, a type, description, fit criterion and a priority. Like the functional requirements, they are prioritised according to the \gls{moscow}. 
 
 \section{Look and Feel Requirements}
 The following section will discuss the visual and tactile aspects of Carvis to ensure that it meets the desired standards for aesthetics and usability.
@@ -8,25 +9,13 @@ The following section will discuss the visual and tactile aspects of Carvis to e
 {Should}
 {Simple and understandable}
 {Carvis should have a simple, easily understandable interface for \gls{nontechnical} users to not overwhelm them. It should feel \enquote{live}, using \glspl{data} that are as recent as possible.}
-{A survey is launched which asks respondents to rate on a scale how easy the UI is to use based on looks alone.}
-
-\snowcard{Appearance Requirements}
-{Should}
-{Realtime data}
-{The connection between to the real world data and vehicles should be apparent. In addition, the usefulness of the \glspl{data} should be brought attention to. The user should recognise their benefit and be inspired as to how to use them.}
-{A tester is able to tell, when the last update of the data was.}
-
-\snowcard{Style Requirements}
-{Could}
-{Corporate indentity}
-{Carvis should be visually appealing by complying with the corporate indentity (\gls{ci}) of the customer.}
-{Can only be tested by getting feedback from decision makers}
+{A survey is launched which asks respondents to rate how easy the UI is to use based on looks alone.}
 
 \snowcard{Style Requirements}
 {Could}
 {Quick and easy}
-{In relation to the requirement \autoref{NFR{1}}, the UI should not only be understandable and simple, but also easy and quick to use, but still bring added value to the user.}
-{A use can navigate to specific pages within 5 seconds.}
+{The UI should be easy and quick to use, but still bring added value to the user.}
+{A user can navigate to specific pages within 5 seconds.}
 
 \section{Usability and Humanity Requirements}
 This section describes the requirements for how easy Carvis should be to use and how well it should meet the needs and expectations of its users.
@@ -34,20 +23,14 @@ This section describes the requirements for how easy Carvis should be to use and
 \snowcard{Usability and Humanity Requirements}
 {Must}
 {Fast creation of a \gls{appetiser}}
-{For a sales employee, a \gls{appetiser} should be able to be created for the decision maker in under one hour}
+{For a sales employee, a \gls{appetiser} should be able to be created for the decision maker in under one hour.}
 {The tester creates a defined \gls{appetiser} from a real case in under one hour from scratch.}
 
 \snowcard{Usability and Humanity Requirements}
 {Should}
-{Quick recognizability}
-{Ease of use is a prerequisite for the customers. All information should be quickly at a glance. Information should be limited to the most necessary for the home page and be quickly available at a glance. It is not assumed that customers already have some experience with the digital world. Basic terms from the automotive industry such as \gls{vin}, on the other hand, should be known to all customers.}
-{A questionnaire is created on certain data, such as fuel consumption, average speed and distance travelled, which has to be answered by various testers with the help of the appetizer created. The time is to be measured here. The criterion is considered to be fulfilled if the testers can answer the questions within less than one minute each.}
-
-\snowcard{Personalisation and Internationalisation Requirements}
-{Should}
-{Custom logo and color}
-{Carvis should comply with the \gls{ci} of the customers. The logo and colours of Carvis should be adaptable to those of the customers to make them feel more at home.}
-{The logo and primary color of the UI can be changed}
+{Quick recognisability}
+{Ease of use is a prerequisite for the customers. Information should be limited to the most necessary for the home page and be quickly available at a glance. It is not assumed that customers already have some experience with the digital world. Basic terms from the automotive industry such as \gls{vin}, on the other hand, should be known to all customers.}
+{The decision maker can use Carvis after watching the sales employee give their sales pitch.}
 
 \snowcard{Personalisation and Internationalisation Requirements}
 {Should}
@@ -58,7 +41,7 @@ This section describes the requirements for how easy Carvis should be to use and
 \snowcard{Learning Requirements}
 {Should}
 {Learning Phase}
-{The decision maker will receive a short presentation on the application from the sales employee, but will also be able to use Carvis alone. Since the customers are to be convinced, a long learning phase should be refrained from. The customer's view should be very understandable and easy to use. The sales employee is a Caruso employee. Since they will repeatedly use Carvis, a longer learning curve is to be expected. }
+{The decision maker will receive a short presentation using Carvis from the sales employee, but will also be able to use it alone. Customers will only spend a short time on Carvis, so learning should be kept to a minimum. The customer's view should be very understandable and easy to use. The sales employee will repeatedly use Carvis, thus a longer learning curve is to be expected.}
 {A task catalog in the decision maker view should be created, which should be completed by several testers within a given time.}
 
 
@@ -69,19 +52,14 @@ This section covers the performance requirements of the product, including avail
 {Should}
 {Adding New Content}
 {As it is intended to service a wide range of customers with different interests, the ability to add new templates and widgets quickly is crucial.}
-{New widgets and templates can be quickly created and will appear in their respective lists automatically.}
+{Most new widgets and templates can be created in less than a work day and will appear in their respective lists automatically. Widgets that are more complicated, such as driver scoring, may take longer.}
 
-\snowcard{Capacity Requirement}
-{Could}
-{User Traffic}
-{Carvis is only used for presentations and possibly by customers for short periods of time, thus it does not have to accomodate much user traffic.}
-{Allow up to ten users to view the application without noticeable slowdown.}
 
 \snowcard{Reliability and Availability Requirement}
 {Must}
 {Data Availability}
-{Limitations in the availability of the \gls{data} are completely on the side of the \gls{api} and \glspl{oem}. Only a steady connection to the \gls{api} must be insured.}
-{}
+{Limitations in the availability of the \glspl{data} are completely on the side of the \gls{api} and \glspl{oem}. Only a steady connection to the \gls{api} must be insured.}
+{An error message is displayed if the \gls{api} is unavailable.}
 
 \snowcard{Reliability and Availability Requirement}
 {Should}
@@ -95,10 +73,10 @@ This section covers the performance requirements of the product, including avail
 This section covers the access and privacy requirements for the product.
 
 \snowcard{Access Requirement}
-{Should}
+{Will not}
 {Multiple Viewers}
-{Decision makers should have access to their cars that are connected via the \gls{dataplace} and should also be able to delegate access to other employees within their company. The decision maker should be able to decide who has access sensitive information and can perform certain actions.}
-{The \gls{dataplace} should have a company organization unit that includes both cars and employees. This unit allows decision makers to manage access to their connected cars and assign appropriate permissions to other employees within their organization.}
+{Decision makers should have access to their cars that are connected via the \gls{dataplace} and should also be able to delegate access to other employees within their company. The decision maker should be able to decide who has access sensitive information and can perform certain actions. This functionality is already given within the \gls{dataplace}.}
+{}
 
 \snowcard{Privacy Requirement}
 {Must}

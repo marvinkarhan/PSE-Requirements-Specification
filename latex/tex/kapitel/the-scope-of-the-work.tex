@@ -1,6 +1,6 @@
 \chapter{The Scope of the Work}
 
-This chapter describes important aspect to consider when building a new product. It determines the boundaries of the business area to be studied and outlines how it fits into its environment. Understanding the scope of the work and its constraints allows to establish the scope of the product and ensure that it will fit seamlessly into its intended environment. We will delve into the current situation and the context of the work in order to fully understand the scope of the project.
+This chapter describes important aspects to consider when building a new product. It determines the boundaries of the business area to be studied and outlines how it fits into its environment. Understanding the scope of the work and its constraints allows us to establish the scope of the product and ensure that it will fit seamlessly into its intended environment. We will delve into the current situation and the context of the work in order to fully understand the scope of the project.
 
 \section{The Current Situation}
 The current way of acquiring new customers is shown in figure \ref{ScopeOfWork:Situation}.
@@ -12,16 +12,18 @@ The current way of acquiring new customers is shown in figure \ref{ScopeOfWork:S
   \label{ScopeOfWork:Situation}
 \end{figure}
 
-Entry into a new contract currently requires three \glspl{stakeholder}: a decision maker, a Caruso sales employee and a Caruso configurator. The process can be split into four steps: first contact, persuasion, testing and conclusion. During first contact, the decision maker and sales employee enter into contact with each other. The sales employee gauges a decision makers interest in Caruso services or a decision maker becomes aware of Caruso through advertising, word of mouth or some other means.
+Entry into a new contract currently requires three \glspl{stakeholder}: a decision maker, a Caruso sales employee and a Caruso configurator. The process can be split into four steps: first contact, persuasion, testing and conclusion. During first contact, the decision maker and sales employee enter into contact with each other. The sales employee gauges a decision makers interest in Caruso services or a decision maker becomes aware of Caruso through advertising, word of mouth or other means.
 
-After contact is established, the sales employee of Caruso holds a meeting with one or multiple decision makers. Here \glspl{data} of publicly accessible cars, Caruso vehicles or dummy cars are presented. For this purpose, a manually created HTML or Excel report of aggregated vehicle data of past rides is used. These include data such as distance driven per day of the week for an entire fleet of cars.
+After contact is established, the sales employee of Caruso holds a meeting with one or multiple decision makers. Here, \glspl{data} of publicly accessible cars, Caruso vehicles or dummy cars are presented. For this purpose, a manually created HTML or Excel report of aggregated vehicle data of past rides is used. These include data such as distance driven per day of the week for an entire fleet of cars.
 
-After the sales pitch, the decision makers trusts and wants to use Caruso's services. They can then create an account in the \gls{dataplace} and receive the aggregated data shown during the presentation to look at for themselves. This data usually isn't live.
+After the sales pitch, the decision maker trusts and wants to use Caruso's services. They can then create an account in the \gls{dataplace} and receive the aggregated data shown during the presentation to look at for themselves. This data usually isn't live.
 
 After the decision makers are convinced of the value of the data, a final meeting is held where any open questions can be discussed with the sales employee. Finally, a contract is entered by the two parties.
 
 \section{The Context of the Work}
-Figure \ref*{ScopeOfWork:ContextDiagram} shows the communication between the core target group, the Carvis and the neighbouring systems in the form of a context diagram.
+This section will explain how Carvis fits into the current system architecture of Caruso.
+
+Figure \ref{ScopeOfWork:ContextDiagram} shows the communication between the core target group, the Carvis and the neighbouring systems in the form of a context diagram.
 
 % TODO in TikZ neu erstellen
 % TODO Konfigurator unter Sales Employee
@@ -32,7 +34,7 @@ Figure \ref*{ScopeOfWork:ContextDiagram} shows the communication between the cor
   \label{ScopeOfWork:ContextDiagram}
 \end{figure}
 
-The decision maker has access to both the \gls{dataplace} and Carvis. The access to the \gls{dataplace} is required as the decision maker needs to create an account and register vehicles before they can access Carvis.
+The decision maker has access to both the \gls{dataplace} and Carvis. Access to the \gls{dataplace} is required as the decision maker needs to create an account and register vehicles before they can access Carvis.
 
-The sales employee uses Carvis to present Caruso data to the decision maker. They are not allowed to access the decision makers data but can use placeholder cars publicly accessible in the \gls{dataplace}. He also uses Carvis to configure projects for different decision makers. The configurator has no part in this proposed system because the sales employee will handle all forms of configuration without requiring much technical knowledge.
+The sales employee uses Carvis to present Caruso data to the decision maker. They are not allowed to access the decision maker's data but can use placeholder cars publicly accessible in the \gls{dataplace}. He also uses Carvis to configure projects for different decision makers. The configurator has no part in this proposed system because the sales employee will handle all forms of configuration without requiring much technical knowledge.
 % TODO ausformulieren?
